@@ -21,7 +21,8 @@ from kcp_structgen.enumerator import (
 
 
 def _params(product="SR3", expiry="Z6", anchor=97.00, view="neutral",
-            families=None, flag=None, payout=None, expand_monthlies=False):
+            families=None, variants=None, flag=None, payout=None,
+            expand_monthlies=False):
     return {
         "product": product,
         "expiry": expiry,
@@ -31,6 +32,7 @@ def _params(product="SR3", expiry="Z6", anchor=97.00, view="neutral",
         "rate_delta_bp": None,
         "directional_view": view,
         "families": families,
+        "variants": variants,
         "tightness": None,
         "cost_preference": None,
         "broken_direction_flag": flag,
@@ -112,9 +114,30 @@ def test_outrights_bullish_no_puts():
     assert all(line.endswith(" c") for line in g["lines"])
 
 
+def test_outrights_bullish_walks_down_from_anchor():
+    """Calls at and BELOW target anchor (user feedback Feedback pt 2)."""
+    g = outrights(_params(anchor=96.56, view="bullish_price"))
+    # Anchor 96.56 snapped (grid 6.25bp): expect 96.56, 96.50, 96.43, 96.37, 96.31
+    assert g["lines"][0] == "SFRZ6 96.56 c"  # at target
+    assert "SFRZ6 96.50 c" in g["lines"]
+    assert "SFRZ6 96.43 c" in g["lines"]
+    # Must NOT contain strikes ABOVE target.
+    assert not any(line.endswith(f" {k} c") for k in ("96.62", "96.68", "96.75") for line in g["lines"])
+
+
 def test_outrights_bearish_no_calls():
     g = outrights(_params(view="bearish_price"))
     assert all(line.endswith(" p") for line in g["lines"])
+
+
+def test_outrights_bearish_walks_up_from_anchor():
+    """Puts at and ABOVE target anchor."""
+    g = outrights(_params(anchor=97.43, view="bearish_price"))
+    assert g["lines"][0] == "SFRZ6 97.43 p"
+    assert "SFRZ6 97.50 p" in g["lines"]
+    assert "SFRZ6 97.56 p" in g["lines"]
+    # Must NOT contain strikes BELOW target.
+    assert not any(line.endswith(f" {k} p") for k in ("97.37", "97.31") for line in g["lines"])
 
 
 def test_outrights_neutral_has_both():
@@ -133,9 +156,27 @@ def test_verticals_bullish_emits_cs_only():
     assert not any(" ps" in line for line in g["lines"])
 
 
+def test_verticals_bullish_short_leg_at_anchor():
+    """Bullish CS: short leg = anchor, long leg below. So K1 < K2 = anchor."""
+    g = verticals(_params(anchor=96.56, view="bullish_price"))
+    for line in g["lines"]:
+        ks = [float(x) for x in line.split()[1].split("/")]
+        assert ks[1] == 96.56, f"short leg should be at anchor in {line}"
+        assert ks[0] < ks[1], f"long leg should be below anchor in {line}"
+
+
 def test_verticals_bearish_emits_ps_only():
     g = verticals(_params(view="bearish_price"))
     assert all(" ps" in line for line in g["lines"])
+
+
+def test_verticals_bearish_short_leg_at_anchor():
+    """Bearish PS: short leg = anchor, long leg above."""
+    g = verticals(_params(anchor=97.43, view="bearish_price"))
+    for line in g["lines"]:
+        ks = [float(x) for x in line.split()[1].split("/")]
+        assert ks[1] == 97.43, f"short leg should be at anchor in {line}"
+        assert ks[0] > ks[1], f"long leg should be above anchor in {line}"
 
 
 def test_verticals_max_payout_one_step():
@@ -157,6 +198,110 @@ def test_default_families_when_none_includes_condor():
     assert any("Condor" in h for h in headings), (
         f"condors should be in the default set. Got: {headings}"
     )
+
+
+def test_default_includes_broken_condors():
+    """Feedback pt 2: user asked why no broken condors. They should appear."""
+    groups = enumerate_structures(_params(view="bullish_price", families=None))
+    headings = [g["heading"] for g in groups]
+    assert any("Condors (broken, in favour)" in h for h in headings), headings
+    assert any("Condors (broken, against)" in h for h in headings), headings
+
+
+def test_broken_condor_bullish_in_favour_lower_wider():
+    """Desk rule: bullish in-favour = lower outer wider than upper outer.
+    Inspect internal tuples (not the truncated 2dp strings) for precision."""
+    from kcp_structgen.enumerator import _condor_tuples_broken
+    tuples = _condor_tuples_broken(_params(anchor=96.56, view="bullish_price"),
+                                    "in_favour")
+    assert tuples
+    for k1, k2, k3, k4 in tuples:
+        lower_outer = k2 - k1
+        upper_outer = k4 - k3
+        assert lower_outer > upper_outer + 1e-9, (
+            f"expected lower outer > upper outer: {(k1, k2, k3, k4)}"
+        )
+
+
+def test_broken_condor_bullish_against_upper_wider():
+    from kcp_structgen.enumerator import _condor_tuples_broken
+    tuples = _condor_tuples_broken(_params(anchor=96.56, view="bullish_price"),
+                                    "against")
+    assert tuples
+    for k1, k2, k3, k4 in tuples:
+        lower_outer = k2 - k1
+        upper_outer = k4 - k3
+        assert upper_outer > lower_outer + 1e-9, (
+            f"expected upper outer > lower outer: {(k1, k2, k3, k4)}"
+        )
+
+
+def test_broken_condor_flag_filters_groups():
+    """broken_direction_flag=in_favour should drop the 'against' condor group."""
+    groups = enumerate_structures(_params(view="bullish_price",
+                                          families=["condor"], flag="in_favour"))
+    headings = [g["heading"] for g in groups]
+    assert not any("against" in h for h in headings), headings
+    assert any("in favour" in h for h in headings), headings
+
+
+# ---------------------------------------------------------------------------
+# variants: precise narrowing (overrides families)
+# ---------------------------------------------------------------------------
+
+def test_variants_overrides_families_single():
+    """variants=['fly_broken_in_favour'] → only that one group, no symmetric."""
+    groups = enumerate_structures(_params(
+        view="bullish_price",
+        families=["fly", "condor"],  # should be ignored
+        variants=["fly_broken_in_favour"],
+    ))
+    headings = [g["heading"] for g in groups]
+    assert headings == ["Flies (broken, in favour)"], headings
+
+
+def test_variants_broken_without_direction_emits_both():
+    """User asked for 'broken flies' → in-favour AND against, no symmetric."""
+    groups = enumerate_structures(_params(
+        view="bullish_price",
+        variants=["fly_broken_in_favour", "fly_broken_against"],
+    ))
+    headings = [g["heading"] for g in groups]
+    assert "Flies (broken, in favour)" in headings
+    assert "Flies (broken, against)" in headings
+    assert "Flies (symmetric)" not in headings
+
+
+def test_variants_symmetric_only():
+    """'symmetric flies' → only symmetric group."""
+    groups = enumerate_structures(_params(
+        view="bullish_price", variants=["fly_symmetric"],
+    ))
+    headings = [g["heading"] for g in groups]
+    assert headings == ["Flies (symmetric)"], headings
+
+
+def test_variants_mixed_flies_and_condors():
+    """'symmetric flies and broken condors in favour' → exactly those two."""
+    groups = enumerate_structures(_params(
+        view="bullish_price",
+        variants=["fly_symmetric", "condor_broken_in_favour"],
+    ))
+    headings = [g["heading"] for g in groups]
+    assert "Flies (symmetric)" in headings
+    assert "Condors (broken, in favour)" in headings
+    # The other variants should be dropped.
+    assert "Flies (broken, in favour)" not in headings
+    assert "Condors (symmetric)" not in headings
+
+
+def test_variants_empty_list_falls_back_to_families():
+    """variants=[] should NOT block families (treat as not narrowed)."""
+    groups = enumerate_structures(_params(
+        view="bullish_price", families=["fly"], variants=[],
+    ))
+    headings = [g["heading"] for g in groups]
+    assert any("Flies" in h for h in headings)
 
 
 def test_broken_flag_in_favour_drops_against_group():

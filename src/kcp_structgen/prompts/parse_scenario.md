@@ -18,6 +18,7 @@ Extract. Do not do arithmetic. Do not reason about wing widths, strike choices, 
   "rate_delta_bp": <number> | [<lo>, <hi>] | null,
   "directional_view": "bullish_price" | "bearish_price" | "neutral",
   "families": [<family>, ...] | null,
+  "variants": [<variant>, ...] | null,
   "tightness": "tight" | "medium" | "wide" | null,
   "cost_preference": "cheap" | "normal" | null,
   "broken_direction_flag": "in_favour" | "against" | null,
@@ -42,12 +43,26 @@ So "Sep 2026" → `U6`, "Nov 2026" → `X6`, "Oct 2026" → `V6`. If scenario na
 
 **Anchor price.** If user gives a price (≥10), use directly. If user gives a rate (<10), convert: `price = 100 - rate`. Example: `3% SOFR` → `97.00`. If scenario only talks about rate moves, leave `anchor_price` null.
 
-**Rate events.** Use this when the scenario describes a *sequence* of rate moves in time. Each entry is `{"when": <month-year or label>, "delta_bp": <signed bp number or [lo, hi]>}`. Cuts are negative, hikes positive. 1 cut/hike = 25bp unless specified.
+**Rate events.** Use this when the scenario describes a *sequence* of rate moves in time. Each entry is `{"when": <month-year or label>, "delta_bp": <signed bp number or [lo, hi]>}`. Cuts are negative, hikes positive.
+
+**CRITICAL sizing rule.** One central-bank meeting = ONE move. Size is **always 25bp** per move unless the user gives an explicit number or multiplier. A meeting reference like "hikes in September" or "cuts in March" is a SINGLE event of 25bp (even though the word is plural in English — it refers to the action at that meeting, not multiple meetings).
+
+- "ECB hikes in September" → ONE event, `delta_bp: 25`. Not 50, not 75.
+- "ECB cuts in March" → ONE event, `delta_bp: -25`.
+- "Fed does 2 hikes in September" / "Fed 50bp hike in Sep" / "Fed hikes 50 in Sep" → `delta_bp: 50` (explicit number).
+- "Fed hikes in September and December" → TWO events, one each meeting, each 25bp.
+- "BoE hikes twice in 2026" → two events at two different meetings; if meetings aren't named, pick two sequential meetings.
+
+Examples with full JSON:
 
 - "ECB hikes in Sep and then a small chance of cut in Dec" →
   `[{"when": "2026-09", "delta_bp": 25}, {"when": "2026-12", "delta_bp": [-3.75, -10.0]}]`
+- "ECB hikes in September 2026 and December 2026" →
+  `[{"when": "2026-09", "delta_bp": 25}, {"when": "2026-12", "delta_bp": 25}]`
 - "BoE hold through Jun, cut in Sep, small chance cut in Dec" →
   `[{"when": "2026-06", "delta_bp": 0}, {"when": "2026-09", "delta_bp": -25}, {"when": "2026-12", "delta_bp": [-3.75, -10.0]}]`
+- "Fed 50bp hike in Sep" →
+  `[{"when": "2026-09", "delta_bp": 50}]`
 
 **Rate delta (single event).** When only one event is described with no timeline, use `rate_delta_bp` instead:
 - "1 cut" → `-25`
@@ -66,13 +81,34 @@ So "Sep 2026" → `U6`, "Nov 2026" → `X6`, "Oct 2026" → `V6`. If scenario na
 
 If `rate_events` has a net hawkish tilt, `directional_view` is bearish_price; net dovish is bullish_price. Use the final/dominant event for the sign if ambiguous.
 
-**Families.** Use these exact strings: `outright`, `vertical`, `fly`, `condor`, `ratio_spread`, `ratio_fly`, `rr`, `straddle`, `strangle`, `calendar`. Null if user didn't specify.
+**Families.** Broad family list. Use these exact strings: `outright`, `vertical`, `fly`, `condor`, `ratio_spread`, `ratio_fly`, `rr`, `straddle`, `strangle`, `calendar`. Null if user didn't narrow. Used when the user says things like "flies" or "flies and condors" (broad selection — emits all variants).
+
+**Variants.** Precise narrowing at variant level. Use when the user filters by symmetric/broken/in-favour/against, e.g. "broken flies", "symmetric condors", "flies broken in favour". `variants` **overrides** `families` entirely — if `variants` is set, the tool emits only those variants and ignores `families`. Valid variant strings:
+
+- `outright`, `vertical`
+- `fly_symmetric`, `fly_broken_in_favour`, `fly_broken_against`
+- `condor_symmetric`, `condor_broken_in_favour`, `condor_broken_against`
+- `ratio_spread`, `ratio_fly`
+- `rr`, `straddle`, `strangle`, `calendar`
+
+Mapping rules:
+
+- "flies" / "show me flies" → `families=["fly"]`, `variants=null` (broad, all 3 variants)
+- "symmetric flies" / "regular flies" / "vanilla flies" → `variants=["fly_symmetric"]`
+- "broken flies" (no direction) → `variants=["fly_broken_in_favour", "fly_broken_against"]`
+- "flies broken in favour" / "flies broken in my favour" → `variants=["fly_broken_in_favour"]`
+- "flies broken against" → `variants=["fly_broken_against"]`
+- Same rules for condors: "symmetric condors", "broken condors", "condors broken against", etc.
+- Mixed: "symmetric flies and broken condors in favour" → `variants=["fly_symmetric", "condor_broken_in_favour"]`
+- "flies and condors" (no narrowing) → `families=["fly","condor"]`, `variants=null`
+
+Null `variants` is the default — only populate when the user explicitly narrows.
 
 **Tightness.** `tight`/`medium`/`wide` from phrasing; null if unspecified.
 
 **Cost preference.** `cheap` if user said cheap/credit/give them. `normal` if said. Null otherwise.
 
-**Broken direction flag.** Populate only if user literally used "in favour" / "in my favour" / "against" / "against me". Never inferred.
+**Broken direction flag.** Populate only if user literally used "in favour" / "in my favour" / "against" / "against me". Never inferred. This field is kept for backward compatibility; prefer using `variants` to narrow down the output instead.
 
 **Max payout ticks.** If user says "max payout X ticks" / "pays X" / "6.25 ticks max" / "I want it to pay Y bps max" → set to that number. Typical values: 6.25, 12.5, 18.75, 25. Null if unspecified.
 
@@ -111,7 +147,17 @@ User: `boe stays on hold through june, cuts once in september and small chance o
 
 User: `bullish sfrz6 at 97, flies broken in my favour, max payout 12.5 ticks`
 ```json
-{"product":"SR3","expiry":"Z6","expand_monthlies":false,"anchor_price":97.00,"rate_events":null,"rate_delta_bp":null,"directional_view":"bullish_price","families":["fly"],"tightness":null,"cost_preference":null,"broken_direction_flag":"in_favour","max_payout_ticks":12.5,"horizon_event":null,"raw_scenario":"bullish sfrz6 at 97, flies broken in my favour, max payout 12.5 ticks"}
+{"product":"SR3","expiry":"Z6","expand_monthlies":false,"anchor_price":97.00,"rate_events":null,"rate_delta_bp":null,"directional_view":"bullish_price","families":null,"variants":["fly_broken_in_favour"],"tightness":null,"cost_preference":null,"broken_direction_flag":"in_favour","max_payout_ticks":12.5,"horizon_event":null,"raw_scenario":"bullish sfrz6 at 97, flies broken in my favour, max payout 12.5 ticks"}
+```
+
+User: `sfrz6 at 97, show me symmetric flies and broken condors in favour`
+```json
+{"product":"SR3","expiry":"Z6","expand_monthlies":false,"anchor_price":97.00,"rate_events":null,"rate_delta_bp":null,"directional_view":"neutral","families":null,"variants":["fly_symmetric","condor_broken_in_favour"],"tightness":null,"cost_preference":null,"broken_direction_flag":null,"max_payout_ticks":null,"horizon_event":null,"raw_scenario":"sfrz6 at 97, show me symmetric flies and broken condors in favour"}
+```
+
+User: `1 cut by december in sofr, broken flies`
+```json
+{"product":"SR3","expiry":"Z6","expand_monthlies":true,"anchor_price":null,"rate_events":null,"rate_delta_bp":-25,"directional_view":"bullish_price","families":null,"variants":["fly_broken_in_favour","fly_broken_against"],"tightness":null,"cost_preference":null,"broken_direction_flag":null,"max_payout_ticks":null,"horizon_event":null,"raw_scenario":"1 cut by december in sofr, broken flies"}
 ```
 
 User: `show me v6 euribor structures, bearish`

@@ -49,7 +49,19 @@ def load_current_rates() -> dict[str, float]:
     return {k: float(v) for k, v in data.items()}
 
 
-def _current_price(product: str) -> float:
+def _current_price(product: str, params: dict | None = None) -> float:
+    """Effective cash rate as price (100 - rate) for the product.
+
+    Always reads current_rates.json. This is what rate events are applied
+    to, to compute the target anchor.
+
+    NOTE: `current_price_override` is deliberately NOT read here. It's the
+    user-supplied current *futures* price, used only by _is_bullish/
+    _is_bearish to decide calls-vs-puts. Feeding it into the anchor math
+    would double-count the rate expectations the futures price already bakes
+    in.
+    """
+    _ = params  # intentionally unused; kept in signature for symmetry
     rates = load_current_rates()
     if product not in rates:
         raise RatesError(
@@ -110,24 +122,18 @@ def _anchors_from_delta(current: float, delta) -> list[float]:
 
 def resolve_anchor_range(params: dict) -> tuple[float, float] | None:
     """Return (lo_price, hi_price) if the scenario implies a terminal range,
-    else None. Used by range-aware families (condor, vertical, etc.).
-
-    A range is present when:
-    - rate_events contains a probabilistic event (list delta), OR
-    - explicit [anchor_lo, anchor_hi] is given (not yet supported).
-    """
+    else None. Used by range-aware families (condor, vertical, etc.)."""
     events = params.get("rate_events")
     if events:
         net = _collapse_rate_events(events)
         if isinstance(net, tuple):
-            current = _current_price(params["product"])
+            current = _current_price(params["product"], params)
             a1 = round(current - net[0] / 100.0, 10)
             a2 = round(current - net[1] / 100.0, 10)
             return (min(a1, a2), max(a1, a2))
-    # Legacy single-field rate_delta_bp as a range.
     delta = params.get("rate_delta_bp")
     if isinstance(delta, (list, tuple)) and len(delta) == 2:
-        current = _current_price(params["product"])
+        current = _current_price(params["product"], params)
         a1 = round(current - float(delta[0]) / 100.0, 10)
         a2 = round(current - float(delta[1]) / 100.0, 10)
         return (min(a1, a2), max(a1, a2))
@@ -135,27 +141,40 @@ def resolve_anchor_range(params: dict) -> tuple[float, float] | None:
 
 
 def resolve_anchors(params: dict) -> list[float]:
-    """Return one or more anchor prices for the given parsed params.
-
-    Precedence:
-    1. Explicit anchor_price → [anchor_price]
-    2. rate_events (list of sequential rate moves) → collapse to net delta,
-       then single or three anchors depending on whether net is a range.
-    3. Legacy rate_delta_bp (number or [lo,hi]) → single or three anchors.
-    4. Nothing → [].
-    """
+    """Return one or more anchor prices for the given parsed params."""
     if params.get("anchor_price") is not None:
         return [float(params["anchor_price"])]
 
     events = params.get("rate_events")
     if events:
         net = _collapse_rate_events(events)
-        current = _current_price(params["product"])
+        current = _current_price(params["product"], params)
         return _anchors_from_delta(current, net)
 
     delta = params.get("rate_delta_bp")
     if delta is None:
         return []
 
-    current = _current_price(params["product"])
+    current = _current_price(params["product"], params)
     return _anchors_from_delta(current, delta)
+
+
+def scenario_needs_current_price(params: dict) -> bool:
+    """Does this scenario require asking the user for the current futures price?
+
+    Rule (user-dictated, Feedback pt 2): ALWAYS ask on multi-event scenarios
+    where the tool otherwise falls back to current_rates.json as the
+    pre-event price. That file holds the effective cash rate, not the
+    futures price which already prices in expected moves.
+
+    Returns False if:
+      - anchor_price is explicit (user gave a number -> nothing to ask)
+      - current_price_override is already set (dialog has been answered)
+      - scenario is single-event (rate_delta_bp or rate_events with 1 entry)
+    """
+    if params.get("anchor_price") is not None:
+        return False
+    if params.get("current_price_override") is not None:
+        return False
+    events = params.get("rate_events") or []
+    return len(events) >= 2

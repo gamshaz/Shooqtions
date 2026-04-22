@@ -27,9 +27,8 @@ from .products import format_prodexp, monthly_expiries_for
 from .rates import resolve_anchor_range, resolve_anchors
 from .strikes import _grid_step, format_strike, snap_to_grid, walk
 
-# Soft cap on total structures per run. Bumped because we enumerate across
-# multiple anchors and potentially multiple monthlies now.
-VARIANT_CAP = 120
+# Soft cap on total structures per run. User bumped to 150 after BoE scenario.
+VARIANT_CAP = 150
 
 
 class Group(TypedDict):
@@ -77,10 +76,20 @@ def _anchor(params: dict) -> float:
 
 
 def _is_bullish(params: dict) -> bool:
+    """Use call structures? True when target anchor is above current price
+    (price needs to rise). If current_price_override is set (multi-event
+    dialog), that decides; otherwise fall back to directional_view."""
+    cp = params.get("current_price_override")
+    if cp is not None and params.get("anchor_price") is not None:
+        return float(params["anchor_price"]) > float(cp)
     return params.get("directional_view") == "bullish_price"
 
 
 def _is_bearish(params: dict) -> bool:
+    """Use put structures? Mirror of _is_bullish."""
+    cp = params.get("current_price_override")
+    if cp is not None and params.get("anchor_price") is not None:
+        return float(params["anchor_price"]) < float(cp)
     return params.get("directional_view") == "bearish_price"
 
 
@@ -100,55 +109,72 @@ def _payout_steps(params: dict) -> int | None:
 # ---------------------------------------------------------------------------
 
 def outrights(params: dict) -> Group:
-    """Calls for bullish, puts for bearish, both for neutral."""
+    """Strikes at and below target anchor, per user feedback (Feedback pt 2):
+      - Bullish (cuts raise price, target > current): calls walking from
+        anchor DOWN (anchor, anchor-1, anchor-2, ...). 'At or below target.'
+      - Bearish (hikes lower price, target < current): puts walking from
+        anchor UP (anchor, anchor+1, anchor+2, ...). Mirror of above.
+      - Neutral: ATM call + ATM put + one step OTM each side.
+    """
     pe = _pe(params)
     a = _anchor(params)
-    grid = walk(a, params["product"], 2)
-    k_m2, k_m1, k_atm, k_p1, k_p2 = grid
+    step = _grid_step(params["product"])
 
     lines: list[str] = []
-    if _is_bearish(params):
-        lines += [f"{pe} {_K(k_atm, params)} p",
-                  f"{pe} {_K(k_m1,  params)} p",
-                  f"{pe} {_K(k_m2,  params)} p"]
-    elif _is_bullish(params):
-        lines += [f"{pe} {_K(k_atm, params)} c",
-                  f"{pe} {_K(k_p1,  params)} c",
-                  f"{pe} {_K(k_p2,  params)} c"]
+    if _is_bullish(params):
+        for n in range(0, 5):  # anchor down to anchor-4 grid steps
+            k = round(a - n * step, 10)
+            lines.append(f"{pe} {_K(k, params)} c")
+    elif _is_bearish(params):
+        for n in range(0, 5):  # anchor up to anchor+4 grid steps
+            k = round(a + n * step, 10)
+            lines.append(f"{pe} {_K(k, params)} p")
     else:
-        lines += [f"{pe} {_K(k_atm, params)} c",
-                  f"{pe} {_K(k_atm, params)} p",
-                  f"{pe} {_K(k_p1,  params)} c",
-                  f"{pe} {_K(k_m1,  params)} p"]
+        g = walk(a, params["product"], 1)
+        k_m1, k_atm, k_p1 = g
+        lines = [
+            f"{pe} {_K(k_atm, params)} c",
+            f"{pe} {_K(k_atm, params)} p",
+            f"{pe} {_K(k_p1,  params)} c",
+            f"{pe} {_K(k_m1,  params)} p",
+        ]
     return {"heading": "Outrights", "lines": lines}
 
 
 def verticals(params: dict) -> Group:
-    """Call spreads for bullish, put spreads for bearish, both for neutral.
+    """Vertical spreads at and below target anchor (per user feedback).
 
-    Widths enumerated: 1, 2, 3, 4 grid steps (or just max_payout_ticks width
-    if that parameter is set).
+    Bullish (target > current, cuts): call spreads where the SHORT leg is at
+    or below target anchor. Emitted as 'lower/higher cs' where higher=anchor.
+    So `{anchor-N}/{anchor} cs` for N = 1..4. User ends up long the lower
+    strike and short the anchor (the post-move level).
+
+    Bearish (target < current, hikes): put spreads where the SHORT leg is at
+    or above target anchor. `{anchor+N}/{anchor} ps`.
+
+    Neutral: symmetric around anchor.
+
+    If max_payout_ticks is set, only that spread width is emitted.
     """
     pe = _pe(params)
     a = _anchor(params)
     product = params["product"]
+    step = _grid_step(product)
 
     steps_to_try = [_payout_steps(params)] if _payout_steps(params) else [1, 2, 3, 4]
-    g = walk(a, product, max(steps_to_try))
 
     lines: list[str] = []
     for n in steps_to_try:
-        k_up = g[len(g) // 2 + n]
-        k_dn = g[len(g) // 2 - n]
-        if _is_bearish(params):
-            lines.append(f"{pe} {_K(a, params)}/{_K(k_dn, params)} ps")
-            lines.append(f"{pe} {_K(k_up, params)}/{_K(a, params)} ps")
-        elif _is_bullish(params):
-            lines.append(f"{pe} {_K(a, params)}/{_K(k_up, params)} cs")
-            lines.append(f"{pe} {_K(k_dn, params)}/{_K(a, params)} cs")
+        k_below = round(a - n * step, 10)
+        k_above = round(a + n * step, 10)
+        if _is_bullish(params):
+            # Long the lower (further from current), short the anchor.
+            lines.append(f"{pe} {_K(k_below, params)}/{_K(a, params)} cs")
+        elif _is_bearish(params):
+            lines.append(f"{pe} {_K(k_above, params)}/{_K(a, params)} ps")
         else:
-            lines.append(f"{pe} {_K(a, params)}/{_K(k_up, params)} cs")
-            lines.append(f"{pe} {_K(a, params)}/{_K(k_dn, params)} ps")
+            lines.append(f"{pe} {_K(a, params)}/{_K(k_above, params)} cs")
+            lines.append(f"{pe} {_K(a, params)}/{_K(k_below, params)} ps")
     return {"heading": "Vertical spreads", "lines": _dedupe(lines)}
 
 
@@ -231,24 +257,102 @@ def flies_broken_against(params: dict) -> Group:
     return {"heading": "Flies (broken, against)", "lines": _dedupe(lines)}
 
 
-def condors_symmetric(params: dict) -> Group:
-    """Symmetric and range-anchored condors.
-
-    If a terminal range [lo_price, hi_price] is present (from probabilistic
-    scenarios), emit condors whose body straddles the range: K2=grid≤lo,
-    K3=grid≥hi, wings walk outward.
-
-    If only a point anchor, emit three placements (midpoint, lower_body,
-    upper_body) × two wing widths (or the user's max_payout).
-    """
-    pe = _pe(params)
+def _condor_tuples_symmetric(params: dict) -> list[tuple[float, float, float, float]]:
+    """Symmetric condors across anchor placements and outer-wing widths."""
     product = params["product"]
     step = _grid_step(product)
-    cp = "p" if _is_bearish(params) else "c"
+    a = _anchor(params)
+    payout_steps = _payout_steps(params)
+    outer_opts = [payout_steps] if payout_steps else [1, 2]
+    inner_opts = [1, 2]
 
     tuples: list[tuple[float, float, float, float]] = []
+    for inner in inner_opts:
+        for outer in outer_opts:
+            # Midpoint placement.
+            k2 = round(a - 0.5 * inner * step, 10)
+            k3 = round(a + 0.5 * inner * step, 10)
+            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
+            # Anchor = lower body.
+            k2 = a
+            k3 = round(a + inner * step, 10)
+            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
+            # Anchor = upper body.
+            k3 = a
+            k2 = round(a - inner * step, 10)
+            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
+    return tuples
 
-    # Range-anchored condor (if applicable).
+
+def _condor_tuples_broken(params: dict, direction: str) -> list[tuple[float, float, float, float]]:
+    """Broken condors with ON-GRID bodies.
+
+    Body = two adjacent listed strikes. Two body placements enumerated:
+      anchor-as-lower-body: K2 = anchor, K3 = anchor + 1 step.
+      anchor-as-upper-body: K2 = anchor - 1 step, K3 = anchor.
+
+    Outer wings asymmetric per direction rule (same as flies):
+      Bullish, in favour: lower outer wider than upper (K2-K1 > K4-K3)
+      Bullish, against:   upper outer wider than lower
+      Bearish, in favour: upper outer wider than lower
+      Bearish, against:   lower outer wider than upper
+    """
+    product = params["product"]
+    step = _grid_step(product)
+    a = _anchor(params)
+    payout_steps = _payout_steps(params)
+    wider_opts = [payout_steps] if payout_steps else [2, 3, 4]
+
+    body_placements = [
+        (a,                         round(a + step, 10)),  # anchor = lower body
+        (round(a - step, 10),       a),                     # anchor = upper body
+    ]
+
+    tuples: list[tuple[float, float, float, float]] = []
+    for k2, k3 in body_placements:
+        for wider in wider_opts:
+            for narrow in range(1, wider):
+                wider_bp  = wider  * step
+                narrow_bp = narrow * step
+                if _is_bullish(params):
+                    if direction == "in_favour":
+                        k1 = round(k2 - wider_bp,  10)
+                        k4 = round(k3 + narrow_bp, 10)
+                    else:
+                        k1 = round(k2 - narrow_bp, 10)
+                        k4 = round(k3 + wider_bp,  10)
+                elif _is_bearish(params):
+                    if direction == "in_favour":
+                        k1 = round(k2 - narrow_bp, 10)
+                        k4 = round(k3 + wider_bp,  10)
+                    else:
+                        k1 = round(k2 - wider_bp,  10)
+                        k4 = round(k3 + narrow_bp, 10)
+                else:
+                    continue
+                tuples.append((k1, k2, k3, k4))
+    return tuples
+
+
+def _condor_lines_from_tuples(params: dict,
+                              tuples: list[tuple[float, float, float, float]]
+                              ) -> list[str]:
+    pe = _pe(params)
+    cp = "p" if _is_bearish(params) else "c"
+    if cp == "c":
+        return [f"{pe} {_K(x, params)}/{_K(y, params)}/{_K(z, params)}/{_K(w, params)} c condor"
+                for x, y, z, w in tuples]
+    return [f"{pe} {_K(w, params)}/{_K(z, params)}/{_K(y, params)}/{_K(x, params)} p condor"
+            for x, y, z, w in tuples]
+
+
+def condors_symmetric(params: dict) -> Group:
+    """Symmetric and range-anchored condors."""
+    product = params["product"]
+    step = _grid_step(product)
+    tuples: list[tuple[float, float, float, float]] = []
+
+    # Range-anchored condor (probabilistic/multi-event scenarios).
     range_ = resolve_anchor_range(params)
     if range_ is not None:
         lo, hi = range_
@@ -265,36 +369,21 @@ def condors_symmetric(params: dict) -> Group:
             k4 = round(k3 + n * step, 10)
             tuples.append((k1, k2, k3, k4))
 
-    # Point-anchored placements.
-    a = _anchor(params)
-    payout_steps = _payout_steps(params)
-    outer_opts = [payout_steps] if payout_steps else [1, 2]
-    inner_opts = [1, 2]  # body width in grid steps
+    tuples.extend(_condor_tuples_symmetric(params))
+    return {"heading": "Condors (symmetric)",
+            "lines": _dedupe(_condor_lines_from_tuples(params, tuples))}
 
-    for inner in inner_opts:
-        for outer in outer_opts:
-            # Midpoint placement: anchor halfway between K2/K3.
-            k2 = round(a - 0.5 * inner * step, 10)
-            k3 = round(a + 0.5 * inner * step, 10)
-            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
 
-            # Anchor = lower body.
-            k2 = a
-            k3 = round(a + inner * step, 10)
-            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
+def condors_broken_in_favour(params: dict) -> Group:
+    tuples = _condor_tuples_broken(params, "in_favour")
+    return {"heading": "Condors (broken, in favour)",
+            "lines": _dedupe(_condor_lines_from_tuples(params, tuples))}
 
-            # Anchor = upper body.
-            k3 = a
-            k2 = round(a - inner * step, 10)
-            tuples.append((round(k2 - outer * step, 10), k2, k3, round(k3 + outer * step, 10)))
 
-    if cp == "c":
-        lines = [f"{pe} {_K(x, params)}/{_K(y, params)}/{_K(z, params)}/{_K(w, params)} c condor"
-                 for x, y, z, w in tuples]
-    else:
-        lines = [f"{pe} {_K(w, params)}/{_K(z, params)}/{_K(y, params)}/{_K(x, params)} p condor"
-                 for x, y, z, w in tuples]
-    return {"heading": "Condors", "lines": _dedupe(lines)}
+def condors_broken_against(params: dict) -> Group:
+    tuples = _condor_tuples_broken(params, "against")
+    return {"heading": "Condors (broken, against)",
+            "lines": _dedupe(_condor_lines_from_tuples(params, tuples))}
 
 
 def ratio_spreads(params: dict) -> Group:
@@ -416,7 +505,7 @@ FAMILY_BUILDERS: dict[str, list] = {
     "outright":     [outrights],
     "vertical":     [verticals],
     "fly":          [flies_symmetric, flies_broken_in_favour, flies_broken_against],
-    "condor":       [condors_symmetric],
+    "condor":       [condors_symmetric, condors_broken_in_favour, condors_broken_against],
     "ratio_spread": [ratio_spreads],
     "ratio_fly":    [ratio_flies],
     "rr":           [risk_reversals],
@@ -425,29 +514,73 @@ FAMILY_BUILDERS: dict[str, list] = {
     "calendar":     [calendars],
 }
 
+# Variant-level builder map. Used when params['variants'] is populated
+# and caller wants only specific variants of flies/condors.
+VARIANT_BUILDERS: dict[str, callable] = {
+    "outright":               outrights,
+    "vertical":               verticals,
+    "fly_symmetric":          flies_symmetric,
+    "fly_broken_in_favour":   flies_broken_in_favour,
+    "fly_broken_against":     flies_broken_against,
+    "condor_symmetric":       condors_symmetric,
+    "condor_broken_in_favour": condors_broken_in_favour,
+    "condor_broken_against":  condors_broken_against,
+    "ratio_spread":           ratio_spreads,
+    "ratio_fly":              ratio_flies,
+    "rr":                     risk_reversals,
+    "straddle":               straddles,
+    "strangle":               strangles,
+    "calendar":               calendars,
+}
+
 DEFAULT_FAMILIES: list[str] = ["outright", "vertical", "fly", "condor"]
 
 
 def _filter_by_broken_flag(fam: str, params: dict) -> list:
-    """Honour broken_direction_flag: only emit the asked direction of broken fly."""
+    """Honour broken_direction_flag on flies + condors. Other families ignore."""
     builders = FAMILY_BUILDERS[fam]
-    if fam != "fly":
-        return builders
     flag = params.get("broken_direction_flag")
-    if flag == "in_favour":
-        return [flies_symmetric, flies_broken_in_favour]
-    if flag == "against":
-        return [flies_symmetric, flies_broken_against]
+    if fam == "fly":
+        if flag == "in_favour":
+            return [flies_symmetric, flies_broken_in_favour]
+        if flag == "against":
+            return [flies_symmetric, flies_broken_against]
+    elif fam == "condor":
+        if flag == "in_favour":
+            return [condors_symmetric, condors_broken_in_favour]
+        if flag == "against":
+            return [condors_symmetric, condors_broken_against]
     return builders
 
 
 def _enumerate_one_anchor_one_expiry(params: dict) -> list[Group]:
+    """Route params to builders.
+
+    Precedence:
+      1. params['variants']: precise list of variant keys (overrides families
+         entirely). Used when the user narrowed their scenario, e.g.
+         'show symmetric flies and broken condors in favour'.
+      2. params['families']: broad family names; emits every variant builder.
+      3. Neither set: DEFAULT_FAMILIES.
+    """
+    variants = params.get("variants")
+    if variants:
+        groups: list[Group] = []
+        for v in variants:
+            build = VARIANT_BUILDERS.get(v)
+            if build is None:
+                continue
+            g = build(params)
+            if g["lines"]:
+                groups.append(g)
+        return groups
+
     families = params.get("families")
     default_used = families is None
     if default_used:
         families = DEFAULT_FAMILIES
 
-    groups: list[Group] = []
+    groups = []
     for fam in families:
         builders = _filter_by_broken_flag(fam, params)
         if not builders:
