@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kcp-structgen"
+version = "0.1.0"
+description = "STIR options structure generator for the KCP rates desk. NL scenario in, PricingMonkey trade-description block out."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "KCP Rates Desk" }]
+dependencies = [
+  "pyperclip>=1.8.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+kcp-structgen = "kcp_structgen.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

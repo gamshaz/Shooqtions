@@ -1,0 +1,14 @@
+{
+  "scenario": "fade hawkish fomc sfrz6 tight around 97, flies and condors",
+  "expected": {
+    "product": "SR3",
+    "expiry": "Z6",
+    "anchor_price": 97.00,
+    "directional_view": "bullish_price",
+    "families": ["fly", "condor"],
+    "tightness": "tight",
+    "cost_preference": null,
+    "broken_direction_flag": null,
+    "raw_scenario": "fade hawkish fomc sfrz6 tight around 97, flies and condors"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "scenario": "sfrz6 1x2 put spreads at 97, bearish",
+  "expected": {
+    "product": "SR3",
+    "expiry": "Z6",
+    "anchor_price": 97.00,
+    "directional_view": "bearish_price",
+    "families": ["ratio_spread"],
+    "tightness": null,
+    "cost_preference": null,
+    "broken_direction_flag": null,
+    "raw_scenario": "sfrz6 1x2 put spreads at 97, bearish"
+  }
+}

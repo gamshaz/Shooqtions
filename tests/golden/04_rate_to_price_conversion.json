@@ -1,0 +1,14 @@
+{
+  "scenario": "dovish fomc, 3% sofr dec 2026, full menu",
+  "expected": {
+    "product": "SR3",
+    "expiry": "Z6",
+    "anchor_price": 97.00,
+    "directional_view": "bullish_price",
+    "families": null,
+    "tightness": null,
+    "cost_preference": null,
+    "broken_direction_flag": null,
+    "raw_scenario": "dovish fomc, 3% sofr dec 2026, full menu"
+  }
+}

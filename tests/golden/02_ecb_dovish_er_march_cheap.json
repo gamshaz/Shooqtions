@@ -1,0 +1,14 @@
+{
+  "scenario": "ecb dovish er march, cheap downside",
+  "expected": {
+    "product": "ER",
+    "expiry": "H6",
+    "anchor_price": null,
+    "directional_view": "bullish_price",
+    "families": null,
+    "tightness": null,
+    "cost_preference": "cheap",
+    "broken_direction_flag": null,
+    "raw_scenario": "ecb dovish er march, cheap downside"
+  }
+}

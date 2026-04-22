@@ -1,0 +1,14 @@
+{
+  "scenario": "bullish sonia m6 around 96.25, show me cheap stuff broken in my favour",
+  "expected": {
+    "product": "SFI",
+    "expiry": "M6",
+    "anchor_price": 96.25,
+    "directional_view": "bullish_price",
+    "families": null,
+    "tightness": null,
+    "cost_preference": "cheap",
+    "broken_direction_flag": "in_favour",
+    "raw_scenario": "bullish sonia m6 around 96.25, show me cheap stuff broken in my favour"
+  }
+}
