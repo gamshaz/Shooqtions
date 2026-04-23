@@ -16,6 +16,7 @@ import pyperclip
 
 from .enumerator import enumerate_structures, groups_to_clipboard, groups_to_preview
 from .parser import ParserError, parse_scenario
+from .products import format_prodexp, underlying_quarterly
 from .rates import scenario_needs_current_price
 
 PLACEHOLDER = "e.g.  1 cut by december in sofr, flies broken in my favour"
@@ -37,7 +38,7 @@ class App:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
         root.title("KCP STIR Structure Generator")
-        root.geometry("960x740")
+        root.geometry("1100x820")
         root.minsize(760, 560)
         root.configure(bg=BG)
 
@@ -85,13 +86,31 @@ class App:
     # -- widgets --------------------------------------------------------
 
     def _build_widgets(self) -> None:
+        ASCII_ART = (
+            "██╗  ██╗ ██████╗██████╗     ███████╗████████╗██╗██████╗ \n"
+            "██║ ██╔╝██╔════╝██╔══██╗    ██╔════╝╚══██╔══╝██║██╔══██╗\n"
+            "█████╔╝ ██║     ██████╔╝    ███████╗   ██║   ██║██████╔╝\n"
+            "██╔═██╗ ██║     ██╔═══╝     ╚════██║   ██║   ██║██╔══██╗\n"
+            "██║  ██╗╚██████╗██║         ███████║   ██║   ██║██║  ██║\n"
+            "╚═╝  ╚═╝ ╚═════╝╚═╝         ╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═╝\n"
+            "\n"
+            "██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ████████╗██╗   ██╗██████╗ ███████╗     ██╗\n"
+            "██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔════╝    ███║\n"
+            "██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║   ██║    ╚████╔╝ ██████╔╝█████╗      ╚██║\n"
+            "██╔═══╝ ██╔══██╗██║   ██║   ██║   ██║   ██║   ██║     ╚██╔╝  ██╔═══╝ ██╔══╝       ██║\n"
+            "██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝   ██║      ██║   ██║     ███████╗     ██║\n"
+            "╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝     ╚══════╝     ╚═╝"
+        )
+
         header = ttk.Frame(self.root)
-        header.pack(fill="x", padx=24, pady=(18, 6))
-        ttk.Label(header, text="STIR Structure Generator", style="Title.TLabel"
-                  ).pack(anchor="w")
+        header.pack(fill="x", padx=24, pady=(14, 4))
+        tk.Label(header, text=ASCII_ART,
+                 font=("Consolas", 5, "bold"),
+                 bg=BG, fg=ACCENT,
+                 justify="left", anchor="w").pack(anchor="w")
         ttk.Label(header,
                   text="Natural-language scenario → PricingMonkey trade descriptions",
-                  style="Subtitle.TLabel").pack(anchor="w")
+                  style="Subtitle.TLabel").pack(anchor="w", pady=(4, 0))
 
         ttk.Separator(self.root).pack(fill="x", padx=24, pady=(8, 8))
 
@@ -244,7 +263,9 @@ class App:
         self.root.after(100, self._poll_worker)
 
     def _ask_for_current_price(self, params: dict) -> None:
-        pe = f"{params.get('product', '?')}{params.get('expiry', '?')}"
+        # Always ask for the underlying quarterly future, not the monthly option expiry.
+        qtly = underlying_quarterly(params.get("expiry", "?"))
+        pe = format_prodexp(params.get("product", "ER"), qtly) if params.get("product") else qtly
         dialog = CurrentPriceDialog(self.root, pe, params)
         self.root.wait_window(dialog.top)
         if dialog.price is not None:

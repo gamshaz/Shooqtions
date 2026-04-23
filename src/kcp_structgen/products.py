@@ -49,6 +49,23 @@ def format_prodexp(product: str, expiry: str) -> str:
     return f"{PRODUCT_TICKERS[product]}{expiry}"
 
 
+def underlying_quarterly(expiry: str) -> str:
+    """Return the quarterly expiry whose future underlies the given expiry.
+
+    For a quarterly (H/M/U/Z), returns itself. For a monthly, returns the
+    quarterly it rolls into: Q6 → U6, X6 → Z6, K6 → M6, etc.
+    """
+    if len(expiry) != 2:
+        return expiry
+    month, year = expiry[0], expiry[1]
+    if month in VALID_QUARTERLY_CODES:
+        return expiry
+    for quarterly, monthlies in MONTHLIES_FOR_QUARTERLY.items():
+        if month in monthlies:
+            return f"{quarterly}{year}"
+    return expiry
+
+
 def monthly_expiries_for(expiry: str) -> list[str]:
     """Given a quarterly expiry like 'Z6', return all 3 monthlies rolling
     into it in order: ['V6', 'X6', 'Z6']. If the expiry is a non-quarterly

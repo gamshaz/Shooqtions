@@ -15,14 +15,16 @@ def test_no_ask_when_explicit_anchor():
     assert not scenario_needs_current_price(_p(anchor_price=97.50))
 
 
-def test_no_ask_for_single_event():
-    assert not scenario_needs_current_price(
+def test_ask_for_single_event():
+    # Prototype rule: always ask when no explicit anchor, so user can supply
+    # the live futures price for call/put direction.
+    assert scenario_needs_current_price(
         _p(rate_events=[{"when": "2026-09", "delta_bp": 25}])
     )
 
 
-def test_no_ask_for_bare_rate_delta():
-    assert not scenario_needs_current_price(_p(rate_delta_bp=-25))
+def test_ask_for_bare_rate_delta():
+    assert scenario_needs_current_price(_p(rate_delta_bp=-25))
 
 
 def test_ask_for_multi_event_scenario():

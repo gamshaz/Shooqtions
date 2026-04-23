@@ -18,7 +18,7 @@ from pathlib import Path
 
 SYSTEM_PROMPT_PATH = Path(__file__).parent / "prompts" / "parse_scenario.md"
 CLAUDE_CLI = "claude"
-SUBPROCESS_TIMEOUT_S = 30
+SUBPROCESS_TIMEOUT_S = 120
 
 
 class ParserError(RuntimeError):
@@ -61,7 +61,7 @@ def parse_scenario(text: str) -> dict:
             encoding="utf-8",
         )
     except subprocess.TimeoutExpired as exc:
-        raise ParserError(f"claude -p timed out after {SUBPROCESS_TIMEOUT_S}s") from exc
+        raise ParserError(f"claude -p timed out after {SUBPROCESS_TIMEOUT_S}s — check your network or Claude Code login") from exc
     except FileNotFoundError as exc:
         raise ParserError(f"could not execute `{CLAUDE_CLI}`: {exc}") from exc
 
@@ -82,8 +82,14 @@ def parse_scenario(text: str) -> dict:
     if not isinstance(model_text, str):
         raise ParserError(f"unexpected claude -p envelope shape:\n{envelope!r}")
 
+    # Strip markdown code fences the model sometimes wraps around JSON.
+    cleaned = model_text.strip()
+    if cleaned.startswith("```"):
+        cleaned = cleaned.split("\n", 1)[-1]
+        cleaned = cleaned.rsplit("```", 1)[0].strip()
+
     try:
-        params = json.loads(model_text.strip())
+        params = json.loads(cleaned)
     except json.JSONDecodeError as exc:
         raise ParserError(
             f"model output was not valid JSON:\n{model_text}"

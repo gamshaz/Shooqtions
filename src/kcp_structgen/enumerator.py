@@ -304,8 +304,11 @@ def _condor_tuples_broken(params: dict, direction: str) -> list[tuple[float, flo
     wider_opts = [payout_steps] if payout_steps else [2, 3, 4]
 
     body_placements = [
-        (a,                         round(a + step, 10)),  # anchor = lower body
-        (round(a - step, 10),       a),                     # anchor = upper body
+        (a,                         round(a + step,      10)),  # anchor = lower body, 1-step wide
+        (round(a - step,      10),  a),                          # anchor = upper body, 1-step wide
+        (a,                         round(a + 2 * step,  10)),  # anchor = lower body, 2-step wide
+        (round(a - 2 * step,  10),  a),                          # anchor = upper body, 2-step wide
+        (round(a - step,      10),  round(a + step, 10)),        # anchor = body midpoint, 2-step wide
     ]
 
     tuples: list[tuple[float, float, float, float]] = []

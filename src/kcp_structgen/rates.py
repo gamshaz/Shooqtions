@@ -176,5 +176,7 @@ def scenario_needs_current_price(params: dict) -> bool:
         return False
     if params.get("current_price_override") is not None:
         return False
-    events = params.get("rate_events") or []
-    return len(events) >= 2
+    # Always ask in prototype phase — current_rates.json holds cash rates, not
+    # futures prices; the dialog lets the user supply the live futures price so
+    # _is_bullish/_is_bearish pick the right call/put side.
+    return True
