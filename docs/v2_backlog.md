@@ -39,16 +39,18 @@ All items deferred from Layer 1. Ordered roughly by desk priority.
 
 ---
 
-## Layer 2: Weekly flow analysis add-on
+## Layer 2: Weekly OI + flow + events analysis
 
-Separate workflow requested by user. Not part of the structure generator; described here for completeness.
+In progress. See [docs/layer2_spec.md](layer2_spec.md) for the frozen v1 spec.
 
-- Read flagged trades from a PM export (CSV or copy-paste).
-- Append to a persistent trade log (JSON or SQLite).
-- Generate a weekly rundown via `claude -p`: "what did the desk put on this week, any themes?"
-- Deliver as a formatted text block the PM-tab user can paste into a chat.
+Layer 2 synthesises three weekly data streams — CME OI daily snapshots, street flow intel, and the desk's own client trades — joined on a daily timeline segmented by macro event (pre / event-day / post). The desk client trades are a first-class stream, not a by-product of flow. Items below are explicitly deferred from Layer 2 v1.
 
-Architecture: same `claude -p` subprocess pattern. No extra API billing. Trigger via a second GUI tab or a separate script — to be decided.
+- **Auto-download CME VoI file**: v1 is manual download; add a scheduled pull from the CME website once the analysis engine is stable. Scrape-friendly URL pattern exists.
+- **Evidence-scoring + tiered rundown**: v1 ships with "show raw evidence, no confidence labels" (option C). After 2-3 real weekly runs, add a deterministic Python evidence-score per observation, split the rundown into "Headlines" (high-confidence) and "Further observations" (lower-confidence). Score factors: |ΔOI| normalised, flow corroboration count, persistence across segments. Calibration requires real-output iteration — do not pre-optimise.
+- **ER / SFI expansion**: v1 is SR3 quarterlies 2026-27 + 0Q 2026-27 only. Expansion blocked on Bloomberg terminal access for Euribor/SONIA OI data.
+- **Weeklies + 2Y/3Y/4Y/5Y mid-curves**: excluded from v1 loader filter. Easy to enable once the core analysis proves itself.
+- **FOMC statement option B fallback**: v1 uses option C (scrape federalreserve.gov) as primary, no fallback. If the Fed redesigns their site, add the desk-maintained manual "event_notes" column as backup.
+- **Bloomberg ECO CSV import**: v1 uses FMP API as primary events source. Spec reserves a loader hook for Bloomberg ECO CSV export as fallback — build the loader when/if FMP proves unreliable.
 
 ---
 
