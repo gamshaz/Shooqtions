@@ -1,5 +1,21 @@
 # KCP STIR Options Structure Generator
 
+
+    
+            ██╗  ██╗ ██████╗██████╗     ███████╗████████╗██╗██████╗ 
+            ██║ ██╔╝██╔════╝██╔══██╗    ██╔════╝╚══██╔══╝██║██╔══██╗
+            █████╔╝ ██║     ██████╔╝    ███████╗   ██║   ██║██████╔╝
+            ██╔═██╗ ██║     ██╔═══╝     ╚════██║   ██║   ██║██╔══██╗
+            ██║  ██╗╚██████╗██║         ███████║   ██║   ██║██║  ██║
+            ╚═╝  ╚═╝ ╚═════╝╚═╝         ╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═╝
+            
+            ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ████████╗██╗   ██╗██████╗ ███████╗     ██╗
+            ██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔════╝    ███║
+            ██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║   ██║    ╚████╔╝ ██████╔╝█████╗      ╚██║
+            ██╔═══╝ ██╔══██╗██║   ██║   ██║   ██║   ██║   ██║     ╚██╔╝  ██╔═══╝ ██╔══╝       ██║
+            ██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝   ██║      ██║   ██║     ███████╗     ██║
+            ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝     ╚══════╝     ╚═╝
+
 ## What this is
 
 A desktop tool for the KCP rates sales desk. Desk member types a trade scenario in natural language; the tool emits a grouped list of listed STIR option structures in PricingMonkey (PM) trade-description grammar. User clicks Copy, pastes into PM, and PM does all pricing, Greeks, and strike validation.
@@ -96,6 +112,23 @@ Outrights, vertical spreads, flies (symmetric + broken in-favour + broken agains
 - The LLM must return a **raw JSON object**, first character `{` and last character `}`. No markdown fences, no prose. Prompt enforces this explicitly.
 - The parser strips a leading ` ```json ... ``` ` fence defensively before JSON-decoding, for the times the model ignores the instruction.
 - Subprocess timeout is 120s (first `claude -p` call after login can be slow).
+
+## Layer 2 status (as of 2026-04-24)
+
+- Spec drafted at [docs/layer2_spec.md](docs/layer2_spec.md). 21 sections. **Awaiting user freeze before any code is written.**
+- Build order (from spec §21): `cme_loader.py` → `flow_loader.py` → `events_api.py` → `classifier.py` + `event_matcher.py` → `segmenter.py` → `aggregator.py` → `fomc_scraper.py` → `memory.py` → `prompts/weekly_analysis.md` → `runner.py` → GUI tab.
+- v2 deferrals tracked in [docs/v2_backlog.md](docs/v2_backlog.md): auto-download CME, evidence-scoring/tiering, ER/SFI expansion, weeklies + 2Y-5Y mid-curves, Bloomberg ECO CSV fallback.
+- Sample CME file committed at repo root: `VoiDetailsForProduct.xls` — use it for parser fixture work.
+
+## Charts (post-spec addendum, not yet in spec)
+
+User asked about charts during the Layer 2 design. Decision: LLM emits chart spec JSON blocks within the markdown rundown, Python module `analysis/charts.py` renders them via matplotlib to PNGs, post-processor swaps the JSON blocks for image links. LLM picks *which* charts; Python owns *how* they render. Charts must come from a fixed enum (`bar`, `line`, `stacked_bar`, `heatmap`) — no free-form. Pin specific chart types when user describes what visualisations they actually want. Add this as a §22 to layer2_spec.md when freezing.
+
+## Known runtime issues (Layer 1)
+
+- **`claude -p exited 1, stderr: <empty>`** — almost always a session/auth issue. Fix: open a terminal, run `claude` (no args), let it complete an auth check or login, then retry the GUI. The CLI sometimes silently expires its session after long idle periods.
+- **First call after fresh login is slow.** Timeout is set to 120s for this reason — do not lower.
+- **GUI swallows stderr when empty.** Improvement filed for later: surface the raw stderr/stdout in the error panel so future debugging doesn't require running the CLI manually.
 
 ## Key files
 

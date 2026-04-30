@@ -410,3 +410,58 @@ All of the following green:
 None at time of drafting. All earlier decisions (cadence, scope, data sources, segmentation, tier lists, event matching, classification bands, FOMC option C, confidence option C) are settled per conversation 2026-04-24.
 
 If this spec is frozen without additions, build order is: `cme_loader.py` → `flow_loader.py` → `events_api.py` → `classifier.py` + `event_matcher.py` → `segmenter.py` → `aggregator.py` → `fomc_scraper.py` → `memory.py` → `prompts/weekly_analysis.md` → `runner.py` → GUI tab.
+
+## 22. Charts (added 2026-04-24)
+
+`claude -p` cannot produce binary artefacts (PNG/SVG). Charts are produced by the same responsibility split used everywhere else in this project: **LLM picks which charts matter; Python renders them deterministically.**
+
+### 22.1 Mechanism
+
+The LLM may include 0-N chart spec blocks inside its markdown rundown. Each spec is a fenced JSON block tagged `chart`:
+
+```chart
+{
+  "type": "bar",
+  "title": "Top OI builds — week of 2026-W47",
+  "x": ["96.50p", "96.75c", "96.87c", "97.00p"],
+  "y": [-2200, 8400, 6100, -3800],
+  "y_label": "ΔOI",
+  "highlight_color_rule": "positive=green,negative=red"
+}
+```
+
+A Python post-processor (`analysis/charts.py`) walks the rundown, parses each chart block, calls matplotlib to render to `data/weekly_digests/2026-W47_chart_N.png`, and replaces the chart block with a markdown image link `![title](2026-W47_chart_N.png)`.
+
+### 22.2 Allowed chart types (enum)
+
+The LLM is told in its system prompt that it may only emit charts of these types:
+
+- `bar` — one categorical axis, one numerical axis. Used for "top N strikes by ΔOI" and similar.
+- `line` — two numerical axes. Used for "OI build over weeks" and similar time-series.
+- `stacked_bar` — one categorical axis, multiple stacked numerical series. Used for "calls vs puts ΔOI per expiry".
+- `heatmap` — two categorical axes, numerical cell values. Used for "strike × expiry concentration".
+
+No other types. No free-form Plotly-style configs. If the LLM emits an unknown `type`, the post-processor warns and skips that chart.
+
+### 22.3 Style
+
+Renderer applies one consistent style across all charts: dark background to match the GUI palette (BG `#0e1117`, panel `#161b22`), accent green for positive series, red for negative, neutral grey gridlines. Style lives in one constant in `charts.py` — no per-chart customisation.
+
+### 22.4 Failure modes
+
+| Condition | Behaviour |
+|---|---|
+| LLM emits `type` not in enum | Skip that chart; warn in rundown header. |
+| Chart spec missing required fields | Skip that chart; warn. |
+| matplotlib render fails | Skip; warn; rest of rundown still renders. |
+| User wants chart-free output | Renderer takes a `--no-charts` flag that strips all chart blocks. |
+
+### 22.5 Pinning the chart vocabulary
+
+When the user describes which visualisations are most useful for the desk, the chart-type enum (§22.2) gets locked. Any new type added later goes through a spec amendment. This keeps the post-processor predictable and the LLM's chart choices bounded.
+
+### 22.6 Testing
+
+- Unit tests per chart type with synthetic specs. Compare rendered PNG byte-hash for regression. Any change to rendering style requires regenerating fixtures.
+- Spec validator: assert any markdown the LLM produces has either zero chart blocks or only blocks with valid `type` and required fields.
+- End-to-end smoke test: synthetic digest → `claude -p` → at least one chart block produced and rendered without error. Skipped if `claude` CLI not on PATH (same gating as Layer 1 golden tests).
