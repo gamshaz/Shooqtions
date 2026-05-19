@@ -51,6 +51,8 @@ Layer 2 synthesises three weekly data streams — CME OI daily snapshots, street
 - **Weeklies + 2Y/3Y/4Y/5Y mid-curves**: excluded from v1 loader filter. Easy to enable once the core analysis proves itself.
 - **FOMC statement option B fallback**: v1 uses option C (scrape federalreserve.gov) as primary, no fallback. If the Fed redesigns their site, add the desk-maintained manual "event_notes" column as backup.
 - **Bloomberg ECO CSV import**: v1 uses FMP API as primary events source. Spec reserves a loader hook for Bloomberg ECO CSV export as fallback — build the loader when/if FMP proves unreliable.
+- **commentary_loader PDF support**: v1 reads DOCX (desk copy-pastes from email into Word). PDF reader path is stubbed for v2.1 when the desk standardises on PDF saves of MNI / ITC reports. `pdfplumber` is the intended library.
+- **Test on a past week of real data**: before declaring Layer 2 done, run end-to-end on 5 days of past CME files + a filled flow Excel + saved MNI/ITC reports. Use the output to (a) refine the main weekly-analysis prompt, (b) seed real few-shot examples that replace the in-prompt synthetic ones, (c) calibrate the evidence-scoring thresholds we'll add later.
 
 ---
 
