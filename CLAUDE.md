@@ -113,12 +113,46 @@ Outrights, vertical spreads, flies (symmetric + broken in-favour + broken agains
 - The parser strips a leading ` ```json ... ``` ` fence defensively before JSON-decoding, for the times the model ignores the instruction.
 - Subprocess timeout is 120s (first `claude -p` call after login can be slow).
 
-## Layer 2 status (as of 2026-04-24)
+## Layer 2 status (as of 2026-05-19)
 
-- Spec drafted at [docs/layer2_spec.md](docs/layer2_spec.md). 21 sections. **Awaiting user freeze before any code is written.**
-- Build order (from spec §21): `cme_loader.py` → `flow_loader.py` → `events_api.py` → `classifier.py` + `event_matcher.py` → `segmenter.py` → `aggregator.py` → `fomc_scraper.py` → `memory.py` → `prompts/weekly_analysis.md` → `runner.py` → GUI tab.
-- v2 deferrals tracked in [docs/v2_backlog.md](docs/v2_backlog.md): auto-download CME, evidence-scoring/tiering, ER/SFI expansion, weeklies + 2Y-5Y mid-curves, Bloomberg ECO CSV fallback.
-- Sample CME file committed at repo root: `VoiDetailsForProduct.xls` — use it for parser fixture work.
+- Spec frozen at [docs/layer2_spec.md](docs/layer2_spec.md), 22 sections including charts addendum.
+- **Pipeline complete and tested end-to-end with mocks**: 15 of 19 build steps done, 324 tests passing. All non-UI modules built: cme_loader → flow_loader → events_api → event_matcher → classifier → segmenter → aggregator → fomc_scraper → memory → commentary_loader → prompts/weekly_analysis.md → runner.
+- **`runner.py`** is the single entry: `generate_weekly_rundown(week_d) -> RunResult` orchestrates everything. Never raises; all failure modes degrade to warnings. Returns the markdown rundown, the structured digest sent to the LLM, saved paths, and a warnings list.
+- **Next step**: dry-run on a real past week of data BEFORE building the GUI. See "Layer 2 dry-run setup" below.
+- **GUI tab**: not built yet. Mechanical work once the pipeline is producing good output on real data.
+- **Charts**: deferred; planned to add as an addendum after first real runs show what visualisations actually help.
+- v2 deferrals tracked in [docs/v2_backlog.md](docs/v2_backlog.md): auto-download CME, evidence-scoring/tiering, ER/SFI expansion, weeklies + 2Y-5Y mid-curves, Bloomberg ECO CSV fallback, commentary_loader PDF support, real-week refinement run.
+
+## Layer 2 dry-run setup
+
+Before building the GUI, run `generate_weekly_rundown()` on a real past week to surface real-world issues and tune the prompt. Requirements:
+
+1. **CME files** at `data/oi/daily/YYYY-MM-DD.xls` (or pre-parsed `.json`) for 5 trading days of the target week.
+2. **Flow Excel** at `data/flow/flow.xlsx` — desk-maintained schema: `date, raw_note, product, expiry, structure, size, direction, price`.
+3. **Client trades** at `data/client_trades/client_trades.xlsx` — same schema, different stream.
+4. **Commentary** at `data/commentary/raw/<YYYY-MM-DD>/itc_us_morning.docx` + `mni_european_open.docx` per trading day. Copy-paste from email into Word. Loader is case-insensitive on filename.
+5. **FMP key** at `config/settings.json` (copy from `config/settings.example.json` and paste the key — never commit).
+6. **`claude` CLI** logged in and reachable from terminal.
+
+Then from a Python shell:
+
+```python
+from datetime import date
+from pathlib import Path
+from kcp_structgen.analysis.runner import generate_weekly_rundown
+result = generate_weekly_rundown(date(2026, 4, 17), data_root=Path("data"))
+print("--- WARNINGS ---")
+for w in result.warnings: print(" -", w)
+print("--- RUNDOWN ---")
+print(result.rundown_md)
+```
+
+The pipeline saves three artefacts per run to `data/weekly_digests/`:
+- `<week>.json` — structured digest the LLM saw
+- `<week>_headlines.md` — extracted headlines, used as next week's prior-week context
+- `<week>_rundown.md` — full markdown rundown
+
+The digest persists even if the LLM call fails, so you can inspect what got built.
 
 ## Charts (post-spec addendum, not yet in spec)
 
