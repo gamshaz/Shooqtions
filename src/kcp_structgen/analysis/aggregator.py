@@ -233,12 +233,26 @@ def _futures_rollup(
 # Segment builder
 # ---------------------------------------------------------------------------
 
+def _filter_commentary_to_days(
+    daily_commentary: dict[str, dict],
+    trading_days: list[date],
+) -> dict[str, dict]:
+    """Keep commentary entries whose date is in `trading_days`.
+
+    Returns a fresh dict keyed by ISO date. Days without commentary in the
+    input are simply absent (no padding stubs).
+    """
+    days = {d.isoformat() for d in trading_days}
+    return {iso: entry for iso, entry in daily_commentary.items() if iso in days}
+
+
 def _build_segment(
     segment: Segment,
     *,
     daily_oi_digests: dict[str, dict],
     flow_rows: list[dict],
     client_rows: list[dict],
+    daily_commentary: dict[str, dict],
 ) -> dict:
     """One Segment → one digest entry."""
     days = segment.trading_days
@@ -255,6 +269,7 @@ def _build_segment(
         "top_volume":         _rank_volume(vol_agg, TOP_K),
         "flow_notes":         _filter_rows_to_days(flow_rows, days),
         "client_trades":      _filter_rows_to_days(client_rows, days),
+        "daily_commentary":   _filter_commentary_to_days(daily_commentary, days),
     }
 
     if segment.anchor_event is not None:
@@ -348,12 +363,18 @@ def build_digest(
     segments: list[Segment] | None = None,
     prior_weeks: list[dict] | None = None,
     warnings: list[str] | None = None,
+    daily_commentary: dict[str, dict] | None = None,
 ) -> dict:
     """Compose the LLM-facing digest for the ISO week containing `week_d`.
 
     All inputs are pre-validated by upstream modules. Aggregator does no I/O
     and raises no exceptions in normal operation — partial data is tolerated
     via `warnings`.
+
+    `daily_commentary` is the output of `commentary_loader.load_week_commentary()`:
+    a dict keyed by ISO date with {date, sources, headlines, commentary}.
+    Filtered to each segment's trading_days at attach time so the LLM has
+    causal context local to the segment it's reasoning about.
     """
     monday, _ = week_window(week_d)
     week_days = _trading_days_of_week(monday)
@@ -368,6 +389,7 @@ def build_digest(
     segments = segments or []
     prior_weeks = prior_weeks or []
     warnings = list(warnings or [])
+    daily_commentary = daily_commentary or {}
 
     return {
         "week":                    week_label(week_d),
@@ -385,6 +407,7 @@ def build_digest(
                 daily_oi_digests=daily_oi_digests,
                 flow_rows=flow_rows,
                 client_rows=client_rows,
+                daily_commentary=daily_commentary,
             )
             for seg in segments
         ],

@@ -438,6 +438,98 @@ def test_client_trades_kept_separate_from_flow():
 
 
 # ---------------------------------------------------------------------------
+# daily_commentary attachment
+# ---------------------------------------------------------------------------
+
+def _commentary_for(d: date, headlines: list[str], commentary: str = "n/a") -> dict:
+    return {
+        "date":       d.isoformat(),
+        "sources":    ["itc_us_morning.docx"],
+        "headlines":  headlines,
+        "commentary": commentary,
+    }
+
+
+def test_daily_commentary_filtered_to_segment_days():
+    """Pre/post segments are single days; commentary entries for other days
+    must not leak into them."""
+    cpi = {"date": WEDNESDAY.isoformat(), "matcher": "CPI",
+           "event_name": "CPI YoY", "surprise": "hot"}
+    segs = segment_week(WEDNESDAY, [cpi])
+    commentary = {
+        MONDAY.isoformat():    _commentary_for(MONDAY,    ["MNI: Mon"]),
+        TUESDAY.isoformat():   _commentary_for(TUESDAY,   ["MNI: Tue"]),
+        WEDNESDAY.isoformat(): _commentary_for(WEDNESDAY, ["MNI: Wed"]),
+        THURSDAY.isoformat():  _commentary_for(THURSDAY,  ["MNI: Thu"]),
+        FRIDAY.isoformat():    _commentary_for(FRIDAY,    ["MNI: Fri"]),
+    }
+    d = build_digest(
+        WEDNESDAY,
+        daily_oi_digests={},
+        events=[cpi],
+        segments=segs,
+        daily_commentary=commentary,
+    )
+    pre, event_day, post = d["segments"]
+    # pre_CPI = Tue only
+    assert list(pre["daily_commentary"].keys()) == [TUESDAY.isoformat()]
+    # event_day_CPI = Wed only
+    assert list(event_day["daily_commentary"].keys()) == [WEDNESDAY.isoformat()]
+    # post_CPI = Thu only
+    assert list(post["daily_commentary"].keys()) == [THURSDAY.isoformat()]
+
+
+def test_daily_commentary_absent_for_days_without_entry():
+    """If commentary dict has fewer days than segment.trading_days, only
+    the days that exist appear in the segment's daily_commentary."""
+    segs = segment_week(WEDNESDAY, [])  # week_flat = all 5 days
+    commentary = {
+        WEDNESDAY.isoformat(): _commentary_for(WEDNESDAY, ["MNI: only Wed has data"]),
+    }
+    d = build_digest(
+        WEDNESDAY,
+        daily_oi_digests={},
+        segments=segs,
+        daily_commentary=commentary,
+    )
+    seg = d["segments"][0]
+    assert list(seg["daily_commentary"].keys()) == [WEDNESDAY.isoformat()]
+    # Mon/Tue/Thu/Fri are NOT padded with empty stubs
+    assert MONDAY.isoformat()   not in seg["daily_commentary"]
+    assert FRIDAY.isoformat()   not in seg["daily_commentary"]
+
+
+def test_daily_commentary_default_empty():
+    """Not passing daily_commentary at all → every segment has empty dict."""
+    segs = segment_week(WEDNESDAY, [])
+    d = build_digest(WEDNESDAY, daily_oi_digests={}, segments=segs)
+    assert d["segments"][0]["daily_commentary"] == {}
+
+
+def test_daily_commentary_preserves_entry_shape():
+    """The full {date, sources, headlines, commentary} dict survives the
+    attach step intact — we don't strip fields."""
+    cpi = {"date": WEDNESDAY.isoformat(), "matcher": "CPI",
+           "event_name": "CPI YoY", "surprise": "hot"}
+    segs = segment_week(WEDNESDAY, [cpi])
+    entry = {
+        "date":       WEDNESDAY.isoformat(),
+        "sources":    ["itc_us_morning.docx", "mni_european_open.docx"],
+        "headlines":  ["ITC: A", "MNI: B"],
+        "commentary": "Quiet session pre-CPI.",
+    }
+    d = build_digest(
+        WEDNESDAY,
+        daily_oi_digests={},
+        events=[cpi],
+        segments=segs,
+        daily_commentary={WEDNESDAY.isoformat(): entry},
+    )
+    event_day = d["segments"][1]
+    assert event_day["daily_commentary"][WEDNESDAY.isoformat()] == entry
+
+
+# ---------------------------------------------------------------------------
 # Week summary
 # ---------------------------------------------------------------------------
 
