@@ -3,12 +3,12 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kcp-structgen"
+name = "stir-structgen"
 version = "0.1.0"
-description = "STIR options structure generator for the KCP rates desk. NL scenario in, PricingMonkey trade-description block out."
+description = "STIR options structure generator. NL scenario in, PricingMonkey trade-description block out."
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{ name = "KCP Rates Desk" }]
+authors = [{ name = "Mashooq Nasser" }]
 dependencies = [
   "pyperclip>=1.8.2",
   "pandas>=2.0",
@@ -23,7 +23,7 @@ dev = [
 ]
 
 [project.scripts]
-kcp-structgen = "kcp_structgen.__main__:main"
+stir-structgen = "kcp_structgen.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

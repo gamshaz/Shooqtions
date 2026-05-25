@@ -8,7 +8,7 @@ Every Friday after close, produce a desk-readable markdown note synthesising thr
 
 1. **CME OI snapshots** — daily settle open-interest per strike, per expiry, per call/put.
 2. **Street flow intel** — what executing brokers and pit brokers told us paper has been doing.
-3. **Desk client trades** — what KCP actually executed for clients.
+3. **Desk client trades** — what the desk actually executed for clients.
 
 The note is shared with the desk. It answers: where is open interest being built or unwound, how do paper's expressed trades correlate with OI moves, how did positioning shift around this week's macro events, and how does what we did for clients fit into the broader picture.
 
@@ -97,7 +97,7 @@ date | raw_note                                      | product | expiry | struct
 
 The `raw_note` column is the pit-broker message verbatim. The remaining columns are a structured parse the desk fills in. Loader is tolerant: if structured columns are empty, the LLM still sees `raw_note` and can reason over it; if they're filled, the pre-aggregator uses them for joins with OI.
 
-### 5.3 Client trades Excel — KCP's own book
+### 5.3 Client trades Excel — the desk's own book
 
 - Source: shared OneDrive. Same shape as flow Excel but is the desk's actual executed trades for clients.
 - Treated as a **separate stream** in the analysis, not merged with flow. Rationale: flow is "what paper is doing"; client trades are "what we did for our clients." They answer different questions and should not be cross-contaminated.
@@ -282,7 +282,7 @@ This is what the LLM actually sees. Shape:
         "Z6 call skew offered"
       ],
       "client_trades": [
-        "KCP bought SFRZ6 96.75 c 2k for client at 3"
+        "desk bought SFRZ6 96.75 c 2k for client at 3"
       ]
     }
   ],
@@ -344,7 +344,7 @@ The system prompt covers:
 
 - **Role**: "You are a desk analyst writing the weekly rates-options positioning note for a STIR-focused options sales desk."
 - **Input**: the structured digest described in §10, plus prior-weeks context.
-- **Output contract**: markdown. Fixed section order — `## This week's headlines` (3-5 bullets), `## Events` (per tier-1 event: what printed, how paper positioned into it, how they adjusted after), `## OI themes` (build-ups, unwinds, strike clustering), `## Flow highlights` (paper colour that correlates with OI moves), `## KCP client activity` (our client book, separately), `## Watch for next week` (2-3 forward bullets).
+- **Output contract**: markdown. Fixed section order — `## This week's headlines` (3-5 bullets), `## Events` (per tier-1 event: what printed, how paper positioned into it, how they adjusted after), `## OI themes` (build-ups, unwinds, strike clustering), `## Flow highlights` (paper colour that correlates with OI moves), `## Desk client activity` (our client book, separately), `## Watch for next week` (2-3 forward bullets).
 - **Constraints**:
   - Every numerical claim must cite the specific strike / ΔOI / date from the digest. No invented numbers.
   - If the digest has no data for a section (e.g. quiet flow week), say so explicitly — do not pad with generic prose.
@@ -431,7 +431,7 @@ data/
 | CME file missing for 1-2 days of the week | Warn in rundown header. Aggregate over the days we have. |
 | CME file missing for ≥3 days of the week | Refuse to generate. "Insufficient OI data." |
 | Flow sheet empty | Proceed with OI-only analysis. Rundown `Flow highlights` section says "No flow logged." |
-| Client-trades sheet empty | Proceed. `KCP client activity` section says "No client trades logged." |
+| Client-trades sheet empty | Proceed. `Desk client activity` section says "No client trades logged." |
 | FMP returns empty / errors | Try Bloomberg CSV fallback. If absent, flat-segment week with warning in header. |
 | FOMC scraper fails on a FOMC week | Flag in rundown; segment boundaries still present; no tone summary. |
 | `claude -p` times out (120s) | Fail loud. Error panel in GUI. No silent retry. |

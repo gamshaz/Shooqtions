@@ -1,6 +1,6 @@
-# KCP STIR Structure Generator
+# STIR Structure Generator
 
-Desktop tool for the KCP rates sales desk. Type a trade scenario in natural language; get a grouped list of listed STIR option structures formatted in PricingMonkey trade-description grammar. Copy, paste into PM, PM prices and validates.
+Desktop tool for a rates desk. Type a trade scenario in natural language; get a grouped list of listed STIR option structures formatted in PricingMonkey trade-description grammar. Copy, paste into PM, PM prices and validates.
 
 Products v1: SOFR, Euribor, SONIA — whites and reds mid-curves. Listed options + futures only.
 
