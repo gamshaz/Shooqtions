@@ -1,4 +1,4 @@
-# STIR Options Structure Generator
+# KCP STIR Options Structure Generator
 
 
     
@@ -18,7 +18,7 @@
 
 ## What this is
 
-A desktop tool for a rates desk. Desk member types a trade scenario in natural language; the tool emits a grouped list of listed STIR option structures in PricingMonkey (PM) trade-description grammar. User clicks Copy, pastes into PM, and PM does all pricing, Greeks, and strike validation.
+A desktop tool for the KCP rates sales desk. Desk member types a trade scenario in natural language; the tool emits a grouped list of listed STIR option structures in PricingMonkey (PM) trade-description grammar. User clicks Copy, pastes into PM, and PM does all pricing, Greeks, and strike validation.
 
 ## Who uses it
 

@@ -423,7 +423,7 @@ def test_client_trades_kept_separate_from_flow():
            "event_name": "CPI YoY", "surprise": "hot"}
     segs = segment_week(WEDNESDAY, [cpi])
     flow = [_flow_row(WEDNESDAY, "street: Z6 covered")]
-    client = [_flow_row(WEDNESDAY, "desk: bought Z6 96.50 p 2k for client X")]
+    client = [_flow_row(WEDNESDAY, "KCP: bought Z6 96.50 p 2k for client X")]
     d = build_digest(
         WEDNESDAY,
         daily_oi_digests=_two_event_week_digests(),
@@ -434,7 +434,7 @@ def test_client_trades_kept_separate_from_flow():
     )
     event_day = d["segments"][1]
     assert event_day["flow_notes"]    == ["street: Z6 covered"]
-    assert event_day["client_trades"] == ["desk: bought Z6 96.50 p 2k for client X"]
+    assert event_day["client_trades"] == ["KCP: bought Z6 96.50 p 2k for client X"]
 
 
 # ---------------------------------------------------------------------------

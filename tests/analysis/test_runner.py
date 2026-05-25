@@ -93,7 +93,7 @@ def _write_client_trades_xlsx(data_root: Path) -> None:
     ws = wb.active
     ws.append(["date", "raw_note", "product", "expiry",
                "structure", "size", "direction", "price"])
-    ws.append([WEDNESDAY.isoformat(), "desk: sold Z6 96.75 c 2k for client X",
+    ws.append([WEDNESDAY.isoformat(), "KCP: sold Z6 96.75 c 2k for client X",
                "SR3", "Z6", "96.75 c", 2000, "sell", 1.5])
     wb.save(path)
 
@@ -201,9 +201,9 @@ Mid-week unwind in Z6 calls.
 
 - Quiet outside Wednesday's reaction
 
-## Desk client activity
+## KCP client activity
 
-Desk sold 2k Z6 96.75c on Wednesday.
+KCP sold 2k Z6 96.75c on Wednesday.
 
 ## Watch for next week
 

@@ -37,7 +37,7 @@ STATUS   = "#8b949e"
 class App:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
-        root.title("STIR Structure Generator")
+        root.title("KCP STIR Structure Generator")
         root.geometry("1100x820")
         root.minsize(760, 560)
         root.configure(bg=BG)

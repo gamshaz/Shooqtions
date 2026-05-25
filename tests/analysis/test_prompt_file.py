@@ -32,7 +32,7 @@ def test_prompt_has_required_section_headings():
         "## Events",
         "## OI themes",
         "## Flow highlights",
-        "## Desk client activity",
+        "## KCP client activity",
         "## Watch for next week",
     ):
         assert heading in text, f"missing required heading: {heading}"

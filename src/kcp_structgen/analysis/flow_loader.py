@@ -1,4 +1,4 @@
-"""Load the street flow Excel and the desk client-trades Excel.
+"""Load the street flow Excel and the KCP client-trades Excel.
 
 Two separate streams (per spec §5.2 + §5.3) sharing one schema. Same row
 shape, separate sheets, separate calls. The aggregator keeps them apart so
@@ -188,7 +188,7 @@ def _load_rows(xlsx_path: Path | str) -> list[dict]:
     """Shared loader for street flow and client trades.
 
     Schema is identical between the two files (per spec §5.2 + §5.3); only
-    the *meaning* differs (street intel vs desk trades), so the loader is one
+    the *meaning* differs (street intel vs KCP trades), so the loader is one
     function and the public functions are thin wrappers.
     """
     path = Path(xlsx_path)
@@ -253,7 +253,7 @@ def load_flow(xlsx_path: Path | str) -> list[dict]:
 
 
 def load_client_trades(xlsx_path: Path | str) -> list[dict]:
-    """Load the desk client-trades Excel. Same shape as `load_flow`."""
+    """Load the KCP client-trades Excel. Same shape as `load_flow`."""
     return _load_rows(xlsx_path)
 
 
