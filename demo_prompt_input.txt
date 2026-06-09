@@ -1,0 +1,1071 @@
+# WEEK DATA
+
+## US ECONOMIC CALENDAR (this week, with consensus/actual/surprise)
+(economic calendar unavailable: FMP HTTP 402: Payment Required)
+
+## CME OPEN INTEREST (top strike activity per day)
+
+### 2026-05-18
+  SR3U6 98.62c  dOI=  -29,925  OI=   24,654  vol=  45,750
+  SR3U6 96.37p  dOI=   14,520  OI=  219,288  vol=  18,520
+  SR3Z6 96.31c  dOI=   13,888  OI=  178,090  vol=  29,502
+  SR3U6 96.25p  dOI=   10,014  OI=  270,581  vol=  18,526
+  SR3Z6 96.43c  dOI=    9,964  OI=  137,881  vol=  31,466
+  SR3N6 96.87c  dOI=   -9,564  OI=   37,966  vol=  32,000
+  SR3U6 96.06p  dOI=    7,713  OI=   91,256  vol=   7,900
+  SR3N6 97.12c  dOI=   -7,577  OI=   30,398  vol=  32,000
+  SR3M6 97.37p  dOI=    7,346  OI=    8,026  vol=       0
+  SR3Z6 96.18c  dOI=    6,750  OI=   49,178  vol=   7,653
+  SR3U6 96.31c  dOI=    6,184  OI=  193,178  vol=   7,284
+  SR3Z6 96.50c  dOI=    5,878  OI=  337,669  vol=  16,892
+  SR3M6 96.68p  dOI=   -5,594  OI=   81,311  vol=   3,800
+  SR3Z6 96.56c  dOI=    4,161  OI=  112,200  vol=  13,405
+  SR3V6 95.81p  dOI=   -4,077  OI=    8,423  vol=  12,500
+
+### 2026-05-19
+  SR3Z6 96.50c  dOI=  -32,356  OI=  305,313  vol=  49,326
+  SR3Z6 97.62c  dOI=  -21,652  OI=   53,604  vol=  53,266
+  SR3M7 97.00c  dOI=   14,356  OI=  113,692  vol=  14,486
+  SR3Z6 98.00c  dOI=   13,157  OI=  496,815  vol=  64,212
+  SR3Z6 97.00c  dOI=  -12,558  OI=  363,421  vol=  59,573
+  SR3Z6 96.12p  dOI=   12,529  OI=  139,767  vol=  17,782
+  0QU6 95.25p  dOI=   12,416  OI=   33,818  vol=  30,155
+  SR3M7 98.00c  dOI=   12,092  OI=   95,849  vol=  14,440
+  0QU6 94.75p  dOI=    9,982  OI=   11,982  vol=  10,500
+  SR3Z6 96.00p  dOI=    8,966  OI=  241,111  vol=  32,728
+  SR3Z6 95.75p  dOI=    8,882  OI=  205,610  vol=  40,532
+  SR3M6 96.37p  dOI=   -8,734  OI=  317,071  vol=     766
+  SR3Z6 97.25c  dOI=    8,192  OI=  151,478  vol=  10,792
+  SR3Z6 96.06p  dOI=    8,100  OI=  123,462  vol=   9,500
+  SR3M6 97.37p  dOI=   -8,000  OI=       26  vol=       0
+
+### 2026-05-20
+  SR3M6 96.31c  dOI=  -17,586  OI=  161,333  vol=  19,769
+  SR3M6 96.37c  dOI=  -14,850  OI=  334,177  vol=  26,138
+  0QU6 95.50p  dOI=   12,830  OI=   58,128  vol=  14,500
+  0QU6 96.00p  dOI=   12,500  OI=  112,600  vol=  15,750
+  SR3M6 96.43p  dOI=  -10,943  OI=  296,398  vol=  11,750
+  SR3N6 96.06p  dOI=    9,900  OI=   79,924  vol=  13,000
+  0QM6 96.00p  dOI=    8,656  OI=   66,171  vol=  21,802
+  SR3M6 96.75p  dOI=   -8,654  OI=   24,891  vol=       0
+  SR3N6 96.18p  dOI=    6,775  OI=   58,220  vol=  13,100
+  SR3Z6 96.06p  dOI=    6,522  OI=  129,984  vol=  12,200
+  SR3N6 96.12p  dOI=   -6,358  OI=   38,627  vol=   7,934
+  SR3M6 96.37p  dOI=   -6,166  OI=  310,905  vol=   9,901
+  SR3Z7 96.00p  dOI=   -6,000  OI=   31,330  vol=   8,750
+  0QM6 95.93p  dOI=    5,939  OI=   22,004  vol=  11,000
+  SR3M6 96.56p  dOI=   -5,792  OI=  159,038  vol=   6,750
+
+### 2026-05-21
+  SR3U6 97.25c  dOI=   46,809  OI=  312,112  vol=   5,001
+  0QU6 96.37c  dOI=   32,751  OI=   58,030  vol=  35,500
+  SR3Z6 96.50c  dOI=   31,906  OI=  339,821  vol=  46,841
+  SR3Z6 95.37p  dOI=   30,459  OI=   51,678  vol=  43,485
+  SR3U6 96.00p  dOI=   29,778  OI=  234,773  vol=  71,533
+  SR3M6 96.68p  dOI=   29,729  OI=  110,690  vol=       0
+  SR3Z7 97.75c  dOI=   28,238  OI=   50,174  vol=  30,861
+  SR3Z6 97.00c  dOI=   24,090  OI=  387,524  vol=  49,674
+  SR3Z6 96.81c  dOI=  -24,012  OI=  130,699  vol=  25,500
+  SR3U6 96.75c  dOI=  -23,694  OI=  469,571  vol=  14,944
+  SR3Z6 96.12p  dOI=   23,347  OI=  158,717  vol=  66,721
+  SR3Z7 96.75c  dOI=   23,221  OI=   43,662  vol=  30,861
+  SR3U6 96.56c  dOI=   21,595  OI=  252,306  vol=  18,771
+  SR3N6 95.37p  dOI=   20,500  OI=   21,000  vol=  21,000
+  SR3M6 98.00c  dOI=   18,574  OI=  173,224  vol=       0
+
+## STREET FLOW LOG
+      Date                                                                                                             Trade    Price  Quantity
+2026-05-18                                                   SFRM6 96.3125/96.375 call spread 1x2 paper paid 2.5-2.75 on 15k 2.5-2.75     15000
+2026-05-18                                                                            SFRN6 96.125 put paper sold 2k at 3.75     3.75      2000
+2026-05-18                                             SFRU6 96.00 put cvd 96.265 -22%d paper paid 5.25 on 1.5k (ref 96.255)     5.25      1500
+2026-05-18                                           SFRU6 96.1875/96.125/96.00/95.9375 put condor paper paid 1 on 2.5k live        1      2500
+2026-05-18                              SFRU6 96.375/96.50/96.625 call fly cvd 96.285 +5%d paper paid 0.75 on 2k (ref 96.26)     0.75      2000
+2026-05-18                                                               SFRZ6 98.00/99.00 call spread paper paid 1.25 on 5k     1.25      5000
+2026-05-18                                       SFRZ6 96.375/96.625/96.875 call fly 2x3x1 paper paid 7.5 on 1k (ref 96.165)      7.5      1000
+2026-05-18                               SFRZ6 96.6875/96.8125/96.9375/97.0625 call condor paper sold 1k at 0.75 (ref 96.18)     0.75      1000
+2026-05-18                                                         SFRZ6 96.1875/96.6875 call spread paper paid 14.5 on 1.5k     14.5      1500
+2026-05-18                        *SCREEN* SFRH7 97.00/95.00 risk reversal cvd 96.06 +19% delta paper paid -1 on 500 (+call)       -1       500
+2026-05-18                                 SFRM7 96.00 straddle vs SFRH8 96.125 straddle paper paid 23.5 on 500 (vol 102.64)     23.5       500
+2026-05-18                                                      SFRZ7 97.50/98.00 call spread paper paid 4 on 8k (ref 96.03)        4      8000
+2026-05-18                                              0QM6 96.1875/96.00/95.8125 put fly paper sold 2k at 4.5 (ref 96.005)      4.5      2000
+2026-05-18                                              0QM6 96.50 vs 2QM6 96.625 call calendar paper sold 3.5k at 1 (-0QM6)        1      3500
+2026-05-18                                                    0QU6 96.375/96.625/96.875 call fly 1x3x2 paper paid 0.25 on 4k     0.25      4000
+2026-05-19                                                                 SFRM6 95.50 put paper paid 0.25 on 1k (ref 96.34)     0.25      1000
+2026-05-19                                                       SFRM6 96.4375 call cvd 96.34 +8% delta paper sold 2k at 0.5      0.5      2000
+2026-05-19                                                     SFRM6 96.25/96.375 strangle paper sold 1k at 1.75 (vol 29.21)     1.75      1000
+2026-05-19                                                             SFRM6 96.3125/96.4375 strangle paper sold 500 at 1.75     1.75       500
+2026-05-19                                                           SFRN6 96.25 straddle paper paid 16.5 on 300 (vol 49.51)     16.5       300
+2026-05-19                             SFRN6 96.375/96.625/96.875 call fly cvd 96.25 +10%d paper sold 2.5k at 1 (ref 96.225)        1      2500
+2026-05-19                                                                             SFRU6 95.50 put paper sold 5k at 2.75     2.75      5000
+2026-05-19                     SFRU6 95.9375/95.687/95.4375 put fly cvd 96.21 -4% delta paper paid 1.25 on 27k (7k outright)     1.25     27000
+2026-05-19                                          *SCREEN/PIT* SFRU6 96.3125/96.4375/96.5625 call fly paper paid 1.5 on 4k      1.5      4000
+2026-05-19                                       SFRU6 96.50/96.375/96.25/96.125 put condor paper paid 7.5 on 8k (ref 96.24)      7.5      8000
+2026-05-19                                                       SFRU6 96.4375/96.5625/96.6875 call fly paper paid 0.5 on 5k      0.5      5000
+2026-05-19                                     SFRU6 96.25/96.3125/96.375/96.4375 call condor paper paid 3 on 8k (ref 96.26)        3      8000
+2026-05-19                                       SFRU6/SFRZ6 96.4375/96.3125 put spread spread paper sold 1.5k at 0.25 (-U6)     0.25      1500
+2026-05-19                       SFRX6 95.75/95.50 put spread vs 0QX6 95.625/95.375 put spread paper paid 2.25 on 5k (+0QX6)     2.25      5000
+2026-05-19                                           SFRZ6 96.25/95.50 put spread cvd 96.115 -38% delta paper paid 21 on 20k       21     20000
+2026-05-19                                                 SFRZ6 96.00/95.25 put spread cvd 96.11 -28%d paper paid 13 on 21k       13     21000
+2026-05-19                                               SFRZ6 96.125/95.6875 put spread paper paid 11.75 on 2k (ref 96.145)    11.75      2000
+2026-05-19                                                  SFRZ6 96.00/96.125/96.25 call fly paper paid 1 on 3k (ref 96.14)        1      3000
+2026-05-19                                            *PIT/BLOCK* SFRZ6 96.00 put cvd 96.095 -44% delta paper sold 10k at 20       20     10000
+2026-05-19                                           SFRZ6 96.4375/96.1875/95.8125 put fly paper paid 3.5 on 10k (ref 96.14)      3.5     10000
+2026-05-19                                                           SFRH7 96.00/95.50 put spread 1x2 paper paid -3.25 on 2k    -3.25      2000
+2026-05-19                                        SFRM8 95.50/96.625 risk reversal cvd 95.995 60%d paper paid 9 on 4k (+put)        9      4000
+2026-05-19                                                                0QN6 96.00/95.75 put spread paper paid 10.25 on 7k    10.25      7000
+2026-05-19                                                  0QU6 96.125/96.375/96.625/97.00 call condor paper paid 5.5 on 8k      5.5      8000
+2026-05-19                                                            0QV6 97.00 call cvd 95.98 +7% delta paper paid 4 on 5k        4      5000
+2026-05-19                                                        3QZ6 95.75 put cvd 95.905 paper paid 23 on 2k (ref 95.925)       23      2000
+2026-05-19                                                            3QZ6 95.875 straddle paper paid 58.5 on 2k (vol 98.11)     58.5      2000
+2026-05-20                                                               SFRM6 96.375 put paper paid 4.5 on 1k (ref 96.3425)      4.5      1000
+2026-05-20                                *BLOCK* SFRM6 96.375/96.4375 call spread cvd 96.37 +5% delta paper paid 0.75 on 5k     0.75      5000
+2026-05-20                                                      SFRN6 96.125/96.00 put spread paper paid 2 on 2k (ref 96.24)        2      2000
+2026-05-20                                                                   *SCREEN* SFRN6 96.00 put paper paid 3.75 on 10k     3.75     10000
+2026-05-20 SFRU6 96.3125 put (2x) cvd 96.225 -62% delta vs SFRZ6 96.3125 put cvd 96.09 -64% delta paper paid 3.5 on 2k (+Z6)      3.5      2000
+2026-05-20                                                        SFRZ6 95.625 put paper paid 9.5 on 7.5k (ref 96.145-96.15)      9.5      7500
+2026-05-20                                  SFRZ6 96.00/95.25 put spread cvd 96.125 28%d paper paid 12.75 on 10k (ref 96.14)    12.75     10000
+2026-05-20                              SFRZ6 96.00/95.25 put spread cvd 96.165 -26% delta paper paid 12 on 10k (ref 96.145)       12     10000
+2026-05-20                                 SFRZ6 96.25/96.75 risk reversal cvd. 96.105 -74% paper paid 24.25 on 5250 (+Puts)    24.25      5250
+2026-05-20                                                      SFRH7 95.75/96.25 strangle paper paid 45.5 on 1k (vol 96.23)     45.5      1000
+2026-05-20                                          SFRH7 97.00/97.25 call spread cvd 96.005 +4% delta paper paid 1.75 on 2k     1.75      2000
+2026-05-20                                                           SFRM7 96.00/95.25 put spread 1x2 paper sold 1.5k at 3.5      3.5      1500
+2026-05-20                                                                            SFRH8 100.00 call paper paid 1 on 1.5k        1      1500
+2026-05-20                                                             SFRH8 96.50/95.50 put spread 1x2 paper paid 9 on 2.5k        9      2500
+2026-05-20                                  SFRM8 96.625/95.50 risk reversal cvd 95.995 -60% delta paper paid 9 on 1k (+put)        9      1000
+2026-05-20                                                                 0QN6 95.75/95.5625 put spread paper paid 3 on 20k        3     20000
+2026-05-20                          SFRX6 95.75/95.50 put spread vs 0QX6 95.625/95.375 put spread paper paid 1.5 on 5k (+0Q)      1.5      5000
+2026-05-20                                                             0QZ6 96.125 straddle paper sold 1k at 64 (vol 109.18)       64      1000
+2026-05-21                      SFRM6 96.3125/96.375/96.4375/96.50 call condor paper paid 2.75 on 8.5k (+1k cvd 96.33 +36%d)     2.75      8500
+2026-05-21                                                       SFRM6 96.4375/96.25 risk reversal paper paid 1 on 5k (+put)        1      5000
+2026-05-21                                               *SCREEN/PIT* SFRM6 96.375/96.4375 call spread paper paid 0.5 on 20k      0.5     20000
+2026-05-21                                                               SFRQ6 96.125/96.00 put spread paper paid 2.25 on 5k     2.25      5000
+2026-05-21                                                 SFRQ6 96.1875/96.125/96.0625/96.00 put condor paper paid 1 on 10k        1     10000
+2026-05-21                                                        SFRQ6/SFRU6 96.3125 put spread paper paid 1.25 on 2k (+U6)     1.25      2000
+2026-05-21                                                         SFRU6 96.125/96.375/96.625 call fly paper sold 1k at 11.5     11.5      1000
+2026-05-21                 **SCREEN & PIT** SFRU6 96.375/96.4375/96.50/96.5625 call condor paper paid 0.25 on 7k (ref 96.20)     0.25      7000
+2026-05-21                                  SFRU6 96.3125/96.375/96.4375/96.50 call condor paper paid 1.25 on 2k (ref 96.21)     1.25      2000
+2026-05-21                                              SFRU6 96.1875/96.125/96.0625/96.00 put condor paper paid 0.75 on 10k     0.75     10000
+2026-05-21             SFRU6 96.25 put cvd 96.21 -10% delta VS SFRH7 95.50 put cvd 96.01 -20% delta paper paid 4 on 5k (+H7)        4      5000
+2026-05-21                                                        SFRZ6 96.625/97.125 call spread 1x2 paper sold 2k at -0.25    -0.25      2000
+2026-05-21                                                      SFRM7/SFRU7/SFRZ7/SFRH8 95.25 put strip paper paid 97 on 500       97       500
+2026-05-21                                                0QN6 95.1875 vs SFRZ6 95.375 put spread paper paid 5.5 on 5k (+Z6)      5.5      5000
+2026-05-21                                      2QN6 96.125 straddle cvd 96.12 -1% delta paper sold 200 at 30.5 (vol 103.65)     30.5       200
+
+## DAILY ITC COMMENTARY
+
+### ITC commentary — 2026-05-18
+ITC Fixed Income Your Eyes and Ears on the Rates Markets
+May 18, 2026
+
+
+
+
+Calendars
+📆  Daily G10 Calendar
+📆  Daily APAC Calendar
+📆  Weekly Macro Calendar
+📆  Weekly Supply Calendar
+
+Cheat Sheets & Resources
+🕊 Hawk/Dove Cheat Sheet
+💡  Cheat Pack
+
+
+ITC US FI Recap: Choppy start to the week as conflicting Iran headlines persist; SOX > -4.25% intraday.
+
+
+
+
+
+
+
+In this email: USTs & Swaps / ED & SOFR / Cross Asset / News / Schedule
+
+Main Market Highlights: Choppy price action Monday with USTs under renewed pressure;  Iran headlines drive price action -Yields jumped to local highs in Asia following weekend Iran developments and a threatening post from Trump. -A reversal was seen into NY after reports (later refuted) that the US was considering lifting Iran oil sanctions. -With oil coming off the highs, USTs bounced through early part of the session. -The rally quickly ran out of momentum amid reports Iran’s latest proposal was not a meaningful improvement/insufficient for a deal -UST futs consolidated around unched levels in quiet afternoon conditions. -Renewed selling through the Nymex close as OIL took another leg higher. - Late post from Pres Trump (“…serious negotiations are now taking place”) lifted UST futs and equities, hitting oil back to the midpoint of the session. -10y traded 4.63% overnight, the highest since Jan 2025, before going gout near 4.60/61%. 2y yields ranged 4.036-4.103% before consolidating near 4.08/09% into the close -1y1y OIS breached 4% for the first time since Feb 2025. -Gilts outperformed with a late lift into the London close amid reports Andy Burnham (potential Starmer replacement) would NOT alter current UK fiscal rules. -SOFR: Reds continued to lead directionally. SFRM7 made a new low at 95.96 before going out around 95.99 (>4.00) -Funding: GSE cash further pressure overnight rates with GC trading near the lower end of the target range; Friday’s SOFR fixed -1bp at 3.55 (local low) while May SERFF close +1.25bp at 4.0bps. -VOL: maintained a bid with 3m10y edging near 80 NV, highest since April 7th. -Stocks: Semis under pressure with SOX -3.6%, NQ -1.0%; ESA was -0.50, dipping back below 7400. DOW was down over 100pts before bouncing back to flat late in the day..  -Oil: CL saw a quick dip through $103 into NY before bouncing towards o/n highs on Iran headlines, closing +3.0% at $108.66; Brent was +2.7% at $112.10 -Data: NY Fed services activity improved to -5.8 in May (-14.0 prior). May NAHB housing index improved to 37 vs 34 est. -What’s Priced? Peak of the OIS strip pushed out to July of 2027 which was pricing rates >4% for next summer before some retracement. Into the close, the mkt has ~35bps of rate hikes priced through Q2 2027. - Looking ahead: Tuesday’s data includes wkly ADP payrolls and Apr pending home sales. Canada gets CPI data.
+_________________________________________________________________________________
+USTs & Swaps: The range was unch (3y) to +1.5 bps (30y); 2s10s was +1.3 bp; 5s30s was +1.5 bp
+NY narratives: 1) Selling in Asia (weekend Iran headlines), small bid in London, helped by oil pulling back from initial spike highs in Asia. Gains continued in early NY on optimistic Iran headlines. 5s continued to recover from early underperformance. 2) Light economic data and no speakers during a holiday-shortened week left USTs headline-driven. Early optimistic news (US considering lifting Iran oil sanctions and signs of active negotiations) pushed futs higher, with gains holding until after the equity open.
+3)  As usual, early optimism gave way to pessimistic headlines mid-morning (“Iran has days, not weeks to present a viable proposal”), which topped UST futs and equities while lifting WTI again. After pushing to new highs otd, futs retraced roughly 50% of the gains, trading choppy but with a heavy tone into the close.
+
+4) O/night weakness in 5s flattened 5s30s and further steepened 2s5s. Belly recovered into the morning, curve steepening into midday as 2s10s bottomed (overall choppy tone). 5s30s gave back some early gains but remained well above its lows. 5) Late day headlines from Pres Trump (“…hold off on our planned Military attack…scheduled for tomorrow…serious negotiations are now taking place) led to a late session hit in WTI, lift in USTs and equities.
+____________ NY:  An early spike higher in Asia was triggered by weekend volatility around Iran — including President Trump’s comments (“better get moving, FAST…”) — and a drone strike in the UAE. This drove WTI sharply higher to $104.37 (July), sparking solid selling in Treasuries and upside follow-through that further broke the year long range in 2y and 5y yield.  A modest recovery followed in London as oil pulled back and more optimistic headlines emerged, with 5s regaining some of their early underperformance.
+
+Little beyond headlines to begin the holiday shortened week in NY (early close Friday, holiday next Monday). More optimistic headlines flowed early, helping USTs, weighing further on oil, boosting equities: -  A SOURCE CLOSE TO THE NEGOTIATION TEAM TOLD TASNIM THAT UNLIKE ITS PREVIOUS TEXTS, THE US HAS ACCEPTED IN THE NEW TEXT TO WAVE IRAN'S OIL SANCTIONS DURING THE NEGOTIATION PERIOD. -   … THE US HAS PROPOSED A TEMPORARY OFAC WAIVER UNTIL THE FINAL AGREEMENT.- TASNIM NEWS
+
+UST futs pushed to new highs otd, belly outperforming as further headlines emerged. They did not show progress specifically, but did suggest ongoing active negotiations. As has been the case, more pessimistic headlines emerged midday. Not only did they dispute that the US had accepted the lifting o Iran’s oil sanctions, further, Al Jazeera: US source says that Iran has “days, not weeks” to present a viable proposal to break the deadlock in talks with Donald Trump. The source added that Trump’s patience is wearing thin as negotiations with Tehran show little progress. UST futs and equities peaked, while WTI and Brent bottomed before fully retracing the early decline and trading to new afternoon highs. Yields climbed, recovering roughly 70-80% of the early drop, though they stopped short of the o/night peaks set in Asia. The curve shifted from 5s underperforming o/night to the belly outperforming into the pit open. 2s10s bottomed early, traded to modest new highs on the day, and then peaked in the afternoon. 5s30s faded its initial bounce and higher highs, settling near the middle of the 85–89 bp range. ________________ Late post from Pres Trump:
+I have been asked by the Emir of Qatar, Tamim bin Hamad Al Thani, the Crown Prince of Saudi Arabia, Mohammed bin Salman Al Saud, and the President of the United Arab Emirates, Mohamed bin Zayed Al Nahyan, to hold off on our planned Military attack of the Islamic Republic of Iran, which was scheduled for tomorrow, in that serious negotiations are now taking place, and that, in their opinion, as Great Leaders and Allies, a Deal will be made, which will be very acceptable to the United States of America, as well as all Countries in the Middle East, and beyond. This Deal will include, importantly, NO NUCLEAR WEAPONS FOR IRAN! Based on my respect for the above mentioned Leaders, I have instructed Secretary of War, Pete Hegseth, The Chairman of The Joint Chiefs of Staff, General Daniel Caine, and The United States Military, that we will NOT be doing the scheduled attack of Iran tomorrow, but have further instructed them to be prepared to go forward with a full, large scale assault of Iran, on a moment’s notice, in the event that an acceptable Deal is not reached. Thank you for your attention to this matter! President DONALD J. TRUMP -  WTI was hit hard, while UST futs and equities lifted. Neither market made new highs on the day as the back-and-forth headlines continued. _________________ The initial bid took yields 5-7 bps lower from o/night peaks to new lows otd. 2y bottomed near 4.035%, 5y near 4.215%, 10y near 4.56% and 30y near 5.10%. Subsequent bounce through most of NY approached, but did not break the peaks in Asia near 4.105% (2y), 4.29% (5y) 4.63% (10y) and 5.155% (30y) A lot of intraday movement on the curve, from 5s underperforming o/night to the belly outperforming early, to steepening midday and belly underperforming late. Net/net, not a lot of traction with 2s10s trading 505/53.5 bps overall, moistly 85.5 to 88.5 bps in 5s30s. SOFR swaps saw heavy flow go though the SEF screens in APAC with swap spreads seen mixed with 2y touch tighter while others all wider led by +0.50bps move in 10y.  Then, heavy flow continued in SOFR swaps in the early Ldn trade with swap spreads seen wider across the curve led by +0.625bps move in 20y. - After having widened O/N, swap spreads had a choppy yet contained trade through the U.S. session, once again largely driven by U.S.-Iran headlines and the resultant directionality with USTs. - 2y spread is closing out +0.625bps wider at -14.875bps, 5y spread is closing out +0.75bps wider at -28.125bps, 10y spread is closing out +0.75bps wider at -42.5bps, and 30y spread is closing out +0.75bps wider at -74.5bps. - Swap volumes ran at a solid clip this session (…roughly 120% above average) amid increased activity in all tenors.
+
+Implied swaption VOL remained elevated today even after Friday’s sharp moves higher.  1m expiries saw a more modest –- but still solid –- increase of ~4 to 7 NVs today while 3m expiries saw a ~0.5 to 1.3 NV move higher.  3m10y implieds closed ~1.3 NVs higher at ~79.35 normals – having taken out the local highs on Friday and completely retracing the big drop in VOL seen on the Apr 6th U.S.-Iran ceasefire agreement news.
+
+JPM (Ozil) on VOL: Implieds spiked on Friday following headlines and increased delivered volatility after a relatively quiet week otherwise. (Friday’s) change in 6Mx2Y implied volatility is one of the largest moves that we have seen in the past few months. The moves (Friday) highlight the continued high sensitivity of both delivered and implied vol to newsflow, as policy and geopolitical uncertainty remain elevated. This sensitivity is why we have been hesitant to add outright shorts despite elevated levels of implieds with respect to what’s been delivered in the past few weeks. Even though (Friday’s) moves have been painful for our trade, we continue to recommend soft bearish expressions in the upper right of the surface via calendar spreads.
+____________ Data:  No top tier data, nothing to move USTs. -  New York Fed Services Business Activity (May) -5.8 vs -14.0 prior
+IG: 8 deals, est $12.2b -   American Water $500m, Blue Owl $400m, Charles Schwab $2.25b, Chubb $1b, Evergy $300m,
+Merck $6b, Northwestern Mutual $1.25b, RGA Global $500m. From Ron Quigley of Quigley’s Corner, estimates for this week: -  High-End Avg.   $38.06b
+-  Midpoint Avg   $37.18b
+-  Low-End Avg.   $36.29b
+-  The High             $50b
+-  The Low             $25b
+
+
+
+SOFR: Iran headlines continued to dominate price action on Monday.
+STIR futs were knocked lower on the open after Trump noted time is running out for Iran to make a deal. Reports of a drone attack that sparked a fire at a United Arab Emirates nuclear plant added to early selling through Asia as UST/STIR futs bottomed overnight.
+
+There was a strong recovery into the NY open after reports the US were considering lifting oil sanctions on Iran. Oil futs were knocked lower on the headlines as UST futs bounced, reversing overnight losses.
+
+Around mid-morning, USTs would pare gains amid a series of negative headlines out of Iran.
+-US source told Al Jazeera that Iran has “days, not weeks” to present a viable proposal to break the deadlock in talks with Donald Trump. The source added that Trump’s patience is wearing thin as negotiations with Tehran show little progress.
+-Tasnim news reported US are making  “excessive demands and unrealistic positions” and added Iran’s frozen assets must be returned to the Iranian people “in a clear and guaranteed manner.”  Iran is “very serious” about the need for US compensation following the military operation against Iran. They added under no circumstances would Iran agree to end the way for their nuclear program.
+
+Oil bounced back towards the overnight highs – taking out those levels with CLA trading +3% at $108.75 in the NYMex close.
+UST pared gains with further selling seen in futs in the afternoon.
+2y yields ranged 4.036 to 4.103% before climbing back towards the overnight highs in the afternoon. 1y1y OIS traded above 4.0% overnight before
+
+Along the strip: SFRM7 trading in heavy volumes again – making new lows at 95.96 overnight. Attempted recovery into NY was faded as SFRM7 (low contract) close -1 at 95.98.  Strip was steeper through the greens which were trading -3.5 into the close (new lows). While the mkt is pricing some easing through 2028, terminal rates are now expected to hold above 3.85%.
+3pm  Snapshot:
+SFRM6: -0.25 at 96.3375
+SFRM7: -1.0 at 95.980
+SFRM8: -3.5 at 96.060
+SFRM9: -3.0 at 96.015
+
+
+
+Funding / Repo / TBills: Funding conditions remain soft with GSE cash set to put further pressure on overnight rates this week. GC was trading through 3.60% again with early prints as low at 3.50%.
+-Friday's SOFR fixed -1bps, making a new low at 3.55% or 8bps through EFFR (3.63%) -SOFR vs FF spreads were bid again this morning with May SERFF +1.25, making new highs at +4.0bps. -Reminder, a few banks noted NY Fed opted to cut the monthly pace of RMPs from $25b to $10b was in response to funding conditions which may have become too easy.  -With repo rates trading well through IOR and EFFR, there was increased usage in the RRP with 21 counterparties parking $7.1b in cash there at 3.50%. DB: Soft funding conditions reflect a combination of factors, including ongoing Fed reserve-management purchases, increased intermediation capacity by large banks, and reduced demand for repo leverage, among others. Bill supply is projected to increase in the coming months, partially offset by Fed RMPs, although the stepdown in the pace of RMPs to $10bn per month is bigger than we expected. That said, repo conditions should remain stable, as seasonal declines in TGA balances pushing reserve balances higher provide additional accommodation. We view the SOFR/FF basis as broadly well priced at current levels.
+
+
+What’s Priced In: Peak of the OIS strip pushed out to July of 2027 which was pricing rates >4% for next summer before some retracement. Into the close, the mkt has ~35bps of rate hikes priced through Q2 2027.
+
+Headlines & Data: US Close
+Middle East
+Trump: Asked by Qatar; Saudi and UAE asked to hold off on attack on Iran; attack scheduled for tomorrow called off; military has been instructed to be ready for a full scale attack on Iran if satisfactory deal is not reached
+CNBC: U.S. official tells me the Iranian state media report that the U.S. has agreed to lift oil sanctions while talks are ongoing is false
+Ali Khodrian, member of the Iran Parliament's National Security Commission: If the Strait of Hormuz is opened, the next war will begin with greater intensity; removing enriched uranium from Iran could expose the country to nuclear attack
+Israeli Channel 12: Washington informed Israel that it’s refuelling aircraft will remain at Ben Gurion until the end of the year
+CCTV: Saudi sources say Iran proposed a conditional transfer of enriched uranium to Russia
+Iran President: We will not retreat from the legitimate rights of the Iranian people
+
+North America
+NY Fed: accepts $7.2b in Reverse Repo bids
+
+UK   BBG: Andy Burnham fully rules out changing Rachel Reeves’ fiscal rules if he becomes PM; spokesperson tells Bloomberg he is explicitly ruling out any changes to the existing fiscal rules; also ruling out exempting defence spending from the fiscal rules to spend more on the military
+
+APAC   Japan Fin Min Katayama: Told the G-7 on the need for close watch on the market; Volatility in oil prices is affecting the forex market; No comment on whether Japan intervened in the FX market; Will address appropriately on FX as needed
+Nikkei: South Korea to join Japan's plan for joint oil reserve
+
+Oil/Geopolitics
+US Tsy Sec Bessent: US will extend lapsed sanction on Russian seaborne oil for another 30 days
+
+
+European Close
+Middle East
+​  Senior Iran Source: US showing flexibility to ongoing discussions including on limits on Iranian nuclear work; US has agreed to release 25% of frozen funds on a timed schedule; nuclear issue to be discussed in later stages; Tehran has requested all funds be released
+Tasnim: According to people close to the negotiation team, the US have accepted lifting Iran oil sanctions in its new text; the US have proposed OFAC until a final understanding is reached
+Trump: Asks Iran to "admit defeat to power and force of US"
+Axios: US Official says Iran deal is insufficient and risks resumption of war; Trump prefers negotiated settlement but is weighing military action as Tehran resists key demands on nuclear programme
+Al Jazeera: US source says that Iran has “days, not weeks” to present a viable proposal to break the deadlock in talks with Donald Trump. The source added that Trump’s patience is wearing thin as negotiations with Tehran show little progress.
+Iran President: Do not have the ability to export oil or the Dollars to import gasoline
+News18: After launching the Persian Gulf Strait Authority (PGSA) on May 6, Iran’s Supreme National Security Council on Monday announced that it would provide “realtime updates on the Hormuz Strait operations and latest developments
+​click here for link to article
+​  ICYMI BBG: Tanker numbers at Iran's Kharg Island reaches a post-blockade peak
+​   According to security officials & gvt sources, Pakistan have deployed 8k troops and air defence system to Saudi Arabia under the defence pact
+Al Arabiya citing the amended paper: Iran wants multiple international guarantees for any agreement; a conditional transfer of enriched uranium to Russia instead of the US; Iran agreed to a long term nuclear freeze rather than a complete dismantlement; Iran backed down from compensation demands; Iran want a political formation of the agreement to save its face; want Pakistan & Oman to play a role in any friction in the Strait of Hormuz
+
+North America
+US May NAHB Housing Market Index: 37 vs 34 cons
+
+Europe
+CNBC: EU will cut its growth outlook and raise its inflation forecast
+Spain to sell up to €6.5b in 2031, 2033 & 2050 SPGB's on Thursday
+
+UK
+​UK Tsy: Announced reforms to ring fencing that reduces duplication within banks & removes barrier to lending/investment; new growth allowance will let major banks use limited amount of their B/S more flexibly; new growth allowance to unlock up to £80b in financing
+​​Beth Rigby: PM visited Labour HQ today & he’s coming out fighting. Starmer acknowledges tough results and that “it’s not been easy circumstances in last 10 days” Makes it clear he’s carrying on with the job “to serve my country and to carry out my duties as Prime Minister of this country” Says he’ll support the candidate in Makerfield 100%; Also uses the remarks to highlight his record - 2 child benefit cap, renters’ rights, NHS lists - and make point that many people just want govt ‘to get on with it’
+​Sky News: Labour MP Josh Simons has officially resigned from parliament
+​  Andy Burnham: Brexit has been damaging; not proposing the UK consider rejoining the EU, he respects the Brexit referendum decision
+IMF: UK 2026 GDP f/c 1% vs 0.8% Apr f/c; BoE doesn't need to hike rates this year based on the current energy price O/L; expect UK inflation to peak at just under 4% at yr end and then return to the 2% tgt by end of 2027; UK gvt must stay course on debt reduction given mkt pressures and greater implementation risks; any energy subsidies should be targeted, temporary & funded by tax hikes or spending cuts
+BoE Gilt Ops (9-7y): 2.56x Cover Ratio
+
+Trade
+​Sources: EU looking at tougher trade measures to rebuff China's export surge Oil/Geopolitics
+​India Govt Official: We've been buying Russian oil irrespective of US waiver
+​Nikkei citing Brazil For Min: Ready to increase oil exports to Japan
+
+Equities
+​Commerzbank: Formally rejects offer from Unicredit
+
+
+Pre-US
+Middle East
+Iran For Ministry: Communications with Oman and all relevant parties about Hormuz crossing mechanism are ongoing; have no feeling of hostility with any countries in region inc UAE; both Iran/US have sent comments on recent Iran proposal; talks are ongoing via Pakistan mediation
+​   Iran For Ministry Spokesperson: Iran's demand in negotiations with the US include releasing Iranian frozen funds and lifting sanctions; Iran focused on ending the war at this stage
+According to Pakistan sources, Pakistan shared revised Iran’s proposal to end the war with the US Sunday night
+​  Pres Trump (Fortune): Iran is dying to sign a deal; re Iran's latest threats said we know how to respond
+AmitSegal (N12) citing Western sources: New Iranian proposal includes a commitment—of unclear value—not to produce nuclear weapons. No mention of uranium. No mention of Hormuz
+
+Europe
+ECB's Lagarde: Asked if worried by bond sell off, I always worry, that's my job
+BBK's Nagel: BBK's Nagel: We can do a lot to calm markets and give positive momentum; expecting a lot from G7 discussions
+France Fin MIn Lescure: EZ economy so far so good; Europe not in high inflation environment, economy proving quite resilient, is slowing but not in recession; G7 ready to release oil again if needed; G7 sending clear message oil mkt will be protected; French economy should bounce back in Q2, sees 2026 GDP ~0.9%; gvt’s must not go too far with fiscal support; G7 Fin Mins will discuss this correction in the global bond mkt
+​Italian Mar Global Trade Bal: €4.71b vs €4.94b prev
+Sweden May Money Market CPIF Expectations: 1Y 1.6% vs 1.7% prev, 5Y 2% vs 2.2% prev
+Riksbank: Most participants in the Swedish foreign exchange and fixed-income markets consider that the market is functioning well. However, the war in the Middle East has led them to reduce their risk-taking compared to autumn 2025
+EU 3Y, 11Y, 25Y Bond Auction Results (sold €6.46b): Mixed results, 29Y lower pricing, 3Y roughly in line
+
+UK
+BoE’s Greene: Some global economy resilience to Iran is due to inventories; 2nd round effects of energy price shock won’t show up for another year; we should 't be looking through negative supply shocks
+​Telegraph: UK Chancellor Reeves is set to scrap the planned 5p increase in fuel duty in order to ease the cost of living
+UK Dep PM Lammy: PM Starmer will not set out a timetable to leave his post
+@alexwickham: Keir Starmer will not set out a timetable for his departure, David Lammy says…People familiar with the PM’s position confirm that is correct, contrary to some speculation in recent days
+@LouisaJamesITV: Deputy PM David Lammy tells @gmb Keir Starmer may NOT stand in a potential  leadership contest after all: “If someone gets the 81 MPs backing then he would consider standing down, but right now he won't.”
+
+US
+Pres Trump (Fortune): When asked about rates said you can’t really look at the figures until the war is over
+
+Trade
+US Tsy Sec Bessent: Had very successful China visit; call on G7 to follow sanctions, keep financing away from Iran's war machine; G7 will discuss global economy imbalances, terror financing & critical minerals
+Pres Trump (Fortune): The supreme court tariff ruling pisses me off; important we win the AI race against China; should've asked for more from the Intel deal
+
+APAC
+Japanese Fin Min Katayama: Not at the stage to talk about the specifics of an extra budget; been instructed y PM Takaichi to minimise various risks when asked about JGB yield rises
+Japan Chief Cab Sec Kihara: Watching market moves, including long-term rates, with a very high sense of urgency; declines to comment on FX intervention; will consider funding source if we decide to forma an extra Budget
+
+Russia/Ukraine
+Kremlin: Ukraine peace process is on pause but we expect it to be resumed
+
+Oil/Geopolitics
+- IEA's Birol: Commercial oil inventories are depleting rapidly with only weeks left
+
+
+Key Scheduled Events Tomorrow:
+For full detail, see our ITC Daily Calendar
+For more info on central bank speakers, Click here for the ITC Speakers preview
+Highlighted Data, Speakers & Other Events
+All times are EST time
+1930 - RBA's Hunter (Asst Gov) at BBG Forum.
+1950 - Japan GDP q/q Q1 (P) (Cons 0.4%, Prev 0.3%)
+2130 - RBA Minutes
+0030 - Japan Ind Prod y/y Mar (F)
+0200 - UK Unemp Rate Mar  (Cons 4.9%, Prev 4.9%)
+0200 - UK Avg Earnings excl. Bonus (3Mo/Yr) Mar  (Cons 3.4%, Prev 3.6%)
+0300 - GEMM/Investor Meeting Minutes
+0410 - BoE's Breeden (Dove) on Digital Money at City week.
+0500 - Eurozone Trade Bal Mar  (Cons 6.5b, Prev 11.5b)
+0730 - ECB's Villeroy (Super Dove) presser after G7 FinMin/CB Gov Meeting.
+0800 - ECB's Lane (Dove) panel session at IRF 2026.
+0800 - Fed's Waller (Dove) panel session at IRF 2026. Q&A yes.
+0830 - Canada CPI y/y Apr  (Cons 3.1%, Prev 2.4%)
+0955 - ECB's Makhlouf (Hawk) fireside chat at AFME Conf 2026.
+1000 - US Pending Home Sls m/m Apr  (Cons 1.3%, Prev 1.5%)
+1630 - US API Crude Oil Stock Chg May 15 (Prev -2.2m)
+
+Supply Events - Bonds, Bills & Central Bank Operations
+All times are EST time
+2230 - Japan auction ¥3000bn 12 mth bills (May27)
+0500 - UK auction £1.25bn 5y Gilt Linker 0.125% (Aug31)
+0530 - Germany auction €5.00bn 5y Bobl 2.50% (Apr31)
+0600 - Finland auction 4y RFGB 2.50% (Apr30), 15y RFGB 3.55% (Apr41) total €1.5bn
+1130 - US auction 6 wk bills  (Jul26) total $85bn
+1400 - US Tsy Nominal Purchase Op 3y-5y for ~$0.0 to $4.0bn
+
+Upcoming Coupons & Redemptions
+Friday 22 Aut Coupon €0.65bn
+Friday 22 Slova Redemption €1.45bn
+Friday 22 UK Coupon £0.62bn
+Friday 22 UK I/L Coupon £1.0bn
+
+### ITC commentary — 2026-05-19
+ITC Fixed Income Your Eyes and Ears on the Rates Markets
+May 19, 2026
+
+
+
+
+Calendars
+📆  Daily G10 Calendar
+📆  Daily APAC Calendar
+📆  Weekly Macro Calendar
+📆  Weekly Supply Calendar
+
+Cheat Sheets & Resources
+🕊 Hawk/Dove Cheat Sheet
+💡  Cheat Pack
+
+
+ITC US FI Recap: Technical selling, inflation concerns drive belly-led rise in yields; 30y highest since 2007.
+
+
+
+
+
+
+
+In this email: USTs & Swaps / ED & SOFR / Cross Asset / News / Schedule
+
+Main Market Highlights: -UST yields jumped to new highs as ongoing inflation/fiscal concerns fueled technical selling. -Monday’s late bounced was faded overnight; UST futs under pressure through London with Trump threatening renewed Iran strikes in 2-3 days if a deal is not reached. -Technical selling/neg gamma hedging intensified shortly after the pit open with heavy TY volumes traded as we took out Monday’s lows. -Belly led the move lower amid a series of large block sales in TY and FV futs.  -Yields peaked mid-morning through block sales totaling 131.5k TY (~$8.5m/01) & 88k in FV (~$3.7m/01). -Stabilization into the afternoon as yields retreated from the highs as blocks/technical selling eased. -10y yields got up to 4.685%, highest since Jan 2025, before consolidating ~4.66%. 30y peaked at 5.195% which was the highest since 2007. -5y sector struggled on the curve as yields jumped to 4.35%; 2s5s10 fly pushed above -15bps for the first time since Q1 of last year. -2y yields reached 4.137%;  1y1y OIS got as high as 4.08% retreating into the close.   -SOFR: Steeper through blues which were -5/-5.5 into the close; Reds continued to move through the 9600 level (>4.0%); SFRM7 traded a new low at 95.91 -VOL: Board gamma went bid as UST futs accelerated lower; 3m10y took another leg higher, pushing above 80 NVs for the first time since early April. -Funding: Soft conditions continue with GC trade at or through the bottom of the target range; Monday’s SOFR fixed -2bps at 3.53% which is 10bps through EFFR and just +3bps vs RRP. -Stocks: Increasing sensitivity to the move in rates with stocks under pressure. ESA was -0.5%, back through 7400. -Oil: WTI closed little changed at $107.77; Brent was near $110.33 -Iran: WSJ reported regional mediators report little progress in US/Iran talks as US/Israel threaten renewed attacks. -Data: ADP wkly employment edged higher to 42.25k (33k prior); Apr Pending home sales were +1.4% (1.0% est. -What’s Priced? Fwd OIS rates jumped above 4.0% for the mid-2027 meetings. The mkt has above 1.5x rate hikes priced over the next ~12-15 months with ~20bps priced through the end of the year. -Looking ahead: light data Weds includes just the wkly mortgage apps. Fed will release the minutes from the April FOMC. For supply, we get $16b 20y.
+
+
+USTs & Swaps: The range was +5.5 (30y) to +9 bps (5y); 2s10s was +0.6 bp; 5s30s was -3.4 bp
+NY narratives: 1) USTs traded two-way in Asia while WTI held steady. Near session lows in London, a brief recovery that faded, then sold off to fresh lows on thin news. Little direction heading into NY, near session lows.
+
+2) ADP (weekly) was a solid beat, adding to the selling pressure heading into the pit open. Key levels and ranges broke as intraday technical bearish momentum accelerated. 5s were notably weak, belly significantly underperforming.
+3) Selling accelerated mid-morning with a surge of block selling in FV (88k contracts, ~$3.7m per 01) and TY (131.5k contracts, ~$8.5m per 01).  2y and 5y yield pushed further above their year-long ranges (broken last week), while 10y and 30y finally broke their equivalent range highs as yields climbed. 4)  2s5s hit a new high before peaking mid-morning. 5s30s bottomed near midday. 5s stabilized and 5s30s bounced, though it retained most of its flattening. Meanwhile, 2s10s gave back its modest intraday flattening, with the session ending near daily highs. 5) Yields peaked and consolidated in the afternoon, retracing 40%-50% of the o/night and early NY climb.
+____________ NY:  USTs traded two-way while WTI held steady.  At the start of London trade, USTs sat near session lows. Weak UK labour data and oil price moves had little impact. The session remained choppy, with an early recovery fading back to overnight levels before the intermediate and long end came under renewed selling pressure, drifting to fresh lows on thin news flow. USTs were new session lows, little traction, heading into NY. UST futs drifted lower and gained momentum into the pit open, driven by a strong ADP beat (the highest weekly print). Selling accelerated, taking out recent lows, before breaking key longer-term levels — with 10y and 30y finally clearing their year-long range highs (2y and 5y had broken theirs late last week). Technical sellers took note, adding further momentum to the intraday sell-off. This was followed by a frenzy of FV and TY block selling: > $12m/01 in block sales in FV & TY post the cash equity open. Downside momentum in futs accelerated as stops were further triggered. 30y traded to its highest level (5.195%) since July 2007. Belly significantly underperformed. 5s traded very poorly.  2s5s pushed to new highs, steepest levels since Feb. 13th.  5s30s to its lowest level since March 27th, with the break below the low yesterday near 84.9 bps. USTs bottomed mid-morning and consolidated after the aggressive sell-off. While still down on the day, futs retraced 40-50% of the downside into the close.  Around the same time, 2s5s peaked, 5s30s bottomed shortly after and stabilized, while 2s10s briefly flattened before steepening back out to session highs by mid-afternoon.
+
+Specifically, 2y climbed 9 bps to 4.135%, 5y gained 11.5 bps to 4.35%, 10y was +9.9 bps from session lows to 4.685% while 30y was +7 bps to 5.195% (highest since July 2007 as shown below…)
+On the curve, belly underperformance and the very poor showing in 5s was the dominant curve highlight. 2s10s steepened 2.5 bps off session lows, peaking near 55.5 bps. 5s30s flattened 5.8 bps to 83.39 bps (lowest since March 27th).  2s5s steepened to 21.6 bps (steepest since mid Feb). 5s30s bounced in the afternoon, modeslty. 2s10s were not far from session peaks. SOFR swaps saw very light flow go through the SEF screen but volumes with above average overall led by large activity in ultra short 1y sector.  Swap spreads were seen mostly steady in APAC led by -0.25bps move in 2y.  Then, heavy flow was seen going through in SOFR swaps in early Ldn trade with swap spreads seen steady to marginally tighter led by -0.375bps move in 2y.
+- After having edged marginally tighter O/N, swap spreads continued to compress/tighten through the U.S. morning trade as USTs saw a flurry of technically driven sales this morning (i.e swaps outperforming).  Longer-tenor spreads continued to lead directionally with 30y spreads hit down to a low of -75.25bps in the morning before a modest bounce into the afternoon –- all still holding within recent ranges.
+- 2y spread closed out +0.375bps wider at -14.375bps, 5y spread closed out -0.375bps tighter at -28.125bps, 10y spread close out -0.625bps tighter at -42.75bps, and 30y spread closed out -0.875bps tighter at -75bps.
+- Swap volumes ran at a solid clip this session (…roughly 120% above average) amid increased activity in all tenors.
+
+JPM (Ozil) on Swap Spreads: The swap spread curve continues to (i) appear too flat with respect to fundamental drivers, as term funding premium appears about two standard deviations above our estimate of fair value, and (ii) the swap spread curve continues to trade in line with headlines….With TFP’s high sensitivity to headline risk, we continue to recommend patience before initiating swap spread curve steepening exposure. For investors who wish to initiate such exposure, we recommend adding an oil or a vol overlay.
+Implied swaption VOL took another leg higher today, extending on the sharp move seen since last Friday as USTs came under renewed pressure amid decent delivereds yet again today.  3m10y implieds closed another ~2.3 NVs higher today at ~82.2 normals –- now above levels seen on the big drop in VOL seen on the Apr 6th U.S.-Iran ceasefire agreement news.
+____________ Data:  2nd tier data once again, nothing to move USTs given the technical momentum and active blocks. -  ADP Weekly Employment Change (May 2) 42.250k vs 33.000k prior -  Pending Home Sales MoM (Apr) 1.4% vs 1.0% est/1.5% prior revised to 1.7% -  Pending Home Sales NSA YoY (Apr) 3.3% vs 2.1% est/1.88% prior __________ In Canada – CPI came in a little tamer than expected. -  CPI NSA MoM (Apr) 0.4% vs 0.7% est/0.9% prior
+-  CPI YoY (Apr) 2.8% vs 3.1% est/2.4% prior
+-  CPI Ex Food and Energy YoY (Apr) 1.5% vs 1.9% prior
+-  CPI Core- Median YoY% (Apr) 2.1% vs 2.3% est/2.3% prior (lowest since Dec. 2020)
+-  CPI Core- Trim YoY% (Apr) 2.0% vs 2.2% est/2.2% prior (lowest since Feb. 2021)
+-  Consumer Price Index (Apr) 168.0 vs 168.3 est/167.4 prior -              Higher energy prices, most notably gasoline prices, drove the acceleration in the headline CPI. The removal of the consumer carbon levy in April 2025, which resulted in monthly declines for gasoline and natural gas, has now fallen out of the 12-month movement, putting upward pressure on the all-items CPI. -              Year over year, prices rose at a faster pace in nine provinces in April compared with March. Prices in Quebec increased 3.0%, up slightly from March (+2.9%). Unlike the other provinces, Quebec was not impacted by the removal of the consumer carbon levy in April 2025 due to the province's existing cap-and-trade system. -              https://www150.statcan.gc.ca/n1/daily-quotidien/260519/dq260519a-eng.htm Desjardins (Mendes): In contrast to concerns about higher oil prices bleeding into core measures of inflation, price pressures looked unusually muted in April …That left the annual rate of inflation tracking 2.8%, still within the Bank of Canada’s 1 to 3% target range. Higher gasoline prices drove the majority of the increase in April. In contrast, food prices were flat. -    The breadth of outsized price increases narrowed in April, with the share of CPI components rising faster than three percent per year falling to 38% from 41%. While that’s still slightly elevated, recent price dynamics suggest that metric should continue trending lower in the months to come.
+-    The soft inflation print gives the Bank of Canada ample scope to remain patient in assessing the fallout from higher oil prices…. we continue to expect that Canadian central bankers will stay on the sidelines for the remainder of this year. What’s Priced: 2 hikes priced by end 2026 (~51 bps), first hike fully priced for Oct (37.5 bps) ______________________
+Blocks 1) seller 23k TY at 108-25+ (09:38et) 2)  seller 20k TY at 108-24+ (09:40et) 3)  seller 20k TY at 108-22+ (10:20et) 4)  seller 20k TY at 108-20+ (10:21et) 5)  seller 20k TY at 108-20 (10:23et) 6)  seller 28.5k TY at 108-20 (10:40et) 7)  seller 25k FV at 106-18 (10:16et) 8)  seller 25k FV at 106-17+ (10:17et) 9)  seller 33k FV at 106-13+ (10:27et) 10) steepener TY vs WN, buyer 8.8k TY at 108-21+, seller 3.35k WN at 111-17 (11:45et) IG: 12 deals, est $14.775b -              Baltimore Gas & Electric $925m, CCDJ $750m, Ecolab $5b, Ford Motor Credit $1b, Georgia Power $1.3b, Golub Capital $500m, Kennametal $300m, Mobility $2b, Pricoa $450m, Societe Generale $1.25b, Trinity Capital Inc. $300m, Xylem Inc. $1b.
+From Ron Quigley of Quigley’s Corner, as of last night:
+•              The IG Corporate-only WTD total 32.81% of this week’s syndicate midpoint average forecast or $12.20b vs. $37.18b.
+•              We priced 55.99% of the syndicate forecast for May IG Corporate-only new issuance or $104.10b vs. $185.91b.
+•              YTD, we priced 50.84% of the syndicate forecast for 2026 IG Corporate-only new issuance or $925.846b vs. $1.821 trn.
+
+
+
+SOFR: US rates sell-off intensified on Tues with yields breaking to local highs across the curve. A new catalyst for the sell-off was lacking but inflation concerns stemming from higher energy prices and the war in Iran remained the overriding theme. Tuesday selling however appeared more technical with potential capitulation (stops) exacerbating neg gamma hedging flows. After seeing yields climb steadily overnight, selling intensified into the US pit open. The bottom dropped out around 9am as TY took out Monday’s lows. A series of block sales in TY & FV futs totaling over $12m/01 traded out of the cash equity open as yields surged to session highs, Selling was focused in the belly with the 5y cheapening along the curve. 2y yields however jumped to 4.137%, highest since Feb 2025, before retreating to 4.11 intop the close%. 1y1y OIS reached 4.08% - the highest since Feb 2025. Calmer conditions into the afternoon with yields consolidating in a narrow range with some tentative dip buying emerging. Looking ahead: A light calendar on Weds which will keep focus on geopolitics/Iran. We will however see minutes from the April FOMC meeting. Hawkish headlines are expected as the debate over maintaining the easing bias in the statement resulted in three hawkish dissents.
+Along the strip: The strip was steeper through the blues which were trading -5.5/-6 into the close. Reds continue to fall further through the 96.00 level. SFRM7 remains the low point on the strip, closing -4 at 95.935. While the mkt is pricing some easing through 2028, terminal rates are now expected to hold above 3.90%.  3pm  Snapshot: SFRM6: -0.25 at 96.3325 SFRM7: -4.0 at 95.935 SFRM8: -3.5 at 96.025 SFRM9: -5.0 at 95.96
+
+
+Funding / Repo / TBills: Overnight mkt easily absorbed the $40b in new TBills settling on Tues with GSE cash adding to pressure on repo rates. GC continued to trade near or through the bottom of the target range. -Monday’s SOFR fixed -2bps, making new lows at 3.53% which is 10bps through EFFR and just +3bps vs the RRP rate. Heavy volumes traded in SOFR vs FFs spreads ahead of the fix included a 30k clip in Sept SERFF traded up at -2. Following the fix, May SERFF was making new highs, trading +1.5bps at +5.25 -RRP: RRP volumes were up another ~$5b at $12.9b on Tues as 22 MM fund opted to park cash at the Fed for 3.5% with GC rate dipping below that level. $12.9b was the largest usage for RRP since March month-end and the largest non-month-end RRP since YTD. -Some focus on comments from  NYFed's Perli (SOMA manager). In a speech titled “Reserve Management and the Fed’s System Open Market Account: Recent Experience and Insights from Surveys” Perli noted: -RMPs are not on a pre-determined course. -we make RMP decisions on a month-to-month basis to preserve the flexibility that is needed to adapt to changing market conditions. -we stand ready to adjust the pace of RMPs up or down as necessary to maintain reserves within the ample range. - If reserve demand declines exogenously, RMPs can be adjusted downwards or even stopped; in that case, the SOMA portfolio will shrink relative to GDP. If a decline in reserve demand is sufficiently pronounced, the SOMA portfolio can decline even in absolute terms https://www.newyorkfed.org/newsevents/speeches/2026/per260519 Some viewed the above Perli speech as confirmation that last week’s surprise cut in the pace of RMPs was in fact in response to funding conditions which may have become ‘too easy’ with MM rates drifting towards the lower end of the Fed’s target range.
+
+
+What’s Priced In: ? Fwd OIS rates jumped above 4.0% for the mid-2027 meetings. The mkt has above 1.5x rate hikes priced over the next ~12-15 months with ~20bps priced through the end of the year.
+
+Headlines & Data: US Close
+Middle East
+CNN: A senior Pentagon official declined to say whether the Trump administration would rule out putting US boots on the ground in Iran and did not say whether it would seek congressional authorization to restart operations against Tehran.
+US VP Vance: Just spoke with Trump about Iran, we have two paths we can go down with Iran; we have made a lot of progress; think Iran wants a deal; won't say with confidence that we'll get a deal with Iran; we can restart military campaign but that is not what Trump or Iran want; Trump told us to aggressively negotiate with Iran; not totally clear what Iran wants to accomplish; no plan for Russia to take enriched uranium; Iran must agree to not build a nuclear weapon; regardless of what Trump decides on Iran, it will not last forever
+WSJ: Mediators see little progress in US/Iran talks
+WSJ: US seized Iran-linked oil tanker in the Indian Ocean; tanker said to be loaded with 1m barrels of oil from Kharg Island
+Jerusalem Post: Israeli officials believe that Trump will eventually strike Iran, two officials told the Post, with one saying that Trump and Netanyahu are in full coordination
+Israeli Channel 12 source: Steps are currently being taken to ensure the implementation of an extremely extensive attack (on Iran) when necessary
+
+North America
+Trump to Washington Examiner: I will let Warsh do what he wants
+Reuters/Ipsos: Donald Trump's presidential approval rating has fallen to 35%, nearing its lowest point
+US VP Vance: We delayed a troop deployment to Poland, not a reduction; we could decide to send those troops elsewhere
+NY Fed Perli: The plausible path to lower reserve levels is regulatory change; rate control toolkit has worked very well; liquidity management effective; can deal with changing bank reserve regulations; shifting to scarce reserve system would be a challenge; unclear how Fed will handle TGA funds
+
+APAC   Japan Katayama: Ready to take decisive action on FX; G7 understands Japan's stance
+BoJ's Governor Ueda: The latest GDP data is mostly in line with our forecast, the Middle East situation has begun to impact; need to monitor upward price pressures; aware that long-term interest rates are rising rapidly; will assess market situation and functionality on tapering; will take appropriate Mon Pol action to achieve inflation target; will work closely with the govt on JGB mkt situation
+
+Trade
+CBS: US probe into China firms cutting shipping container production pre-Covid
+
+UK   BBG: Andy Burnham won’t commit to keeping Labour’s manifesto promises on tax and has opened the door to new tax rises if he becomes PM. His decision to back the current fiscal rules wins him a reprieve from markets, but it limits his options to fund policies like council house-building. It raises the prospect of tax hikes. Asked by Bloomberg if he is committed to Labour’s election manifesto pledges not to raise income tax, national insurance, VAT or corporation tax, his campaign declined to say so. They also didn’t rule out new taxes on wealth.
+FT: UK treasury pressures supermarkets to cap food prices
+
+
+European Close
+Middle East
+Qatar For Ministry: Under international law, no state bordering natural Straits may obstruct passage; right now, there are no special arrangements for the export of energy products; 2 LNG tankers have crossed SOH, but that does not mean normal traffic has resumed
+Mehr News Agency: Explosion heard in Qeshm Island, unknown cause
+NYT: The Pentagon have urged no resumption of US strikes on Iran as Iran have become more effective at tracking US air ops
+BBG: NATO starting to consider Hormuz deployment to protect ships if the strait is not open by July; but still lacks necessary unanimous support
+Trump: May have to give Iran another hit, not sure; Iran begging to make a deal; Gulf states along with Israel are negotiating; Middle east countries have asked for a few more days before any attack; will wait for Iran till maybe early next week; Iran has limited capacity; not leaving Iran yet, we're going to do it right
+Iran Security Commission Chair: Trump’s hesitation is rooted in one reality: he knows any move against Iran means facing a decisive military response and a unified nation. He obviously does not care about the mediation of the Persian Gulf state heads.
+US Tsy Sec Bessent: European allies need to close Iranian bank branches and confiscate property held by firms linked to the Iranian regime. Asian allies need to better police Iran's shadow fleet to prevent oil transfers to non-sanctioned tankers
+
+Europe
+ECB Villeroy: We reaffirm our strong commitment to price stability; this is a strong collective commitment; global central banks are monitoring 2nd round effects; mon pol will remain data dependent; we’ll be ready to act as needed; fiscal policy needs to remain sound; the ECB are fully determined to bring inflation to tgt
+ECB Nagel: ECB moving away from baseline scenario; will take a decision based on data in June; maybe we’ll have to do something in June; will show the same commitment as in the past; can develop some sympathy for European debt
+German Chancellor Merz: We need to be careful the debt doesn’t rise too much, Germany plays an important role in the stability of the Euro
+Spain: Activates sovereign wealth fund with €13.3b injection
+Riksbank Bunge: AI hasn’t yet penetrated the labour mkt & productivity to such an extent it affects current Mon Pol; but developments are moving very fast and this means we’ll have to monitor what happens in the coming years; must be vigilant about the Iran war spillover; the ME war has led to rising prices for oil, gas, jet fuel & fertilisers which means inflation will be higher than would otherwise have been the case; we have room to await further info before we need to act; risks increase the longer the Iran war continues
+Finland 4Y, 15Y RFGB Auction Results: Size sold €1.5b, Size sold €1.5b, lower b/c, weaker o/b than recent averages
+Top NATO commander: US decision to redeploy an armoured brigade from Europe will not impact the executability of NATO's defence plans; a total of 5,000 US troops will be pulled out of Europe; exp more US troop moves from Europe in the long-term; asked about potential NATO mission in the strait of Hormuz, says this is a political decision
+{dk} Fox News: Trump Makes Fresh Greenland Play After Xi Talks As China’s Arctic Ambitions Loom; WWH official says US in talks with Greenland and Denmark
+
+North America
+US Weekly ADP Employment: 42.25k vs 33k prev
+RTRS poll: 49 of 101 economists expect the Fed to keep rates unch in 2026 vs 30 of 103 in Apr poll; 48 of 101 economists expect the Fed to cut rates at least once in 2026; 83 of 101 economists expect the Fed to keep rates steady through Q3
+US Pending Home Sales [Apr]: 1.4% vs 1.0% cons;
+Canada Apr CPI: 0.4% m/m vs 0.7% cons, 2.8% y/y vs 3.1% cons
+Canada Apr Core CPI: 0.2% m/m vs 0.2% prev, 2.1% y/y vs 2.5% prev
+Canada Mar Building Permits: 10.3% vs 3% prev
+US Treasury's Bessent: Trump Administration not in a hurry to extend China trade truce due to expire in November; US-China truce on critical minerals and tariff rates can be extended through subsequent meetings this year; new section 301 tariffs won't be a problem for China as long as they do not exceed prior levels agreed last November; U.S.-China board of investment protocol will seek to identify deals that would not need CFIUS national security reviews or investments that U.S. is not ready to consider; China understands that section 301 trade investigations may bring U.S. tariffs back to levels prior to supreme court decision to annul some U.S. duties; will have a meeting with Chinese vice premier He Lifeng prior to Xi's September visit to white house to work out more details on trade arrangements; US-China consultations on ai guardrails to prevent proliferation of powerful models likely to start in next four to eight weeks; U.S., China will initially identify $30 bln of non-critical goods that can have reduced or no tariffs under board of trade protocol
+
+Trade
+US Tsy Sec Bessent: G7 discussions emphasize using IMF data to confront China on the impact of its export push. G7 countries are working on critical minerals inventory reserves, pricing, and price floor mechanisms to keep China from undercutting alternative supply efforts
+
+APAC
+US Tsy Sec Bessent: Spoke with BoJ Gov at the G7 meeting; confident BoJ Ueda will successfully guide Japanese mon pol; believe Japanese economy's fundamentals are strong and excess FX vol is undesirable
+Bessent: BOJ Gov Ueda will do what he needs to do if granted sufficient independence by Japan govt
+
+Equities
+Home Depot Q1: Adj EPS $3.43 vs $3.41 cons, Rev $41.76b vs $41.63b cons; Net Income $3.29b; reaffirmed 2026 fiscal guidance
+Microsoft: introduces new Surface devices, for business and AI acceleration
+
+
+Pre-US
+Middle East
+IRNA citing Iran Dep For Min: Lifting sanctions, releasing frozen funds and ending blockade are inc in our recent proposal to US; also inc in proposal is ending war on all front inc Lebanon and US forces leaving areas close to Iran
+
+Europe
+EZ Mar Trade Bal NSA: €7.8b vs €11.5b prev
+Spanish Mar Trade Bal: -€4.37b vs -€3.3b prev
+Bank of Spain: End of March debt/GDP ratio 101.6%
+German 5Y Bobl Auction Result (sold €3.84b): Higher b/c and better pricing: official b/c 1.3 vs 1.04 prev, real b/c 1.02 vs 0.82 prev, o/b 1.5c vs 1.15c prev, tail 1c vs 2c prev
+
+UK
+UK Mar Avg Earnings 4.1% vs 3.8% cons: Ex-Bonus 3.4% in-line
+UK Mar ILO Unemployment Rate: 5.0% vs 4.9% cons
+UK Mar Employment Change: 148k vs 104k cons
+UK Apr Claimant Count: 26.5% vs 26.8k prev
+ONS: Labour market remains soft, vacancies at lowest level in 5 yrs, unemployment rate higher y/y; regular wage growth slowed further
+UK: Cap on household energy bills set to increase 13% this summer
+UK Q1 Output Per Hour: 0.4% y/y vs -0.5% prev
+UK 5Y Gilt Linker Auction Result: Lower b/c, lower o/b: Size £1.25b, b/c 3.75 vs 3.88 prev, o/b 7.6p vs 16.3p prev
+
+North America
+Punchbowl Sources: Pres Trump is expected in Rep. Mike l Lawler's district with the congressman this Friday for an official event on the economy
+
+Russia/Ukraine
+EU Dombrovskis: The EU don’t think now is time to ease pressure on Russia; US Tsy Sec Bessent reassures G7 meeting Russian oil sanctions waiver will be temporary
+Russia's Rybakov (Tass): Risk of direct Russia/NATO clash are increasing
+
+Oil/Geopolitics
+Taiwan Defence Min: Cautiously optimistic about US arm sales
+
+Equities
+China For Ministry: China/US agreed to carry out inter-governmental talks on AI
+
+
+Key Scheduled Events Tomorrow:
+For full detail, see our ITC Daily Calendar
+For more info on central bank speakers, Click here for the ITC Speakers preview
+Highlighted Data, Speakers & Other Events
+All times are EST time
+1900 - Fed's Paulson (Dove) on Econ outlook at Atlanta Fed Conf. Text/Q&A yes.
+2000 - Japan Reuters Tankan Index May  (Prev 7.0)
+2100 - China Loan Prime Rate 1Y May 20  (Prev 3%)
+0200 - Germany PPI m/m Apr  (Cons 1.0%, Prev 2.5%)
+0200 - UK CPI m/m Apr  (Cons 0.9%, Prev 0.7%)
+0200 - UK Core CPI m/m Apr  (Prev 0.4%)
+0300 - Eurozone ECB Non-MonPol Meeting
+0430 - Iceland CBI Policy Rate May (Prev 7.50%)
+0500 - Eurozone CPI m/m Apr (F) (Cons 1.0%, Prev 1.0%)
+0915 - Fed's Barr (No Known Bias) at FHN Emerge 2026 Conf. Text yes.
+1030 - US DoE Crude Inventories May 15 (Prev -4.3m)
+1400 - FOMC Minutes
+1410 - ECB's Sleijpen (Hawk) gives speech for Uitreiking Koning Willem I-prijs
+
+Supply Events - Bonds, Bills & Central Bank Operations
+All times are EST time
+2335 - Japan auction ¥700bn 20y JGB (Mar46)
+0530 - Germany auction €5.00bn 10y Bund 2.90% (Feb36)
+0530 - Portugal auction 6 mth bills  (Nov26), 12 mth bills  (May27) total €2bn
+0600 - Eurozone auction 3 mth bills  (Aug26), 6 mth bills  (Nov26), 12 mth bills  (May27) total €4bn
+1100 - US Tsy Nominal Purchase Announcement 5y-7y for  ~$0.0 to $4.0bn
+1130 - US auction $65ebn 17 wk bills (Sep26)
+1200 - Canada auction C$5.50bn 2y GCAN 2.75% (Aug28)
+1300 - US auction $16bn New 20y Bond (May46)
+
+Upcoming Coupons & Redemptions
+Friday 22 Aut Coupon €0.65bn
+Friday 22 Slova Redemption €1.45bn
+Friday 22 UK Coupon £0.62bn
+Friday 22 UK I/L Coupon £1.0bn
+
+### ITC commentary — 2026-05-20
+ITC Fixed Income Your Eyes and Ears on the Rates Markets
+May 20, 2026
+
+
+
+
+Calendars
+📆  Daily G10 Calendar
+📆  Daily APAC Calendar
+📆  Weekly Macro Calendar
+📆  Weekly Supply Calendar
+
+Cheat Sheets & Resources
+🕊 Hawk/Dove Cheat Sheet
+💡  Cheat Pack
+
+
+ITC US FI Recap: Iran optimism triggers oversold rebound, belly led. WTI falls sharply, -7% intraday.
+
+
+
+
+
+
+
+In this email: USTs & Swaps / ED & SOFR / Cross Asset / News / Schedule
+
+Main Market Highlights: -A strong oversold bounce Weds was aided by reports US/Iran were nearing a deal to end the war. -DM bonds were higher overnight with JGBs bouncing in Asia after a well-received 20y auction. -Further rally through London with Gilts leading; UK 2y yields fell >14bps with mkts unwinding rate HIKE premium after tame CPI data &  dovish MPC (relative to pricing) -USTs faded through early NY before jumping to session highs on US/Iran headlines -Al Arabiya reported ‘The finalization of the agreement between America and Iran may be announced within hours” -About an hr later, another huge lift in UST futs after Trump commented that the US were in the ‘final stages’ of talks with Iran. -UST futs surged to session highs before stabilizing into the afternoon. -A continued bid into the close amid reports Iran is reviewing the latest US proposal with Iran minister Araghchi reportedly preparing for a trip to the UN in NY. -5y sector continued to lead directionally, outperforming on the curve with yields falling to 4.22% (4.35% peak Tues). -2y yields were back below 4.04% through the afternoon while 10y was <4.57% -SOFR: Flatter through the reds/greens which jumped as much as 12-13-ticks on the Iran headlines; SFRM7 recovered >96.05 vs Tues 95.91 low. -Funding: Very soft funding conditions persist with GC trading near the bottom of the range; Tues SOFR was -2bps at 3.51%; EFFR was -1bps at3.62%; May SERFF made a new high at +5.5 -RRP: RRP volumes hit YTD highs ~$25b with more MM funds parking cash at the Fed with repo mkt rates trading near or through the 3.50% rate. -Swaps: Spreads curve steepened with 30y spreads nearly 2bps wider otd, trading -73.5bps. -TIPs: Sharp bear-steepening in breakeven curve with 2y BEIs sliding ~10bps as oil fell 6%. -Stocks: Solid recovery on ‘Iran optimism’ with ESA +0.90% at 7440 while DOW was +600pts; Tech outperforming pre-NVDA earnings with NQ +1.3%. -Oil: WTI was down 6.0%, trading through $98.00; Brent -5.8% at $104.90 -Data: Wkly mortgage apps were -2.3%, -What’s Priced? Peak of the OIS fwd curve fell to 3.93%, down around 10bps from Tuesday’s highs as the mkts scaled back on anticipated rate HIKEs. Mkt still has about 31bps of hikes priced through June of 2027. -Looking ahead: Data includes May prelim PMIs, April Housing Starts/building permits, May Philly Fed, and wkly jobless claims. Supply includes $19b 10y TIPs reopening.
+
+
+USTs & SwapsThe range was -10 (5y) to -6 bps (30y); 2s10s was -1.5bp; 5s30s was +3.6 bp
+NY narratives: 1) Little in Asia, lift in early London on softer UK inflation and downside in oil, small curve flattening. Near highs, low conviction, in early NY. 2) The heavy selling in USTs since mid-May — with 10y +26 bps and 2y +19 bps since the May 12 CPI print — left the market oversold and in need of a bullish catalyst. Wednesday delivered, as constructive headlines emerged suggesting a final agreement could be nearing on Iran. WTI oil fell sharply, while UST futs and equities rallied aggressively. Belly outperformed. 3) Supportive headlines continued intermittently throughout the day, keeping WTI under pressure and stocks higher. Yields bottomed in late morning (front end > -10 bps from session highs), then consolidated and chopped into the close. 4) Belly outperformance continued into the close, with little discernible intraday trend in 5s10s. 2s10s finished near session lows, while 5s30s held close to session highs.
+____________ NY:  Conviction remained low in Asia. USTs pushed to fresh session highs at the start of London, driven by softer UK inflation data and a drop in oil. Short end lagged, modest flattening in 2s/10s. After trading sideways in the upper range, USTs extended gains on a further slip in oil, this time led by the short end through the belly of the curve. Near session highs heading into NY on low volume. UST selling has been consistent essentially since early May but particularly since CPI mid May. During that time, yields have climbed 19-27 bps, led by 5y which is +27.2 bps. The accumulated oversold conditions needed a bullish trigger for at least a partial unwind. Wednesday seemed to provide exactly that…. …Positive headlines: Al Arabiya sources: The finalization of the agreement between America and Iran may be announced within hours #AlArabiya_Breaking
+
+AlArabiya_Brk - Arabic sources: A new round of negotiations will be held in Islamabad after the Hajj season *TRUMP SAYS US IN 'FINAL STAGES' OF TALKS WITH IRAN: POOL REPORT
+
+Iran's Foreign Ministry Spokesperson: seeking to establish with Oman, and in coordination with 'specialized international bodies', a mechanism to ensure sustainable security in strait of Hormuz; Iran ready to develop protocols for safe shipping traffic in cooperation with other coastal states *PREPARATIONS UNDERWAY FOR ARAGHCHI’S US TRIP FOR UN MEETING: TV *IRAN'S PEZESHKIAN: ALL PATHS REMAIN OPEN FROM OUR SIDE _________________
+The early AlArabiya tweet, followed approx. 1 hour later by President Trump’s comments, delivered a one-two punch that sparked aggressive buying, accompanied by strong volume throughout the session. This drove yields to retrace roughly 50-60% of their post-CPI climb, bottoming in late morning. A typical post-London exit correction and chop then took hold through the afternoon, leaving yields not far from session lows. Equities were bid, holding gains through the session. Oil was hit, -7% intraday for WTI with only a very modest pullback. SPX was > +3.5% intraday. Unlike the last few sessions of curve movement, intraday was consistent today. 5s recovered though 5s10s was net sideways. But it was a story of belly outperformance. 2s10s pulled back from its 55.7 bps peak, closing near session lows. 5s30s bounced towards the peaks yesterday (89.2 bps) while 2s5s flattened 3 bps. Specifically, yields fell 7 (30y) to almost 11 bps (5y) from session peaks. 2y bottomed near 4.01%, 5y near 4.21%, 10y near 4.56% and 30y near 5.105%. SOFR swaps saw poor flow go through the SEF screens in APAC with swap spreads seen mixed led by +0.5bps move in 20y.  Then, heavy flow was seen going through in SOFR swaps in early Ldn trade with swap spreads seen wider across the curve led by +0.875bps move in 20y.
+- Swap spreads remained well-bid in the U.S. session, at times gapping higher on constructive U.S.-Iran headlines that also lifted USTs and equities while also weighing on VOL and oil prices.
+- Longer-tenor spreads once again led directionally with the 30y spread bid up to an intraday high of -73.375bps (….or +2bps otd) before a modest retrace into the close.
+- 2y spread is closing out unched at -14.625bps, 5y spread is closing out +0.875bps wider at -27.375bps, 10y spread is closing out +1.125bps wider at -41.75bps, and 30y spread is closing out +1.875bps wider at -73.5bps.
+- Swap volumes ran at a solid clip this session (…roughly 50% above average) amid increased activity in all tenors.
+
+JPM (Ozil) on Swap Spreads: The swap spread curve continues to (i) appear too flat with respect to fundamental drivers, as term funding premium appears about two standard deviations above our estimate of fair value, and (ii) the swap spread curve continues to trade in line with headlines….With TFP’s high sensitivity to headline risk, we continue to recommend patience before initiating swap spread curve steepening exposure. For investors who wish to initiate such exposure, we recommend adding an oil or a vol overlay.
+BEIs sharply bear steepened today as oil prices took a hit (Brent -5.94%, WTI -5.90%) on a series of positive U.S.-Iran headlines (i.e. finalization of the agreement between America and Iran & Trump say in ‘final stages’ of talks).  2y breakevens tested the cycle lows hit on May 7th down at ~273.5bps.  Looking ahead, attention soon shifts to tomorrow’s $19bn 10y TIPS auction (re-opening).
+- 2y breakeven is closing out -9.75bps lower at 276.375bps, 5y breakeven is closing out -7.125bps lower at 261bps, 10y breakeven is closing out -4.875bps lower at 245.25bps, and 30y breakeven is closing ou-3.125bps lower at 229.375bps.
+
+JPM (Downie/Wash): Last week we highlighted the near-term downside risks to breakevens and nominals this quarter and initiated a tactical 2-year Treasury long. In line with this view and the muted sensitivity of 5y5y inflation breakevens to energy prices this year, we see relative value in 2y3y/5y5y inflation swap steepeners and initiate this trade. _________ Supply: Fair overall result for the 20y. Auction stopped with a small 0.1bps tail at 5.122%. Non-dealers were solid at 90.6%: Indirects took down 67.70% vs. last four avg. 64.10% while directs were allotted 22.90% vs. last four avg. 25.20%.
+_________________________ IG: 5 deals, est $5.4b -              Columbia Pipelines $750m, PNC Financial $1.65b, Molson Coors $1.5b, Southern Co. Gas $500m, Hydro One $1b.
+From Ron Quigley of Quigley’s Corner, as of last night:
+•   The IG Corporate-only WTD total 72.55% of this week’s syndicate midpoint average forecast or $26.975b vs. $37.18b.
+•   We priced 63.94% of the syndicate forecast for May IG Corporate-only new issuance or $118.875b vs. $185.91b.
+•   YTD, we priced 51.65% of the syndicate forecast for 2026 IG Corporate-only new issuance or $940.621b vs. $1.821 trn.
+
+
+
+SOFR: Solid recovery Weds as positive US/Iran headlines provided energy for an oversold bounce.
+Rally kicked off overnight with DM bonds broadly bid with UK mkts leading the move higher. SONIAs jumped after tame UK inflation data with the rally extended later on dovish MPC comments (relative to pricing)
+Some selling into the US pit open with some US traders fading the overnight rally.
+At 10:16et, however, there was a huge lift in USTs after Al Arabiya sources: The finalization of the agreement between America and Iran may be announced within hours
+USTs repriced higher with yields slipping further.
+About an hr later, there was another surge in UST volumes as yields slid to session lows with Trump seemingly corroborating the Al Arabiya report, saying the US is in the ‘final stages’ of talks with Iran.
+The 5y sector, which led the move lower on Tues, would lead the ensuing recovery. 5y yields dropped to 4.22% after peaking at 4.35% on Tues.
+Continued bid into the close amid reports Iran is reviewing the latest US proposal with Iran minister Araghchi reported preparing for a trip to the UN in NY.
+2y yields slid to 4.04% while 1y1y OIS was in to 3.29% which was down from the 4.08% peak on Weds.
+Little reaction to the release of the minutes from the April FOMC which had predictably hawkish headlines. Minutes noted, a majority of Fed officials warned the central bank would likely need to consider raising interest rates if inflation continued to run persistently above their 2% target. They added “many” officials during last month’s policy meeting called for the Fed to drop its easing bias and signal its next move could be an interest-rate increase.
+Given the hawkish repricing seen following the meeting, there was little reaction to the headlines as 2y yields continued to chop around the day’s lows while Reds SOFR futs continued to trade around +10 to +12 otd.
+
+Along the strip: US/Iran ‘optimism’ was the main catalyst for a strong oversold bounce along the strip on Weds. After trading local lows across the strip on Tues, reds led the recovery, trading +13 to +14 otd at the highs before closing +10 to +12 otd. SFRM7 remains the low point on the strip, recovering to 96.04 or +11 otd into the close.
+3pm  Snapshot:
+SFRM6: +1.0 at 96.3425
+SFRM7: +11.0 at 96.040
+SFRM8: +11.5 at 96.135
+SFRM9: +9.5 at 96.0555
+
+
+Funding / Repo / TBills: funding markets remain exceptionally soft, with repo rates holding near the bottom of the target range. GC ranged 3.48-3.58, averaging 3.50% at 10am. -Tuesday’s SOFR and TGCR printed at 3.51%, just 1bp above the ON RRP rate—marking the softest levels since the May 2025 debt-ceiling episode EFFR also dipped another 1bp within the range, setting 3.52% for Tues. SOFR is now 11bps through EFFR, the lowest since Sept 2022. RRP: *16 COUNTERPARTIES TAKE $24.867B AT FED REVERSE REPO OP.
+-Another jump in RRP volumes as MM funds opt to leave cash at the Fed as repo trades at or though the 3.50% RRP rate
+-$24.9b was the largest RRP YTD. (largest since Dec month-end) -   JPM attributes most of the recent softness to RMPs, MBS reinvestments into T-bills, and seasonal T-bill paydowns. Looking ahead: JPM said still expect conditions to firm gradually from here, particularly as the GSE period concludes. In addition, ongoing net T-bill supply and upcoming coupon settlements should help repo levels drift modestly higher, moving closer to EFFR. -   Also keep in mind comments from NY Fed SOMA manager, Perli, from Tuesday. In a speech titled, “Reserve Management and the Fed’s System Open Market Account: Recent Experience and Insights from Surveys” Perli noted: -   RMPs are not on a pre-determined course. -   we make RMP decisions on a month-to-month basis to preserve the flexibility that is needed to adapt to changing market conditions. -   we stand ready to adjust the pace of RMPs up or down as necessary to maintain reserves within the ample range. - If reserve demand declines exogenously, RMPs can be adjusted downwards or even stopped; in that case, the SOMA portfolio will shrink relative to GDP. If a decline in reserve demand is sufficiently pronounced, the SOMA portfolio can decline even in absolute terms https://www.newyorkfed.org/newsevents/speeches/2026/per260519
+-   Some viewed the above Perli speech as confirmation that last week’s surprise cut in the pace of RMPs was in fact in response to funding conditions which may have become ‘too easy’ with MM rates drifting towards the lower end of the Fed’s target range. More speculation that excessively soft funding conditions will  warrant a quicker end/taper to RMPs than expected. Barclays are among that view, they see risk the Fed could pause RMPs at the mid-June calendar update until mid-September when it moves back to a steady level of $20 billion/month given the recent softness in US funding markets.
+
+
+What’s Priced In: Peak of the OIS fwd curve fell to 3.93%, down around 10bps from Tuesday’s highs as the mkts scaled back on anticipated rate HIKEs. Mkt still has about 31bps of hikes priced through June of 2027.
+
+
+Headlines & Data: US Close
+Middle East
+Trump: Do we finish Iran up? Or will they sign? Let's see; Seeing in Iran that the US is respected; need to get the right answer on Iran; we are dealing with reasonable people; will wait a few days for their response; no relief on oil sanctions until deal reached; if I don't get the right answers on Iran, it goes quickly; I need complete 100% good answers from Iran; will end soon, one way or the other
+Tasnim: US has sent a new text to Iran; Iran is reviewing the text and has not yet responded
+Fars: Iran Foreign Ministry: Iran-US message exchange continues based on 14-point text; we are negotiating in good faith, and it is up to the American side to prove its seriousness in the negotiations; US has to prove its goodwill and end 'piracy' against Iranian ships; hold severe and reasonable suspicion on US; studying US points
+Israeli Broadcasting Authority: Netanyahu is trying to convince Trump to give the green light to resume the war on Iran
+Iran President: Iran has consistently honoured its commitments and explored every avenue to avert war; all paths remain open from our side; forcing Iran to surrender thru coercion is nothing but an illusion
+Iran's Foreign Ministry Spokesperson: seeking to establish with Oman, and in coordination with 'specialized international bodies', a mechanism to ensure sustainable security in strait of Hormuz; Iran ready to develop protocols for safe shipping traffic in cooperation with other coastal states
+US Centcom: Earlier today in the Gulf of Oman, U.S. Marines from the 31st Marine Expeditionary Unit boarded M/T Celestial Sea, an Iranian-flagged commercial oil tanker suspected of attempting to violate the U.S. blockade by transiting toward an Iranian port. American forces released the vessel after searching and directing the ship’s crew to alter course
+House Appropriations Chair Tom Cole: Pentaon will run out of money for Iran by "probably August." Dept of Defence declines to comment.
+
+North America
+Fed Minutes From April 28-29 Meeting: Many policymakers would have preferred to remove easing bias from policy statement; majority of participants said some policy firming would likely become appropriate if inflation were to continue running persistently above 2%; participants generally judged continued elevated inflation and uncertainty over middle east could necessitate keeping current policy stance for longer than anticipated; a fewer number of participants judged it would be appropriate to lower fed funds rate on clear indications disinflation back on track; almost all participants supported maintaining fed funds target range at this meeting; participants generally observed middle east conflict could have significant implications for balance of risks and appropriate policy path; several participants indicated rate cuts would be warranted later this year in a scenario in which conflict was resolved soon and inflation pressures dissipated; some participants were concerned about a scenario in which elevated energy prices and tariffs could result in inflation pressures becoming embedded more broadly
+Trump: We have Cuba on our minds; Cuba is a failing nation, cannot say what is next for them; have to help the Cuban people; we are freeing up Cuba; Castro's indictment is a very big moment; there won't be an escalation in Cuba; announcement on oil embargo to be made soon
+US 20y Bond Auction Result: Size Sold $16b; Tails 0.1bps; b/c 2.55; Indirect 67.7%; Direct 23%; Dealers take 9%
+NY Fed: accepts $24.87Bn in Reverse Repo bids
+
+UK
+FT: UK Chancellor Reeves drops the push for a food price cap; will not be mentioned in tomorrow's speech
+
+Equities
+WSJ: OpenAI ready to go public as early as Sept; plans to make confidential filing as soon as Friday
+
+European Close
+Middle East
+Trump: US in final stages of talks with Iran; will see what happens
+Al Hadath Sources: Pakistani Army Chief may visit Iran tomorrow to announce the completion of the final version of the agreement text. If he does not travel to Iran, the announcement may come within hours. The next round of negotiations will be held in Islamabad after the Hajj season
+Iran For Min: No reason to transfer enriched uranium; talks ongoing via Pakistan intermediaries
+Trump: Netanyahu will do whatever I want him to do; in no hurry in Iran; we will give this one shot; Iran is decimated
+​  Iran Parliamentary Speaker: Obvious and hidden moves of the enemy show they seek a new round of war; military forces have used ceasefire to rebuild strength; Iran and the US are in a war of wills
+Al Arabya citing sources: The US intensified its demands on the nuclear issue & navigation security on the Strait of Hormuz; US has shown recent limited flexibility re easing Iran sanctions; Iran still see US guarantees as insufficient re the renewal of war
+CENTCOM: A US Marine Corps AH-1Z Viper attack helicopter is helping to enforce the maritime blockade against Iran; US forces have redirected 90 ships and disabled 4 to ensure compliance
+​
+Europe
+ECB Sources: Rate hike very likely in June as inflation outlook moves to adverse scenario; likely to be noncommittal about July; would prefer to wait until Sep projections to decide if follow up necessary; no decisions has been made yet; follow up hike not urgent as second round effects not yet visible; three of the sources noted weak growth was the biggest reason why any tightening must be cautious
+Germany Chancellor Merz: The average tax rate in Germany must decline
+France Parliament: Approved French Pres Macron's pick for incoming Bank of France Gov Emmanuel Moulin
+
+UK
+BoE Gov Bailey: Financial market tightening gives us time to assess whether to raise rates; have a softening picture for both growth and the job market; removal of cut expectations has tightened policy; market futures curves seem fairly benign compared to damage to the Middle East gas infrastructure; Government is right to keep in mind that the cost of large fiscal measures does come back to you; fuel tax cut may affect UK household inflation expectations; don't think inflation expectations are de-anchored; seeing continued reduction in private sector wage settlements; todays food price inflation surprisingly benign; money supply isnt flagging inflation pressure
+BoE Breeden: I have seen tightening in financial conditions; policy is tightened from an already restrictive place; if it does look like we are moving to a prolonged Middle East conflict with pronounced 2nd round effects, we will need to move quickly and possibly forcefully; striking that businesses tell me they are not replacing people who leave, good for productivity, but bad for entry-level jobs; data is showing slack in the labour market
+BoE Mann: I am worried about possible high inflation in late 2026 getting embedded in wage deals for 2027; labour market softening is not broad-based; second-half inflation is key to pay settlements
+BoE Dinghra: Looks like enough restrictiveness to avoid tightening is BoE scenario B takes place; economy looks too weak for a consumption boost
+UK PM Starmer: Will extend the freeze in fuel duty for the rest of 2026
+Sky News: UK Makerfield by-election to take place 18th June
+NIESR on UK CPI data: Inflation has dropped largely due to April 2025 base effects, however, we anticipate that inflation will trend upward over the year, possibly reaching above 4% by the end of 2026. We anticipate the Bank may increase rates by precautionary 25bps later this summer. this release may not look alarming, and a June rate hike remains unlikely, however the MPC will remain cautious over the next couple of months
+North America   ​US Weekly MBA Mortgage Applications: -2.3% vs 1.7% prev: 30Y Mortgage rate: 6.56% vs 6.46% prev
+Trump: Fantastic economic numbers yesterday
+
+Trade
+US Puzder: Encouraged by progress on Eu trade; will review details closely
+
+Russia/Ukraine
+​Hungary PM: Sees chance for new chapter opening in Hungary/Ukraine relations; hopeful of meeting Pres Zelensky in Jun
+EU Von Der Leyen: Russia’s public threats against Baltic states are completely unacceptable; a threat against 1 member state is a threat against our entire union
+UK PM Starmer: re Russian oil sanctions said targeted short term sanctions are to phase in new sanctions and protect consumers; not a question of lifting existing sanctions in any way
+German For Office Spokesperson: Anything that enables Russia to continue the war against Ukraine, also poses a threat to German security; China’s growing support for Russia’s war also affects our security
+Oil/Geopolitics
+Trump: On Cuba; will not tolerate a rouge state just 90 miles from US; will not rest until Cuban people have freedom
+US Weekly Oil Inv: Crude: -7.86m vs -2.5m cons; Cushing -1.6m; Distillates 372k vs -1.1m cons; Gasoline -1.54m vs -2.1m cons; Ref Util -0.1% vs 0.8% con
+EU Commission Official: Think EU countries can reduce gas consumption by 15bcm in 2026
+ADNOC CEO: Hormuz shut is the most severe supply disruption on record; will take at least 4mths to get back to 80% of pre conflict flows; some of our facilities were directly targeted and hit; moved ahead in 2025 with new pipeline to bypass Hormuz, and its 50% complete; global spare capacity is ~3m bpd, it should be 5m bpd; global oil demand seen >100m bpd well into 2040s; UAE energy investments in US are already >$85b
+Russia Dep PM Novak: Oil supply to China up 10% in 4 mths; China is interested in long-term oil supplies and increasing volume of imports
+​   Russia’s Novak (Tass): Russia’s Novak (Tass): Russia & China are finalising contracts for gas supplies via power of Siberia 2; global mkt's can't function without Russian oil which is why a number of countries are lifting restrictions  Jodi: Saudi Mar Crude O/P -3.915m bpd m/m to 6.967m bpd; Saudi crude exports: -2.302m bpd o 4.974m bpd
+
+Equities
+ASML CEO: Strong AI demand means chips will be a supply-limited market for quite a while
+
+Pre-US
+Middle East
+​Iran Revolutionary Guard: If the attack on Iran occurs again, the war will extend beyond the region
+@SkyNewsArabia_B: Israeli Channel 12: Trump and Netanyahu held a lengthy phone conversation last night, described as "exciting", to discuss taking a decision soon regarding Iran
+Snr diplomatic source told Al Arabiya: Intensive cooperation between Iran and Pakistan has ceased over the past two weeks
+
+Europe
+​  ECB's Wunsch: Bond selloff not impacting thinking about Iran
+EZ Apr Final HICP: 1% m/m in-line, 3% y/y in-line
+Apr Final Core HICP: 0.9% m/m in-line, 2.2% y/y in-line
+German Apr PPI: 1.2% m/m vs 1% cons, 1.7% y/y vs 1.5% cons
+BOF Gov Nominee Moulin: Need to play close attention to inflation; the private credit sector is an element of vulnerability but the risks in France are lower than the US
+Riksbank's Jansson: Low inflation provides a good starting point, but we need to be vigilant; t the moment, all mon pol makers are grappling with the question of how far-reaching the effects of the supply disruptions in the wake of the war in the Middle East will be; still have not given up hope that the impact might be relatively limited, especially here in Sweden; certainly don’t want to sound the all-clear. The risk of a more serious inflation scenario has increased over the spring; the jury is still out on that, which is I considered it appropriate to adopt a wait-and-see approach and to leave the policy rate unchanged
+German 10Y Bund Auction Result (sold €3.85b): b/c and /b in-line, larger tail: official b/c 1.53 vs 1.5 prev, real b/c 1.18 vs 1.15 prev, o/b 3.1c vs 2.85c prev, tail 2c vs 1c prev
+
+UK
+UK Apr CPI: 0.7% m/m vs 0.9% cons, 2.8% y/y vs 3% cons
+UK Apr Core CPI: 0.7% m/m vs 0.8% cons, 2.5% y/y vs 2.6% cons
+UK Apr CPI Services: 0.9% m/m vs 1.2% cons, 3.2% y/y vs 3.5% cons
+UK Apr RPI: 0.7% m/m vs 1.4% cons, 3% y/y vs 3.6% cos
+UK Apr PPI Input: 2.4% m/m vs 1% cons, 7.7% y/y vs 5.9% cons
+UK Apr PPI Output: 1.4% m/m vs 1% cons, 4% y/y vs 2.8% cons
+ONS: Notable fall in annual inflation led by lower domestic gas/electricity & lower global energy prices before ME conflict fed thru to reduction in OFGEM cap; annual cost of raw materials/goods leaving factories continued to rise driven again by higher crude oil and petrol prices
+ONS: UK Mar Avg House Prices: flat y/y vs 1.7% prev; private rents in the 12 months to April 3.5% vs 3.4% prev
+JPM: Now see BOE hiking rates 25bps in Jul vs Jun prev (cites lower CPI data)
+
+Trade
+​  EU Trade Commissioner Sefcovic: Been in contact with US Commerce Sec Lutnick, US Tsy Sec Bessent & USTR Greer
+Sources: EU in talks with major ports inc Rotterdam about storing critical minerals
+
+APAC
+Japan PM Takaichi: A possible extra budget is aimed mainly at responding to ME situation; not at stage to comment on scale of extra budget; plan to protect people's lives and businesses while curbing issuance of deficit financing bonds as much as possible
+PIMCO: Favouring 30y JGB’s as the yield curve is too steep
+
+Russia/Ukraine
+Russia Def Ministry: Forces practised bringing units to the highest levels ⁠of combat readiness for the use of nuclear weapons
+
+Equities
+Commerzbank CEO: Told shareholders at the AGM, UniCredit offer is vague and poses significant risks; UniCredit underestimates losses in rev and restructuring expenses
+
+
+Key Scheduled Events Tomorrow:
+For full detail, see our ITC Daily Calendar
+For more info on central bank speakers, Click here for the ITC Speakers preview
+Highlighted Data, Speakers & Other Events
+All times are EST time
+- - BoJ's Koeda (Hawk) in Fukuoka
+1900 - Australia PMI Mfg May (P) (Prev 51.3)
+1900 - Australia PMI Services May (P) (Prev 50.7)
+1950 - Japan Trade Bal Apr  (Cons -29.7b, Prev 667b)
+1950 - Japan Machinery Orders m/m Mar  (Cons -8.1%, Prev 13.6%)
+2030 - Japan PMI Mfg May (P) (Prev 55.1)
+2030 - Japan PMI Services May (P) (Prev 51.0)
+2130 - Australia Unemp Rate Apr  (Cons 4.3%, Prev 4.3%)
+0200 - ECB publishes Research Bulletin.
+0315 - France PMI Mfg May (P) (Prev 52.8)
+0315 - France PMI Services May (P) (Prev 46.5)
+0315 - Norges Bank's Bache (Gov) gives speech at a seminar.
+0330 - Germany PMI Mfg May (P) (Prev 51.4)
+0330 - Germany PMI Services May (P) (Prev 46.9)
+0400 - Eurozone PMI Mfg May (P) (Prev 52.2)
+0400 - Eurozone PMI Services May (P) (Prev 47.6)
+0430 - UK PMI Mfg May (P) (Prev 53.7)
+0430 - UK PMI Services May (P) (Prev 52.7)
+0500 - Eurozone Labour Cost y/y Q1 (P) (Prev 3.3%)
+0500 - ECB's Villeroy (Super Dove) at ACPR's annual report presentation
+0600 - UK CBI Ind Trends Orders May  (Cons -40.0, Prev -38.0)
+0800 - BoE's Taylor (Dove) delivers speech at MNI event.
+0830 - US Building Permits m/m Apr (P) (Prev -11.4%)
+0830 - US Housing Starts m/m Apr  (Prev 10.8%)
+0830 - US Philadelphia Fed Mfg Index May  (Cons 18.0, Prev 26.7)
+0830 - US Initial Jobless Claims May 16 (Cons 210k, Prev 211k)
+0945 - US PMI Mfg May (P) (Prev 54.5)
+0945 - US PMI Services May (P) (Prev 51.0)
+1100 - US Kansas Fed Mfg Index May  (Prev 10.0)
+1100 - Banxico Minutes
+1130 - ECB's Elderson (No Known Bias) delivers lecture at Oxford Uni.
+1220 - Fed's Barkin (NV, No Known Bias) on Econ Outlook. Texts/Q&A yes.
+
+Supply Events - Bonds, Bills & Central Bank Operations
+All times are EST time
+2010 - Japan BoJ Bond Purchase 1-3y, 3-5y, 5-10y, 10-25y tranches
+0430 - Spain auction 5y SPGB 2.60% (May31), 7y SPGB 3.00% (Jan33), 24y SPGB 1.00% (Oct50) total €6.5bn
+0450 - France auction 3y OAT 2.40% (Sep29), 4y OAT 2.75% (Feb30), New 5y OAT 3.25% (Feb32), 8y OAT 3.50% (Nov33) total €14bn
+0500 - UK BoE 7-day Short Term Repo (Prev £111bn)
+0500 - UK auction £4.00bn 10y Gilt 4.875% (Jul36)
+0550 - France auction 8y OATei 0.60% (Jul34), 10y OATi 0.10% (Mar36), 10y OATei 0.10% (Jul36), 21y OATei 0.10% (Jul47) total €1.75bn
+1130 - US auction 4 wk bills  (Jun26), 8 wk bills  (Jul26) total $195bn
+1300 - US auction 10y TIPS  (Jan36) total $19bn
+1400 - US Tsy Nominal Purchase Op 5y-7y for  ~$0.0 to $4.0bn
+
+Upcoming Coupons & Redemptions
+Friday 22 Aut Coupon €0.65bn
+Friday 22 Slova Redemption €1.45bn
+Friday 22 UK Coupon £0.62bn
+Friday 22 UK I/L Coupon £1.0bn
+
+### ITC commentary — 2026-05-21
+ITC Fixed Income Your Eyes and Ears on the Rates Markets
+May 21, 2026
+
+
+
+
+Calendars
+📆  Daily G10 Calendar
+📆  Daily APAC Calendar
+📆  Weekly Macro Calendar
+📆  Weekly Supply Calendar
+
+Cheat Sheets & Resources
+🕊 Hawk/Dove Cheat Sheet
+💡  Cheat Pack
+
+
+ITC US FI Recap: Choppy session overall, curve flattening, with Middle East headlines still center stage.
+
+
+
+
+
+
+
+In this email: USTs & Swaps / ED & SOFR / Cross Asset / News / Schedule
+
+Main Market Highlights: Choppy session with USTs mixed, the curve flatter as Iran headlines continued to dominate price action. -DM bonds were better bid overnight with Gilts/Bunds supporting USTs amid some weaker PMI data. -Sellers emerged into the NY open as Oil jumped on reports Iran would not agree to sending near-weapons-grade uranium abroad. -While Iran denied the (Reuters) report, USTs continued to struggle through the morning as WTI consolidated above $100 -Quiet conditions into the afternoon, ahead of the 10y TIPs auction. -The 10y TIPs auction drew weak demand, tailing 1.6bps (2.169%) which weighed on BEIs. -Shortly after the auction, USTs were lifted along with stocks; oil was hit after reports (via Al Arabiya) that a final draft of a US/Iran agreement was reached through Pakistani mediators and was set to be announced with the ‘next few hours’. -While most seemed skeptical of the headlines, USTs maintained a bid while Oil fell to session lows -After jumping to 4.63% mid-morning, 10y was <4.56% TY near session highs at 109-14 -2y yields jumped above 4.11% before falling to  <4.06%. -Continued volatility in UST futs ahead of the pit close as Iran’s President made comments, indicating no agreement/announcement was imminent.  -Curve: Long-end outperforming through the morning with 5s30s bottoming at 84bps before seeing belly outperform in afternoon; 2s10s went out at session lows through 50bps -SOFR: Steeper through the late whites/early reds; SFRZ6 was hit to a new local low at 96.065 in the morning with the mkt pulling forward timing of a potential rate HIKE following the hawkish minutes on Weds. SFRM7 failed to hold above the 96.00 into the close. -Funding: Repo rates edged a little higher amid the $17b new Bill settlements; SERFF spreads backed off local highs; Weds SOFR fixed 3.50, flat to the RRP and -12bps to EFFR. -Stocks: A renewed bid on Iran headlines in the afternoon; small caps led with RTY +0.8%, DOW +250pts. ESA was +0.15% at 7460 while NQ was flat.    -Data: IJC were in-line at 209k, continuing claims at 1782k. May Mfg PMI was 55.3 (53.8 est), Svcs was 50.9 (51.2 est), Composite was 51.7 (51.8 est). May Philly Fed business outlook slid to -0.4 (17.8 est). -Atlanta Fed’s Q2 GDPNow forecast was revised up to 4.3% from 4.0%, GS lowered their Q2 GDP tracking estimate by 0.1pp to +2.0% -What’s priced? MKt was pulling forward timing of a potential rate HIKE following Weds FOMC minutes; OIS fwds for Dec made a new high at 3.84% which implies ~22bps of hike this year. Peak of the curve however held below the local peaks (>4.0%) -Looking ahead: Light data ahead of the recommended early close, includes just final UMich sentiment and May KC Fed services. Canada gets retail sales.
+_____________________________________________________________________________
+USTs & SwapsThe range was -2 (20y) to +3 bps (2y); 2s10s was -3.4bp; 5s30s was -2.7 bp
+NY narratives: 1)  USTs remained weak through the pit open, grinding to fresh lows after uneventful Claims data. However, fresh Middle East headlines quickly overshadowed the numbers once again, knocking WTI off session highs and lifting UST futs off their lows. Overall tone stayed choppy. 2) Mid-morning PMIs came in mixed, leaving USTs heavy as yesterday’s Middle East optimism continued to fade. Front-end underperformance drove steady curve flattening through midday.
+3) Futs (double) bottomed and climbed back toward session highs by mid-afternoon. WTI pulled back sharply, dropping just under 7% from its mid-morning peak near 102.66, as optimism around Iran eased back to modestly positive territory. Equities rallied on the improved tone. 4) Late headline on Iran was less optimistic, leading to a solid bounce (approx. 50% of the downside) in yields into the close. Equities came off their peak, WTI bounced. 5) The belly outperformed in the afternoon, driven by a solid bounce in the 5s30s back toward session highs, while the 2s10s lingered near its lows just below 50 bps. Late headline saw 5s30s top and flatten once again, new lows in 2s10s.
+__________________________
+NY:  Early selling in Bunds and USTs through the London open, before EGBs reversed higher and rallied after a series of weak flash PMI prints, with France’s particularly poor data setting the tone. French business activity saw the steepest decline in five-and-a-half years. Germany’s Mfg PMI also slipped. Rate hike expectations eased, yields fell, as traders unwound some of the recent hawkish pricing. USTs faded lower in early NY. The tone in USTs remained heavy through the pit open. Although the Philly Fed Business Outlook came in starkly weaker than expected (0.4 vs 17.8 est), claims were largely uneventful. USTs kept their choppy downside bias. As has been the pattern, there was no clear economic catalyst behind the selling — just continued fading of yesterday’s Middle East optimism and ongoing back-and-forth on early headlines… Reuters: Iran Supreme Leader says enriched uranium must stay in the country…White House pushed back and said the claim was false. This helped stabilize the market, with UST futs bottoming after the mixed mid-morning PMIs. Optimism toward the Middle East crept back slightly during the session, highlighted by WTI (July) falling nearly 7% from its early peak near 102.66 to a low of 95.76 in the early afternoon. Accordingly, UST futs and equities were lifted to new highs otd before peaking mid afternoon and pulling back slightly.  The pullback was further fed by late headlines, reducing some of the intraday optimism.
+
+AlArabiya_Brk - A high-level source told Al Arabiya: The Pakistani army chief will not travel to Tehran tonight. Flattening was the dominant theme in the morning with the front-end  underperforming. Belly improved however as 5s30s had a solid bounce in the afternoon on further positive headlines, retesting session peaks near 88 bps. 2s10s lingered near session lows below 50 bps. Specifically, 2-way, choppy session, saw 2y oscillate between 4.05% and 4.11%, 5y between 4.23% and 4.30%, 10y mostly between 4.57% and 4.62% and 30y dropping below 5.09% though peaking near 5.15%. On the curve, 2s10s flattened 2.5 bps to bottom near 49.3 bps. 5s30s was 2-way between 87.5 and 84.5 bps.
+SOFR swaps saw heavy flow go through the SEF screen in APAC with volumes well above average overall led by intermediate sector.  Swap spreads were seen mixed with 2y touch tighter while others all wider led by +0.50bps move in 10y.  Then, good flow was seen going through in SOFR swaps in early Ldn trade with swap spreads seen mixed with 2y tighter by -0.625bps while others all marginally wider.
+- Price action in SOFR swap spreads was once again largely driven by U.S.-Iran headlines with spreads compressing into the U.S. session and through the morning after headlines that Iran's Supreme Leader ordered that near-weapons-grade uranium must stay in Iran which erased some of the optimism over a potential deal.  Spreads were offered until mid-morning as USTs came under renewed pressure, oil rallied and VOL went bid.
+- Spread saw some lifts come into the mkt as USTs settled into a (lower) range. However, more constructive headlines later in the session (i.e. senior Iranian official refuting the earlier reports on enriched uranium remaining inside and calling it “propaganda” and later news that Iran US-Iran Draft Agreement Reached Via Pakistan Mediation, Expected To Be Announced In Next Few Hours), helped propel swap spreads wider once again as USTs rallied and oil/VOL came off.
+- However, spreads were hit off the afternoon highs on more negative lines (i.e. a high-level source told Al Arabiya: The Pakistani army chief will not travel to Tehran tonight) as USTs took a sharp hit, oil/VOL was lifted once again.
+- 2y spread is closing -25bps tighter at -14.5bps, 5y spread is closing out -0.125bps, 10y spread is closing out +0.25bps wider at -41.25bps, and 30y spread is closing out unched at -73.375bps.
+- Swap volumes ran at a solid clip this session (…roughly 70% above average) amid increased activity in all tenors.
+
+BEIs opened higher along with oil prices but came off through the morning as oil traded off its early highs on renewed optimism on an Iran deal.  A poorly received $19bn 10y TIPS auction (…~1.6bps tail) weighed on BEIs further though the afternoon.  2y BEIs briefly took out the cycle lows of ~273.5bps hit on May 7th this afternoon but caught a renewed bid as oil popped higher into the close on more negative Iranian headlines.
+- 2y breakeven is closing out -1.25bps lower at 274.375bps, 5y breakeven is closing out -1.875bps lower at 259.25bps, 10y breakeven is closing out -1.875bps lower at 243.125bps, and 30y breakeven is closing out -1bps lower at 228.375bps.
+___________ Data: Claims near expectations, weak Philly, mixed PMI. Nothing to move the needle for USTs. -  IJC (May 16) 209k vs 211k prior revised to 212k
+-  Initial Claims 4-Wk Moving Avg (May 16) 202.50k  vs 203.75k prior revised to 204.00k
+-  CClaims (May 9) 1782k vs 1786k est/1782k prior revised to 1776k (highest since April 10)
+-  Philadelphia Fed Business Outlook (May) -0.4 vs 17.8 est/26.7 prior (lowest since Dec) -     The current shipments and new orders indexes also dropped sharply in May, with the latter falling into negative territory. The shipments index declined 29 points to 4.9, and the new orders index fell 35 points to -1.7, its lowest reading since April 2025. Over 30 percent of the firms reported decreases in new orders (up from 8 percent last month), 28 percent reported increases (down from 41 percent), and 42 percent reported no change (down from 49 percent). -   https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-05
+
+-  Housing Starts (Apr) 1465k vs 1410k est/1502k prior revised to 1507k
+-  Housing Starts MoM (Apr) -2.8% vs -5.3% est/10.8% prior revised to 12.0%
+-  Building Permits (Apr P) 1442k vs 1384k est/1363k prior
+-  Building Permits MoM (Apr P) 5.8% vs 2.5% est/-11.4% prior -   US Mfg PMI (MayP) 55.3 vs 53.8 est/54.5 prior
+-   US Services PMI (MayP) 50.9 vs 51.2 est/51.0 prior
+-   US Composite PMI (MayP) 51.7 vs 51.8 est/51.7 prior -  KC Fed Mfg Activity (May) 8 vs 9 est/10 prior - The GDPNow model estimate for real GDP growth (seasonally adjusted annual rate) in the second quarter of 2026 is 4.3 percent on May 21, up from 4.0 percent on May 14.
+DEALER REACTIONS
+
+GS (Hatzius): Single-family housing starts were weaker than our previous GDP tracking assumptions. We lowered our Q2 GDP tracking estimate by 0.1pp to +2.0% (quarter-over-quarter annualized). Our Q2 domestic final sales estimate stands at +1.7% and our past-quarter GDP tracking estimate stands at +2.2%. _________ Supply: Another tail for a 10y TIPs, about 1.6bps at 2.169%. Non-dealer however were in-line with recent avgs, taking 88.9% of the auction: Indirects took down 61.40% vs. last four avg. 63.40% while directs were allotted 27.50% vs. last four avg. 23.60%
+_________________________ IG: 2 deals, est $2.0b -              Fibra SOMA Trust $800m, FMC Corp $1.2b.
+From Ron Quigley of Quigley’s Corner, as of last night:
+•              The IG Corporate-only WTD total 87.08% of this week’s syndicate midpoint average forecast or $32.375b vs. $37.18b.
+•              We priced 66.85% of the syndicate forecast for May IG Corporate-only new issuance or $124.275b vs. $185.91b.
+•              YTD, we priced 51.95% of the syndicate forecast for 2026 IG Corporate-only new issuance or $946.021b vs. $1.821 trn.
+
+
+
+
+SOFR: After a modest overnight bid, aided by weaker Euro/UK PMIs, UST/STIR futs came under renewed pressure into NY as optimism over a near-term Iran deal was fading. Front-end futs were knocked lower into NY amid reports Iran's Supreme Leader had issued a directive that the country's near-weapons-grade uranium should not be sent abroad. While those reports were later denied by Iran, USTs continued to struggle as 2y yields were holding above 4.10% into the afternoon. Mkts took another turn in the afternoon with UST futs getting lifted to session highs after reports that US-Iran draft agreement reached via Pakistan mediation and was expected yo be announced “in the next few hours”. While there was plenty of skepticism of the latest array of headlines, oil came under pressure late with CL falling to session lows through $96.50 or -1.8% otd which supported USTs into the pit close. Data was somewhat of an afterthought again with Iran headlines the focus. Thursday’s data however was a mixed bag with PMI’s close to estimates while the wkly claims data show no signs of labor mkt weakening. After jumping back above 4.10% on the earlier Iran headlines, 2y yields drifted back to 4.06% into the close. 1y1y OIS ranged 3.932-4.015 before going out around 3.97%. -Front-end was underperforming on the curve with continued focus on Weds FOMC minutes. Recall, the minutes noted “A majority of participants highlighted…that some policy firming would likely become appropriate if inflation were to continue to run persistently above 2%,” and “many” participants would have preferred removing the implicit easing bias from the post-meeting statement. While the  “vast majority” of participants saw greater risk that inflation would take longer to return to 2% than they had previously expected Follow-through from the minutes kept a lid on the front-end as the curve continued to edge flatter. - US front-end also continued to underperform x-mkt: 1y1y OIS cheapening further vs Europe & UK where rate hike urgency continues to back off the extremes seen in April. Recall, the US/EUR 1y1y spread tightened sharply through early April, trading through +50bps as the mkt was pricing more aggressive policy tightening from the ECB (&BoE) relative the Fed. Since the lows (traded Apr 7th), US 1y1y OIS has underperformed with ECB pricing stabilizing while US mkts started to price more aggressive rate hikes. The US/EUR spread got out to +105bps – the widest since August of last year (taking out local resist at ~99bps)
+Along the strip: Late whites/early reds were in the cross-hairs on Thursday, underperforming following the rather hawkish FOMC minutes on Weds. SFRZ6 traded a new low at 96.065 in the morning before closing -6 at 96.10 (new low close); SFRM7 remains the low contract, closing -6 at 95.99 after ranging 95.945-96.035 3pm  Snapshot: SFRM6: -2.0 at 96.3225 SFRM7: -6.0 at 95.990 SFRM8: -3.0 at 96.115 SFRM9: -1.5 at 96.045
+
+
+Funding / Repo / TBills: After relentless softening over the past few weeks, repo firmed modestly Thursday as the mkt absorbed $17b in new TBill settlements. GC edges small higher pushing back above the RRP rate, averaging 3.54% at 10am With repo firming, SERFF spreads were better offered, backing off local wides. May SERFF was -1.0 at +4.5bps while June was -1bps at +1.5bps. -Recall, there has been increased speculation that the Fed could cut or pause RMPs in response to funding mkts which may have become too soft, risking rates falling too low within the range. Weds SOFR fixed -1bp at 3.50,  -A new local low for SOFR, fixing flat to the RRP rate and 12bps through EFFR:
+
+
+What’s Priced In: MKt was pulling forward timing of a potential rate HIKE following Weds FOMC minutes; OIS fwds for Dec made a new high at 3.84% which implies ~22bps of hike this year. Peak of the curve however held below the local peaks (>4.0%) with ~34bps of hikes priced through June of 2027.
+
+Headlines & Data: US Close
+Middle East
+Iran IRNA Citing Al Arabiya: The final draft of the US-Iran agreement has been reached with the mediation of Pakistan, which is expected to be announced within the next few hours
+This draft includes an immediate and comprehensive ceasefire on all fronts
+The Parties mutually undertake to refrain from targeting infrastructure
+Freedom of navigation in the Persian Gulf and the Strait of Hormuz is guaranteed under a joint monitoring mechanism
+Sanctions will be gradually lifted in exchange for Iran's compliance with the terms of the deal
+Negotiations on outstanding issues shall begin within a maximum of seven days
+Trump: We're negotiating on Iran, we'll get it one way or the other; we have total control of the Hormuz Strait; I want Hormuz open and free with no tolls; US will get Iran uranium and likely destroy it; conflict will end soon and gasoline prices will drop
+
+North America
+Fed Goolsbee: There is a significant inflation problem; job market is stable; focusing on inflation aspect of dual mandate
+Fed Barkin: Current policy is in a good place to respond to ongoing shocks; whether the Fed needs to hike rates depends on how businesses and consumers react to developing conditions; consumers are not happy but continue to spend. Businesses are so far managing productivity improvements through attrition and not layoffs; so far, long-term inflation expectations appear to remain contained; before tariffs and the rise in oil prices, the Fed was basically there on meeting the inflation target; nervous about the tails on both sides of the mandate; not leaning towards overly focusing on risks to inflation or employment; longer-term bond-market-based inflation expectations do not look like it has broken out; bond yields are still in a reasonable zone; do not feel like today is a time for strong forward guidance
+Punchbowl: The Senate will go home until June, leaving the reconciliation bill unfinished; Thune just told senators in the room; all because of the DOJ weaponization fund; House is expected to follow suit soon
+White House: Postpones AI EO signing ceremony to a later date
+Trump on the AI executive order: I postponed because I didn't like certain aspects of it
+Trump: Will likely have to pay back $149b in tariffs; we will do tariffs in a different way; Supreme Court likely to rule against me
+Trump: Looks like I will be the one to do something on Cuba
+Pentagon: Will test AI models looking to replace Anthropic
+US 10y TIPS Auction Result: Size Sold $19b; Tails 1.6bps b/c 2.52; Direct 27.5%; Indirect 61.4%; Dealers 11.0%
+
+Europe
+France PM: Broadly against tax cuts on fuel; no tax increase in 2027 budget plan
+SNB Vice Chairman Martin: The SNB has an elevated willingness to intervene in FX; Swiss inflation is within the price stability range
+
+Equities
+The Information: Anthropic annualised revenue seen at $45b vs OpenAi's $25b
+
+European Close
+Middle East
+​Al Jazeera: A senior Iranian official denied to me reports that Supreme Leader Mujtaba Khamenei has issued a new order requiring enriched uranium to remain inside Iran, saying they are “propaganda by the enemies of the deal” The official added there are “no new order has been issued,” and that Tehran’s position has been consistent: Iran would down blend the material itself. “That is the subject of talks in the next stage,” the official said.
+Iran Envoy: Oman/Iran discussing permanent toll for Strait of Hormuz; reopen will require payment from countries using the Strait
+US Sec State: Tolling system in Strait of Hormuz would make a diplomatic solution unfeasible; will talk about issues of force posture at NATO meeting; lets see if we can get an Iran deal, there are some good signs; some progress achieved
+Iran: 31 ships passed through Strait with IRGC co-ordination
+Qatari official source for AP: We only support the ongoing mediation led by Pakistan
+IFX: Putin shared with Xi the ideas of transporting and storing Iran uranium in Russia
+
+North America
+US Weekly Initial Jobless Claims 209k vs 210k cons: Continuing Claims 1.782m vs 1.785m cons
+US May Philly Fed -0.4 vs 18 cons: Employment -2.8 vs -5.1 prev: Prices Paid 47.9 vs 59.3 prev: New Orders -1.7 vs 33 prev
+US Apr Building Permits: 1.442m vs 1.385m cons
+US Apr Housing Starts: 1.465m vs 1.41m cons
+US May Mfg PMI: 55.3 vs 53.8 cons; Services 50.9 vs 51.1 cons
+US Q2 Atlanta Fed GDPNow: 4.3% vs 4.0% prev
+Axios: Pres Trump is making a list of Republicans who could be on the chopping block in 2028 after taking down various GOP dissenters in the primaries in order to reaffirm his dominance over the party
+Walmart CFO: If current elevated cost environment persists, expect somewhat higher retail price inflation in Q2 & H2’26
+Sources, Turkey liquidated almost all of their UST holdings in March
+US Treasury to sell: $69 billion in 2-year notes to be auctioned May 26; $70 billion in 5-year notes to be auctioned May 27 $44 billion in 7-year notes to be auctioned May 28
+
+Europe
+EU Dombrovskis: The Middle East conflict has triggered a new energy shock, with EU inflation projected to rise to 3.1% and growth set to slow to 1.1% in 2026.Europe’s response must be guided by the lessons of past crises
+Eurozone May Consumer Conf: -19.0 vs -20.8 cons
+​ ​BBK Monthly Report: German economy faces stagnation in Q2, with rising prices due to Iran war
+​France 8Y, 10Y, 21Y OAT Linker Auction Results: Weak 8Y, other lines broadly similar to recent averages; size sold €1.54b
+
+UK
+BoE Taylor: Economy has moved into a position of slack; likelihood of 2nd round effects lower than in 2022; GDP growth is sluggish and it’s likely to remain so; seeing tightening of financial conditions; probably correct to expect need for rate hike under scenario C of our outlook; some tightening has happened relative to where we were in Feb; 2nd round effects are less likely to materialize than they did in 2022; not clear if risks were to materialize at all, there are big trade offs for policymakers to consider; thinks we're effectively 100bps above neutral atm; current restrictiveness is enough under scenario B; recession probability has picked up to 30-40%; puts more weight on forward looking policy rules; holding rates has delivered effective tightening, we don't need to be super reactive; the curve does not tell me where rates are likely to go; wouldn't be worried about a policy reversal; re April CPI data, the shock impact is less than thought but it's still early days
+BoE Bailey: AI boost to productivity numbers could take time, how long is an open question
+UK Chancellor Reeves: re energy said we stand ready to act if mkt conditions worsen later in 2026; establishing a £350m critical chemical resilience fund; announced £120m for the ceramics industry; must ensure those who benefit from energy price vol pay their share; bringing forward changes to taxation of foreign branch profits; expect these reforms to raise hundreds of millions of pounds a year; expect supermarkets to pass savings from reduced tariffs in full to customers; temporary cut to VAT on some attractions from 20% to 5%, changes will apply from June 25th to Sep 3rd
+BofA: f/c the BoE will hike rates 25bps in July & Sep vs prior f/c of hikes in June & July
+UK May CBI Trends Orders: -41 vs -40 cons
+​BoE: Allotted £114.89b in their short term repo op
+
+Trade
+BBG: The EU are seeking o carve out banned China chips to protect their auto Co.’s
+
+Russia/Ukraine
+​Kremlin: re nuclear exercises, any such drills are a signal; Ukraine was discussed with Pres Xi, China is ready to help peace efforts   Belta citing Russia Pres Putin: Nuclear weapon usage only a last resort measure; our nuclear triad must serve to guarantee Russia/Bealrus sovereignty
+Oil/Geopolitics
+EIA’s Birol: My hope is the Strait of Hormuz will be open fully and unconditionally; will take a lot of time for ME oil prod and refining to return to Feb 27th levels; oil mkt’s could enter the red zone in July-August as stocks deplete and summer demand firms; IEA ready to act to coordinate further strategic oil reserve releases if necessary; the last SPR release was 20% of stocks
+Source: OPEC likely to agree output hike of 180k bpd at June 7 meeting
+US Weekly Nat Gas Storage Change: 101bcf vs 95bcf cons
+
+Equities
+​WSJ: US govt to award quantum computing firms $2b and take equity stakes
+​  Walmart Q1 Earnings: Adj EPS $0.66 vs $0.65 cons, Rev $177.75b vs $174.8b cons; Q2 Adj EPS f/c $0.72-74; reiterated their FY'27 O/L
+The Information: Anthropic in talks to use Microsoft AI chips
+Paris Appeals Court: Found Airbus & Air France guilty of corporate manslaughter
+
+
+Pre-US
+Middle East
+@AlArabiya_Brk: Arabiya diplomatic source: Tehran is studying the American text and has not yet submitted its response… Pakistan is working to bring closer the viewpoints between the American and Iranian proposers… work is underway on a framework for a temporary agreement between Washington and Tehran… Arabiya diplomatic source: The Pakistani Army Chief's visit to Iran will take place upon its approval of the agreement
+ISNA: Iran is responding to text sent by US; discussing framework and confidence building steps; US has reduced gaps to an extent
+@AlSharq_Breaking News Iranian media citing officials: Bridging the gaps in negotiations requires America to abandon its "lust" for war
+Pakistan Source: Enriched uranium main sticking point is US/Iran talks
+Russia: Only Iran should decide fate of its uranium reserves; ready to help Iran/US on implementing poss solution on enriched uranium
+
+Europe
+EZ Mfg PMI: 51.4 vs 51.8 cons: Services: 46.4 vs 47.7 cons
+S&P: PMI survey data suggests the Euro-area economy will contract by 0.2% in Q2
+EZ Mar C/A: +€14.9b vs +€24.87b prev
+EZ Mar Construction O/P: 0.8% vs -0.19% prev
+EU Commission: EZ 2026 GDP f/c 0.9% vs 1.2% prior f/c, 2027 f/c 1.2% vs 1.4% prior f/c; 2026 inflation f/c 3% vs 1.9% prior f/c, 2027 f/c 2.3% vs 2% prior f/c; French 2026 budget deficit f/c 5.1%, German 2026 budget deficit f/c 3.7%; EZ 2026 aggregate budget deficit f/c 3.3%
+EU's Dombrovskis: EU must keep fiscal support temp and targeted; need to further reduce reliance on imported fossil fuels
+German May Flash PMIs: Mfg 49.9 vs 51 cons: Services 47.8 vs 47 cons
+German Finance Ministry Monthly Report: at the end of 2026, federal budget showed a deficit of €41b; tax rev fell almost 5% in Apr 2026 y/y
+France May Flash PMIs: Mfg 48.9 vs 52.2 cons: Services 42.2 vs 46.6 cons
+Italian Mar C/A: +€1.75b vs +€3.65b prev
+Sweden Apr Unemployment Rate SA: 8.5% vs 8.8% cons
+Swiss Fin Min: Stability is indispensable for our financial centre, it creates credibility; everyone benefitting from stability needs to contribute to it
+Spain 5Y, 7Y, 24Y SPGB Auction Results (sold €6.06b): Weaker o/b and b/c with higher tail on 5Y, 7Y; 19Y higher b/c, lower tail
+France 3Y, 4Y, 5Y, 8Y OAT Auction Results (sold €14): Generally weaker o/b, but shorter tails
+
+UK
+BBC: Fmr Health Sec Streeting Former Health has backed the introduction of a "wealth tax that works", as part of his pitch for the Labour leadership; proposes equalising capital gains tax with income tax, in a reform he estimates could raise £12b pa
+BOE Blog Post: Financial mkt’s point to very data-dependent mon pol; big & uncertain shocks have pushed UK inflation above the 2% inflation tgt over the past few years. How did financial mkt’s view the MPC mon pol during this unprecedented period? We show that mkt’s have come to perceive the MPC's policy stance as increasingly dependent on data releases. In particular, the responsiveness of UK mkt rates in tight windows around data releases rose significantly from 2022 to 2025. Zooming out to longer time windows in between MPC meetings, the change in services inflation explained a historically large share of the overall change in market rates over the same period
+UK May Flash PMIs: Mfg 53.7 vs 53 cons: Services 47.9 vs 51.7 cons
+UK 10Y Gilt Auction Result: b/c & o/b in-line, higher tail (sold £4b): b/c 3.45 vs 3.5 prev, 0/b 6p vs 6.4p pev, tail 2.3p vs 1.4p prev
+
+APAC
+BOJ’s Koeda: Inflationary risk is already materialising; risk of inflation overshooting is bigger than risk of recession; appropriate to deal with inflation with mon pol; there is some time before Jun policy meeting; will continue to look at any change in balance between price/ growth risks; need to guide policy to avoid being behind the curve on inflation; BOJ must play stronger role than in the past in using mon pol to cope with inflation; I also thought it was appropriate to keep rates steady in April as developments in ME conflict could sharply change our growth & price scenario
+BoJ: Most financial institutions who replied to our survey said the BoJ shouldn’t make any change to current bond taper program; as for the next fiscal year onward, there were some who said BoJ should pause tapering and others who said it should continue tapering
+
+Trade
+China MOFCOM: EU using overcapacity as basis of concocting new trade tools against China
+
+Oil/Geopolitics
+China For Ministry: re Pres Trump talking to Taiwan Pres, opposed to US official exchange with Taiwan; wants US to stop sending wrong signal to Taiwan independent separatist forces
+Russia: Stand is solidarity with Cuba; will continue to support Cuba; the US are tightening the noose of sanctions around Cuba
+
+
+Key Scheduled Events Tomorrow:
+For full detail, see our ITC Daily Calendar
+For more info on central bank speakers, Click here for the ITC Speakers preview
+Highlighted Data, Speakers & Other Events
+All times are EST time
+1930 - Japan CPI m/m Apr  (Prev 0.4%)
+2000 - Eurozone ECOFIN Meeting
+2000 - Eurozone Eurogroup Meeting
+2115 - ECB's Lane (Dove) addresses 2026 Asian MonPol Forum.
+0200 - Germany GDP q/q Q1 (F) (Cons 0.3%, Prev 0.3%)
+0200 - Germany Cons Confidence (GfK) Jun  (Cons -34.0, Prev -33.3)
+0200 - UK Retail Sls y/y Apr  (Cons 1.3%, Prev 1.7%)
+0215 - ECB's Lagarde (No Known Bias) opens 2026 Asian MonPol Forum.
+0400 - Germany IFO Biz Climate May  (Cons 84.2, Prev 84.4)
+0430 - ECB's Lagarde (No Known Bias) at Eurogroup presser.
+0500 - Eurozone Negotiated Wage Growth Q1  (Prev 3.0%)
+0730 - ECB's Vujcic (Hawk), Kazimir (NV, Hawk), Muller (Hawk) roundtable session at Ljubljana.
+0830 - Canada Retail Sls y/y Mar  (Prev 3.8%)
+1000 - US CB Leading Index m/m Apr  (Cons -0.2%, Prev -0.6%)
+1000 - US Michigan Cons Sentiment May (F) (Cons 48.2, Prev 48.2)
+1000 - Fed's Waller (Dove) gives lecture on Econ outlook. Text/Q&A yes.
+1030 - Canada BoC SLO Survey
+- Fitch Rating Review: Bel (A+/Stb)
+- Moodys Rating Review: Por (A3/Stb)
+- DBRS Rating Review: Slove (AA(L)/Stb)
+- Scope Rating Review: Slova (A/Neg)
+
+Supply Events - Bonds, Bills & Central Bank Operations
+All times are EST time
+2330 - Japan auction 3 mth bills  (Aug26) total ¥4400bn
+0400 - Japan MoF Liquidity Enhancement Auction (5-11y) for ~¥650bn
+0600 - UK auction 1 mth bills  (Jun26), 3 mth bills  (Aug26), 6 mth bills  (Nov26) total £5bn
+
+Upcoming Coupons & Redemptions
+Friday 22 Aut Coupon €0.65bn
+Friday 22 Slova Redemption €1.45bn
+Friday 22 UK Coupon £0.62bn
+Friday 22 UK I/L Coupon £1.0bn
